@@ -23,6 +23,17 @@ export default {
 				],
 			},
 			{
+				text: 'Getting started',
+				items: [
+					{ text: 'Navigation', link: '/getting-started/navigation.md' },
+					{ text: 'Editing', link: '/getting-started/editing.md' },
+					{
+						text: 'Import / Export',
+						link: '/getting-started/import-export.md',
+					},
+				],
+			},
+			{
 				text: 'Pages',
 				items: [
 					{ text: 'Open project', link: '/pages/open-project.md' },

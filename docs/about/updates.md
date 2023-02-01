@@ -4,8 +4,24 @@ All releases and more information can be found at GitHub:
 
 https://github.com/glyphr-studio/Glyphr-Studio-2/releases
 
+## v2.0.0-alpha.2
+released 2023-02-01
+
+### Description
+The aim of Alpha 2 is to test some pieces of Glyphr Studio v2. 
+Glyphr Studio is in Alpha because it is not a complete product yet.
+But feedback and bug-hunting on the following scenarios would be very 
+helpful:
+
+ - Save and Load Glyphr Studio Project files `.gs2`
+ - Import OTF, TTF, WOFF, and SVG Font files
+ - Export OTF or SVG Font files
+ - Update options on the Settings page for the App, your Project, or your Font
+ - Use the Live Preview page to view your font as sentences or blocks of text
+
+
 ## v2.0.0-alpha.1
-released 2022-00-00
+released 2022-11-01
 
 ### Description
 The aim of Alpha 1 is to test some pieces of Glyphr Studio v2. 

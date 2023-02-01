@@ -2,11 +2,19 @@
 
 Very often we get questions like "Does Glyphr Studio support [something]". Font files have a huge list of features, and since Glyphr Studio is designed for beginners and hobbyists, only a small set of font features are supported.
 
+**For the supported features, be sure to read the the Import / Export article for more detailed information.**
+
 ## What *is* supported
  - Editing any character in the Basic Multilingual Plane (U+000 to U+FFF)
    - This includes whitespace characters and control characters
  - Kerning (Horizontal)
  - Ligatures
+
+### Supported import font formats
+ - OTF
+ - TTF
+ - WOFF
+ - SVG Font
 
 ### Supported export font formats
  - OTF
@@ -23,7 +31,7 @@ Very often we get questions like "Does Glyphr Studio support [something]". Font 
  - Designing the .notdef character
 
 ### Not supported export font formats
- - TTX
+ - TTF
  - WOFF
  - UFO
  - (everything else)
