@@ -7,4 +7,4 @@ Ligatures are a feature of fonts where a specified sequence of characters is rec
 These are just some examples. *Ligatures can have any sequence of two or more characters*. In a text editing program that has ligatures enabled, this sequence of characters is recognized, then replaced with the custom ligature character that you design.
 
 
-![Settings page](../img/page_ligatures.png)
+![Ligatures page](../img/page_ligatures.png)

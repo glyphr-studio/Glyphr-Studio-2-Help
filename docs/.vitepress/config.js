@@ -48,6 +48,14 @@ export default {
 				],
 			},
 			{
+				text: 'Data types',
+				items: [
+					{ text: 'Characters', link: '/data-types/characters.md' },
+					{ text: 'Ligatures', link: '/data-types/ligatures.md' },
+					{ text: 'Components', link: '/data-types/components.md' },
+				]
+			},
+			{
 				text: 'Pages',
 				items: [
 					{ text: 'Open project', link: '/pages/open-project.md' },
