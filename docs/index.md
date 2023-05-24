@@ -1,5 +1,5 @@
 # Help and Documentation
-![Glyphr Studio 2 Beta-1 banner](/img/beta-social-banner-horizontal.png)
+![Glyphr Studio 2 Beta-1 banner](/img/beta-social-banner-horizontal-675x150.png)
 ### Welcome to the Glyphr Studio v2 docs
 
 While Glyphr Studio v2 is in Beta, so will the documentation be. Hopefully the 
