@@ -54,6 +54,11 @@ Glyphr Studio Project files (.gs2) are text files in JSON format. By default, th
 
 type: `Boolean`
 
+### *Move shapes when drag+dropping an SVG file*
+When importing SVG by dragging and dropping a .svg file onto the canvas, move the imported shapes to the origin (x = 0, y = shapes height). Setting up your other vector editor (like Adobe or InkScape) to have coordinates that match Glyphr Studio's coordinates can be challenging - sometimes resulting in imported SVG shapes being very far away from the origin. This is a simplistic option to at least get the imported shapes near the right area of the canvas.
+
+type: `Boolean`
+
 ### *Combine paths on export*
 
 This will boolean-combine all paths before a font is exported. This may make the exported font perform better, but it will drastically increase export time.

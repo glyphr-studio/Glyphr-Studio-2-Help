@@ -5,7 +5,7 @@ Very often we get questions like "Does Glyphr Studio support [something]". Font 
 **For the supported features, be sure to read the the Import / Export article for more detailed information.**
 
 ## What *is* supported
- - Editing any character in the Basic Multilingual Plane (U+000 to U+FFF)
+ - Editing any character in the Basic Multilingual Plane (U+0000 to U+FFFF)
    - This includes whitespace characters and control characters
  - Kerning (Horizontal)
  - Ligatures

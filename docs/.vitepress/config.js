@@ -38,7 +38,9 @@ export default {
 				items: [
 					{ text: 'Open project', link: '/pages/open-project.md' },
 					{ text: 'Overview', link: '/pages/overview.md' },
-					{ text: 'Glyph edit', link: '/pages/glyph-edit.md' },
+					{ text: 'Characters', link: '/pages/characters.md' },
+					{ text: 'Ligatures', link: '/pages/ligatures.md' },
+					{ text: 'Components', link: '/pages/components.md' },
 					{ text: 'Live preview', link: '/pages/live-preview.md' },
 					{ text: 'Settings', link: '/pages/settings.md' },
 					{ text: 'Help', link: '/pages/help.md' },

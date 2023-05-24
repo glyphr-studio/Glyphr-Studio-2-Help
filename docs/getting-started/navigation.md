@@ -11,7 +11,7 @@ When expanded, shows all the pages:
 ![Expanded navigation](../img/nav_page-expanded.png)
 
 ## Editor pages
-The Glyph Edit, Components, and Ligatures pages are pages that include editing 
+The Characters, Components, and Ligatures pages are pages that include editing 
 controls. They also have additional navigation options in the upper left. The
 Page navigation is reduced in size, and an additional Glyph Chooser and Panel 
 Chooser is shown.

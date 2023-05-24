@@ -42,11 +42,10 @@ metadata that is imported into a Glyphr Studio Project. Font files can contain m
 amounts of data, and much of this is *not* imported.
 
 #### Importing Ligatures
-For Alpha 1 & Alpha 2, Ligatures are **not** imported. 
-This will be supported later, though.
+Ligature information and glyph shapes **are** imported.
 
 #### Importing Kerning data
-For Alpha 1 & Alpha 2, Kerning data is **not** imported. 
+For Beta 1, Kerning data is **not** imported. 
 This will be supported later, though.
 
 #### Importing Metadata
@@ -54,24 +53,24 @@ Here is a list of font metadata that does get imported. If that piece of data is
 
 | Font data name | Glyphr Studio default |
 | --- | --- |
-| font.familyName | My Font |
+| font.familyName | "My Font" |
 | font.unitsPerEm | 1000 |
 | font.ascender | 700 |
 | font.descender | 300 |
 | font.tables.os2.sCapHeight | 675 |
 | font.tables.os2.sxHeight | 400 |
-| font.tables.os2.panose | 0 0 0 0 0 0 0 0 0 0 |
+| font.tables.os2.panose | "0 0 0 0 0 0 0 0 0 0" |
 | font.tables.head.fontRevision or font.version | Version 0.1 |
-| font.tables.name.fontSubfamily | 'Regular' |
-| font.tables.name.copyright | '' |
-| font.tables.name.trademark | '' |
-| font.tables.name.designer | '' |
-| font.tables.name.designerURL | '' |
-| font.tables.name.manufacturer | '' |
-| font.tables.name.manufacturerURL | '' |
-| font.tables.name.license | '' |
-| font.tables.name.licenseURL | '' |
-| font.tables.name.description | '' |
+| font.tables.name.fontSubfamily | "Regular" |
+| font.tables.name.copyright | "" |
+| font.tables.name.trademark | "" |
+| font.tables.name.designer | "" |
+| font.tables.name.designerURL | "" |
+| font.tables.name.manufacturer | "" |
+| font.tables.name.manufacturerURL | "" |
+| font.tables.name.license | "" |
+| font.tables.name.licenseURL | "" |
+| font.tables.name.description | "" |
 
 ### Exporting OTF
 For font files, there is only one Export format: `.otf`. Even if you imported and started 
@@ -80,11 +79,10 @@ additional file formats, we recommend using another tool (like Font Forge) to co
 OTF file to other formats.
 
 #### Exporting Ligatures
-For Alpha 1 & Alpha 2, Ligatures are **not** exported. 
-This will be supported later, though.
+Exporting Ligature information **is supported**.
 
 #### Exporting Kerning data
-For Alpha 1 & Alpha 2, Kerning data is **not** exported. 
+For Beta 1, Kerning data is **not** exported. 
 We are currently investigating if this will be possible.
 
 #### Exporting Metadata
@@ -120,17 +118,17 @@ is not found:
 
 | `font-face` attribute name | Glyphr Studio default | 
 | --- | --- |
-| font-family | My Font |
-| font-style | Regular |
-| panose-1 | 0 0 0 0 0 0 0 0 0 0 |
+| font-family | "My Font" |
+| font-style | "Regular" |
+| panose-1 | "0 0 0 0 0 0 0 0 0 0" |
 | units-per-em | 1000 |
 | ascent | 700 |
 | cap-height | 675 |
 | x-height | 400 |
 | descent | -300 |
-| font-variant | normal |
+| font-variant | "normal" |
 | font-weight | 400 |
-| font-stretch | normal |
+| font-stretch | "normal" |
 | underline-position | -50 |
 | underline-thickness | 10 |
 | strikethrough-position | 300 |

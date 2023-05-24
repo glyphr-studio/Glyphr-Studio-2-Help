@@ -1,25 +1,27 @@
 # Help and Documentation
-![Glyphr Studio 2 Alpha-1 banner](/img/alpha-social-banner.png)
+![Glyphr Studio 2 Beta-1 banner](/img/beta-social-banner-horizontal.png)
 ### Welcome to the Glyphr Studio v2 docs
 
-While Glyphr Studio v2 is in Alpha, so will the documentation be. Which is to say, 
-there may not be a lot here.  But, please give feedback - both on the app, and the 
-content of this site (or the lack thereof).
+While Glyphr Studio v2 is in Beta, so will the documentation be. Hopefully the 
+content will be nearing complete.  But, please give feedback - both on the app, and the 
+content of this site.
 
 mail@glyphrstudio.com
 
-### Alpha Blog Posts
-This blog post has a ton of information:
+### Pre-release Blog Posts
+These blog posts has a ton of information about the road to v2.0.0:
 
-[Alpha-1 MEGA POST](https://www.glyphrstudio.com/blog/2022/11/02/v2-alpha-1-mega-post/)
+[Beta-1 MEGA POST](https://www.glyphrstudio.com/blog/)
 
 [Alpha-2 MEGA POST](https://www.glyphrstudio.com/blog/2023/02/01/v2-alpha-2-mega-post/)
+
+[Alpha-1 MEGA POST](https://www.glyphrstudio.com/blog/2022/11/02/v2-alpha-1-mega-post/)
 
 ## Links
 | Website | [glyphrstudio.com](https://www.glyphrstudio.com) |
 | :---- | :---- |
 | Email | [mail@glyphrstudio.com](mailto:mail@glyphrstudio.com) |
-| App | [glyphrstudio.com/v2/online](https://www.glyphrstudio.com/v2/online) |
+| App | [glyphrstudio.com/v2/app](https://www.glyphrstudio.com/v2/app) |
 | Help & Documentation | [glyphrstudio.com/v2/help](https://www.glyphrstudio.com/v2/help/) |
 | Blog | [glyphrstudio.com/blog](https://www.glyphrstudio.com/blog/) |
 | | |
