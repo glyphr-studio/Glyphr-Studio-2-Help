@@ -7,7 +7,7 @@ Editor pages are split into three main areas.  From left to right, the first are
 the Panels area. There is a thin area in the middle to select Tools. And finally 
 a large area on the right to display the edit canvas.
 
-![Editor page](../img/editing_overview.png)
+![Editor page](../img/page_characters.png)
 
 ## Panels area
 Project data is displayed two ways: the edit canvas displays a visual representation 

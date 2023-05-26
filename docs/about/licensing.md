@@ -1,5 +1,5 @@
 # Licensing
-
+This page outlines the license of the Glyphr Studio App itself, and the license of fonts you create.
 ## The Glyphr Studio App
 
 Glyphr Studio, the font editing software code itself, is licensed under GPL v3.0, which is an open-source 

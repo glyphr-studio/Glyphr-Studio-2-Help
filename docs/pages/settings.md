@@ -1,5 +1,9 @@
 # Settings
 
+
+<Badge type="danger">This page may contain information about features that are planned, but not yet in the Beta App</Badge>
+
+
 The Settings page is where you can adjust different behaviors or data for your Project, the App, or your Font.
 
 ![Settings page](../img/page_settings.png)
