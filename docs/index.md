@@ -11,7 +11,7 @@ mail@glyphrstudio.com
 ### Pre-release Blog Posts
 These blog posts has a ton of information about the road to v2.0.0:
 
-[Beta-1 MEGA POST](https://www.glyphrstudio.com/blog/)
+[Beta-1 MEGA POST](https://www.glyphrstudio.com/blog/2023/06/01/v2-beta-1-mega-post/)
 
 [Alpha-2 MEGA POST](https://www.glyphrstudio.com/blog/2023/02/01/v2-alpha-2-mega-post/)
 
