@@ -9,7 +9,7 @@ released 2023-06-01
 
 ### Description
 Beta 1 is (hopefully) mostly stable from a Project File perspective. 
-It also introduces two new areas of functionality in addition to several 
+It also introduces two new areas of functionality in addition to several minor improvements.
 
 ### Main features
  - **Components** - Use any glyph as a Component Root, or define stand-alone Components. Add these to any other glyph as Component Instances. Edit the Root, all the instances are also updated.
