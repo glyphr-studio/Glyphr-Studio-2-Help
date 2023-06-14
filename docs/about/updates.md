@@ -5,6 +5,15 @@ All releases and more information can be found at GitHub:
 https://github.com/glyphr-studio/Glyphr-Studio-2/releases
 
 
+## v2.0.0-beta.1.1 <badge type="info">pre-release</badge>
+*released 2023-06-14*
+#### Description
+Beta 1.1 got rid of the old built-in SVG Parser, and replaced it with 
+the new SVG-to-Bezier library. You can read more about why and how over 
+at the blog: 
+https://www.glyphrstudio.com/blog/2023/06/14/svg-to-bezier-a-gs2-side-quest/
+
+
 ## v2.0.0-beta.1.0 <badge type="info">pre-release</badge>
 *released 2023-06-01*
 #### Description
