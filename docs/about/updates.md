@@ -5,6 +5,21 @@ All releases and more information can be found at GitHub:
 https://github.com/glyphr-studio/Glyphr-Studio-2/releases
 
 
+## v2.0.0-beta.2.0 <badge type="info">pre-release</badge>
+*released 2023-09-07*
+#### Description
+Beta 2.0 is here, although not quite at feature parity with v1, a future
+Beta 2.1 will get us all the way there. In the mean time, here's the new stuff:
+
+#### Main features
+ - **Kerning** - Kern Groups can be saved and loaded from project files, and the new Kerning page allows you to create, edit, and delete Kern Groups.
+ - **Global Actions Page** - see a whole list of actions that you can run which can apply changes across many characters at once.
+ - **Context Characters** - a new panel was added to Character and Ligature edit pages that allows you to display other characters around the glyph you are currently editing.
+ - **Live Previews** - now much improved in functionality, the Live Preview Page has better scrolling options for sample text. Also a new Pop-out Window can be launched to display as many Live Previews as you want - great for seeing your changes in real time in a second window as you make edits in the main app window.
+ - **Combine Shapes** - now when you select two or more paths on the edit canvas, a "Combine shapes" action will allow you to merge multiple paths into as few paths as possible.
+
+
+
 ## v2.0.0-beta.1.1 <badge type="info">pre-release</badge>
 *released 2023-06-14*
 #### Description

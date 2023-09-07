@@ -9,13 +9,12 @@ content of this site.
 mail@glyphrstudio.com
 
 ### Pre-release Blog Posts
-These blog posts has a ton of information about the road to v2.0.0:
-
-[Beta-1 MEGA POST](https://www.glyphrstudio.com/blog/2023/06/01/v2-beta-1-mega-post/)
-
-[Alpha-2 MEGA POST](https://www.glyphrstudio.com/blog/2023/02/01/v2-alpha-2-mega-post/)
-
-[Alpha-1 MEGA POST](https://www.glyphrstudio.com/blog/2022/11/02/v2-alpha-1-mega-post/)
+These blog posts has a ton of information about the road to v2.0.0 - check out the 
+MEGA POST saga: 
+[Alpha-1](https://www.glyphrstudio.com/blog/2022/11/02/v2-alpha-1-mega-post/),
+[Alpha-2](https://www.glyphrstudio.com/blog/2023/02/01/v2-alpha-2-mega-post/),
+[Beta-1](https://www.glyphrstudio.com/blog/2023/06/01/v2-beta-1-mega-post/),
+[Beta-2](https://www.glyphrstudio.com/blog/2023/09/07/v2-beta-2-0-mega-post/).
 
 ## Links
 | Website | [glyphrstudio.com](https://www.glyphrstudio.com) |
