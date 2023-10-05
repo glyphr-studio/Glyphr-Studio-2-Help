@@ -45,8 +45,7 @@ amounts of data, and much of this is *not* imported.
 Ligature information and glyph shapes **are** imported.
 
 #### Importing Kerning data
-For Beta 1, Kerning data is **not** imported. 
-This will be supported later, though.
+Kerning data **is** imported. 
 
 #### Importing Metadata
 Here is a list of font metadata that does get imported. If that piece of data is not found, the Glyphr Studio default is shown in the last column.
@@ -82,8 +81,8 @@ OTF file to other formats.
 Exporting Ligature information **is supported**.
 
 #### Exporting Kerning data
-For Beta 1, Kerning data is **not** exported. 
-We are currently investigating if this will be possible.
+Kerning data is **not** exported. 
+We are investigating if this will be possible (Currently an open issue with OpenType.js).
 
 #### Exporting Metadata
 The following pieces of metadata are passed off to OpenType.js to create the OTF file.
