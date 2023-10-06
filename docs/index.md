@@ -14,7 +14,8 @@ MEGA POST saga:
 [Alpha-1](https://www.glyphrstudio.com/blog/2022/11/02/v2-alpha-1-mega-post/),
 [Alpha-2](https://www.glyphrstudio.com/blog/2023/02/01/v2-alpha-2-mega-post/),
 [Beta-1](https://www.glyphrstudio.com/blog/2023/06/01/v2-beta-1-mega-post/),
-[Beta-2](https://www.glyphrstudio.com/blog/2023/09/07/v2-beta-2-0-mega-post/).
+[Beta-2.0](https://www.glyphrstudio.com/blog/2023/09/07/v2-beta-2-0-mega-post/),
+[Beta-2.1](https://www.glyphrstudio.com/blog/2023/10/06/v2-beta-2-1-the-last-beta/).
 
 ## Links
 | Website | [glyphrstudio.com](https://www.glyphrstudio.com) |
