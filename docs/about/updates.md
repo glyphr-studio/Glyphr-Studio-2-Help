@@ -5,6 +5,24 @@ All releases and more information can be found at GitHub:
 https://github.com/glyphr-studio/Glyphr-Studio-2/releases
 
 
+## v2.0.0-beta.2.1 <badge type="info">pre-release</badge>
+*released 2023-10-06*
+#### Description
+Beta 2.1 is the last Beta!
+
+#### Main features
+ - **Rotate** shapes with the rotation handle affordance on the edit canvas. Rotate Component Instances via the rotate property.
+ - **Add Path Point tool** lets you hover over an existing path and add a new point anywhere along the path you want.
+ - **New Global Actions**: Set all Side Bearings, and Round All.
+
+#### Other small things
+ - More extensive testing and bug fixing for Combine Shapes algorithm.
+ - Better display/communication between the edit canvas and the cards in the Attributes Panel.
+ - Unit tests now have 100% coverage for Glyph Element classes, and common functions.
+ - Help / Documentation updated.
+ - Updated Oblegg, the example font.
+
+
 ## v2.0.0-beta.2.0 <badge type="info">pre-release</badge>
 *released 2023-09-07*
 #### Description
