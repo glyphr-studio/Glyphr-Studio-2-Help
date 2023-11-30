@@ -22,5 +22,6 @@ There are many different panels that support the editing experience. These may b
 Mainly, these panels are:
  - **Attributes** - Show detailed information and inputs about the currently selected Glyph, Path or Component Instance, and Path Point.
  - **Layers** - Shows a list of all the paths and component instances in the current glyph.
+ - **Context characters** - Show other characters inline with the one you are currently editing.
  - **History** - Shows a visual representation of the undo history for this project.
  - **Guides** - Options for showing or hiding various guides on the edit canvas.

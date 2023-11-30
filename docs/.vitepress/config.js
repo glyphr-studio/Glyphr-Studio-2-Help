@@ -34,6 +34,10 @@ export default {
 						text: 'Import / Export',
 						link: '/getting-started/import-export.md',
 					},
+					{
+						text: 'Working with multiple projects',
+						link: '/getting-started/working-with-multiple-projects.md',
+					},
 				],
 			},
 			{
