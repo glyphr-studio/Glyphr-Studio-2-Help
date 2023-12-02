@@ -2,14 +2,6 @@
 https: //github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
 */
 
-/*
-	This is a hack, this style does not leverage global reusable styles
-*/
-/*
-.dark .VPNavBar.has-sidebar .content[data-v-cf6e7c5e] {
-	background: hsla(200, 30%, 14%) !important;
-}
-*/
 :root {
 	--vp-c-white-soft: hsl(200, 30%, 98%);
 	--vp-c-white-mute: hsl(200, 30%, 95%);
@@ -26,4 +18,12 @@ https: //github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/va
 	--vp-c-green-dimm-1: hsla(200, 100%, 60%, 0.5);
 	--vp-c-green-dimm-2: hsla(200, 100%, 60%, 0.25);
 	--vp-c-green-dimm-3: hsla(200, 100%, 60%, 0.05);
+
+	--vp-c-green-1: hsl(200, 100%, 50%);
+	--vp-c-green-2: hsl(200, 100%, 40%);
+	--vp-c-green-3: hsl(200, 100%, 30%);
+
+	--vp-c-indigo-1: hsl(200, 100%, 50%);
+	--vp-c-indigo-2: hsl(200, 100%, 40%);
+	--vp-c-indigo-3: hsl(200, 100%, 30%);
 }

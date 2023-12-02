@@ -1,21 +1,17 @@
 # Help and Documentation
-![Glyphr Studio 2 Beta-1 banner](/img/beta-social-banner-horizontal-675x150.png)
+
 ### Welcome to the Glyphr Studio v2 docs
 
-While Glyphr Studio v2 is in Beta, so will the documentation be. Hopefully the 
-content will be nearing complete.  But, please give feedback - both on the app, and the 
-content of this site.
+Glyphr Studio v2 is out now! On January 15th, 2024, Glyphr Studio all-up will switch
+from v1 to v2 being the default experience. If you have any questions or feedback, please
+send us an email! mail@glyphrstudio.com
 
-mail@glyphrstudio.com
+### More detail on the blog
+These blog posts has a ton of information about the road to v2.0.0, and beyond:
 
-### Pre-release Blog Posts
-These blog posts has a ton of information about the road to v2.0.0 - check out the 
-MEGA POST saga: 
-[Alpha-1](https://www.glyphrstudio.com/blog/2022/11/02/v2-alpha-1-mega-post/),
-[Alpha-2](https://www.glyphrstudio.com/blog/2023/02/01/v2-alpha-2-mega-post/),
-[Beta-1](https://www.glyphrstudio.com/blog/2023/06/01/v2-beta-1-mega-post/),
-[Beta-2.0](https://www.glyphrstudio.com/blog/2023/09/07/v2-beta-2-0-mega-post/),
-[Beta-2.1](https://www.glyphrstudio.com/blog/2023/10/06/v2-beta-2-1-the-last-beta/).
+- [Glyphr Studio Blog: Version 2 is here!](https://www.glyphrstudio.com/blog/2023/12/02/version-2-is-here/)
+- [V1 to V2 transition plan](https://www.glyphrstudio.com/blog/2023/12/02/v1-to-v2-transition-plan/)
+
 
 ## Links
 | Website | [glyphrstudio.com](https://www.glyphrstudio.com) |
