@@ -9,7 +9,7 @@ https://github.com/glyphr-studio/Glyphr-Studio-2
 
 
 ## Fonts that you create
-A common question we get is 'Who owns the fonts I create with Glyphr Studio?' The short answer is, you do!
+A common question we get is 'Who owns the fonts I create with Glyphr Studio?' The short answer is, **you do**!
 
 As with all creative works, the creator of those works has full rights to what they create. That means you decide what type of license is applied to your work.
 

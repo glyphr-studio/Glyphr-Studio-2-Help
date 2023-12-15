@@ -2,6 +2,17 @@
 
 Characters are a type of `Glyph` object that represent regular letters in your font.
 
+### Characters, glyphs, letters, code points... what's the difference?
+
+At a high level, these words kinda mean the same thing. But once we get down into the details of creating a font, there are subtle differences that may matter:
+
+- A **glyph** is one or more visual shapes that represent a character, or some letter-like thing that has stand-alone meaning.
+- A **character** is the concept of a letter in an alphabet, which can be visually represented in many different ways.
+- **Code point** is a word that Unicode uses to uniquely identify characters, and it's also how Glyphr Studio identifies characters in a project.
+
+A good way to think about _visual representation_ of a character vs. _the concept of_ a character is this: if you have a text editor, you can type characters and words, and those characters and words have meaning. You can also change the font that those characters and words are displayed as. Fonts make characters look different, but their meaning does not change. In Unicode, for example, `Latin Capital Letter A` is identified as code point `U+41` or `0x41`. The Unicode code point does not care how each font draws that letter. But giving it a unique ID allows that specific character to be displayed no matter what glyph from a font you use.
+
+In Glyphr Studio, we actually use the word `Glyph` to refer to characters, ligatures, and components.
 
 ### Unicode
 

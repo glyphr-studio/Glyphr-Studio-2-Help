@@ -1,6 +1,6 @@
 # Ligatures
 
-Ligatures are `Glyph` data type - they are a feature of fonts where a specified sequence of characters is recognized and replaced with a single new character that you design. 
+Ligatures are a `Glyph` data type - they are a feature of fonts where a specified sequence of characters is recognized and replaced with a single new character that you design. 
 
 Some common Latin ligatures have an assigned Unicode code point (so, some Ligatures are Unicode Characters). But, *Ligatures can be defined by any sequence of two or more characters*. In a text editing program that has ligatures enabled, this sequence of characters is recognized, then replaced with the custom ligature character that you design. These custom Ligature characters are part of a font file, but they do not have an associated Unicode code point (some Ligatures are not Unicode Characters).
 
@@ -16,7 +16,7 @@ If you are creating a font that has a cursive or handwritten feel to it, Ligatur
 
 ### Abugidas
 
-An [abugida](https://en.wikipedia.org/wiki/Abugida) is a writing system where consonants and vowels are written as a single unit. If you are developing your own Constructed Language (conlang) and want to have a font to use for you abugida-based writing system, then Ligatures are probably right for you.
+An [abugida](https://en.wikipedia.org/wiki/Abugida) is a writing system where consonants and vowels are written as a single letter. If you are developing your own Constructed Language (conlang) and want to have a font to use for you abugida-based writing system, then Ligatures are probably right for you.
 
 Using Latin as an example, it would be like being able to type `n` and `~` together, then have them automatically form a `ñ`.
 

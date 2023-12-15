@@ -55,10 +55,15 @@ Moving characters or ligatures while maintaining all their current component lin
 
 This action will take a copy of each path (or paths from a resolved component link) from the source project and insert them into the same character in the destination project.
 
+Glyph-level data will not be copied over (with the exception of the Advance Width option below), this action only deals with path-level objects.
+
+If the character or ligature object does not exist in the destination project, a default one will be created.
+
 > Options:
-- Scale copied items, if the source and destination Em sizes do not match.
-- Update the destination item's Advance Width to maintain right-side bearing.
-- Reverse copied shapes' windings.
+>
+> - Scale copied items, if the source and destination Em sizes do not match.
+> - Update the destination item's Advance Width to maintain right-side bearing.
+> - Reverse copied shapes' windings.
 
 ### Overwrite characters or ligatures
 
@@ -66,9 +71,14 @@ This action will take a copy of each path (or paths from a resolved component li
 
 This action will take the selected characters or ligatures from the source project, and add them to the destination project. If a character or ligature already exists in the destination project, it will be overwritten.
 
+If the character or ligature object does not exist in the destination project, a default one will be created.
+
+This action deals with glyph-level objects, so all associated metadata for the glyph object will be overwritten in the destination project.
+
 > Options:
-- Scale copied items, if the source and destination Em sizes do not match.
-- Reverse copied shapes' windings.
+>
+> - Scale copied items, if the source and destination Em sizes do not match.
+> - Reverse copied shapes' windings.
 
 ### Add component roots
 
@@ -81,8 +91,9 @@ for Components. This action is the only way to move Components from one
 project to another.
 
 > Options:
-- Scale copied items, if the source and destination Em sizes do not match.
-- Reverse copied shapes' windings.
+>
+> - Scale copied items, if the source and destination Em sizes do not match.
+> - Reverse copied shapes' windings.
 
 ### Add kern groups
 
@@ -91,7 +102,8 @@ project to another.
 This action will duplicate the selected kern groups from the source project, and add them to the destination as new kern groups. If the destination project already has an identical kern group, then the value will **not** be copied over.
 
 > Options:
-- Scale copied items, if the source and destination Em sizes do not match.
+>
+> - Scale copied items, if the source and destination Em sizes do not match.
 
 ### Overwrite settings
 

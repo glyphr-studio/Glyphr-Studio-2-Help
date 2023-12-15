@@ -2,8 +2,9 @@
 
 The Help page shows some help content in the app.
 
-For the Alpha / Beta versions, it is a reference to all the keyboard shortcuts for the 
+This is mostly a reference to all the keyboard shortcuts for the
 edit canvas.
 
+Most help content can be found on this help site.
 
 ![Help page](../img/page_help.png)
