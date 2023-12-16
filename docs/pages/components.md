@@ -6,5 +6,4 @@ Diacritic glyphs (glyphs with accents) are just one example of where having a sh
 
 There are way more details about Component Roots and Component Instances over at the [Data types / Components](../data-types/components) article.
 
-
 ![Components page](../img/page_components.png)
