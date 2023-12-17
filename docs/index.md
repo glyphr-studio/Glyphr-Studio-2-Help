@@ -1,4 +1,4 @@
-![Glyphr Studio Logo](img/logo-wordmark-vertical-blue.svg)
+![Glyphr Studio Logo](/logo-wordmark-vertical-blue.svg)
 
 # Help and Documentation
 

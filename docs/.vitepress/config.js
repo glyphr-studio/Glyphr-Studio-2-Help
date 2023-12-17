@@ -10,7 +10,7 @@ export default {
 	],
 	themeConfig: {
 		siteTitle: false,
-		logo: 'img/logo-wordmark-horizontal-small-blue.svg',
+		logo: '/logo-wordmark-horizontal-small-blue.svg',
 		lastUpdated: 'Last updated: ',
 		editLink: {
 			pattern:
