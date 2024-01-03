@@ -4,6 +4,24 @@ All releases and more information can be found at GitHub:
 
 https://github.com/glyphr-studio/Glyphr-Studio-2/releases
 
+## v2.0.2 <badge type="tip">patch release</badge>
+
+_released 2024-01-03_
+
+### New features
+
+- New App Setting to specify the number of items in the Item Chooser, applies to Ligatures, Components, and Kern Groups. If you have a project with a large number of these, you the Item Chooser will now page through smaller sets of items to help performance.
+
+### Bug fixes
+
+- Loading and Saving files now works in FireFox.
+- Creating a new project with a custom name now actually applies the name to the Project Name and Font Family properties.
+- Crashes, errors, and displaying wrong information while navigating between pages and showing cards in the Panel.
+- "Too large to autosave" check now disables the auto save project setting.
+- Additional checks / resiliency for component links.
+- Global Actions are now more resilient to individual item failures.
+- Export Advance Widths of zero to be a very small number as to not cause OTF file failures.
+
 ## v2.0.1 <badge type="tip">patch release</badge>
 
 _released 2023-12-08_
