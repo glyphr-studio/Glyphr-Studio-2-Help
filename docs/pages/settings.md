@@ -50,6 +50,10 @@ Show the Unicode code points represent things that aren't letters. In Unicode, t
 
 This setting should probably stay turned off, control characters can probably be safely ignored.
 
+### _Number of items to show in the chooser_ <badge type="info">Number</badge>
+
+For Ligatures, Components, and Kern Groups, this is how many items to show in the chooser menu. For projects with large numbers of items, splitting the items apart into pages can help the UI perform better. Default is 256, you can decrease it if your computer is being slow opening the item chooser, or increase it if you have a fast computer.
+
 ### _Project preview text_ <badge type="info">Text</badge>
 
 What text to show when previewing a project or switching between projects. If left blank, the string 'Aa Bb Cc Xx Yy Zz' will be used.
