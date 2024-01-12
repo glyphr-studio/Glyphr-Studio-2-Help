@@ -41,22 +41,16 @@ export default {
 				],
 			},
 			{
-				text: 'Data types',
-				items: [
-					{ text: 'Characters', link: '/data-types/characters.md' },
-					{ text: 'Ligatures', link: '/data-types/ligatures.md' },
-					{ text: 'Components', link: '/data-types/components.md' },
-				],
-			},
-			{
-				text: 'Pages',
+				text: 'Pages & data types',
 				items: [
 					{ text: 'Open project', link: '/pages/open-project.md' },
 					{ text: 'Overview', link: '/pages/overview.md' },
 					{ text: 'Characters', link: '/pages/characters.md' },
 					{ text: 'Ligatures', link: '/pages/ligatures.md' },
 					{ text: 'Components', link: '/pages/components.md' },
+					{ text: 'Kerning', link: '/pages/kerning.md' },
 					{ text: 'Live preview', link: '/pages/live-preview.md' },
+					{ text: 'Global actions', link: '/pages/global-actions.md' },
 					{ text: 'Settings', link: '/pages/settings.md' },
 					{ text: 'Help', link: '/pages/help.md' },
 					{ text: 'About', link: '/pages/about.md' },
