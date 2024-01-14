@@ -4,6 +4,25 @@ All releases and more information can be found at GitHub:
 
 https://github.com/glyphr-studio/Glyphr-Studio-2/releases
 
+&nbsp;
+
+&nbsp;
+
+## v2.0.3 <badge type="tip">patch release</badge>
+
+_released 2024-01-14_
+
+Getting in some bug fixes before the v1/v2 switch happens!
+
+### Bug fixes
+
+- Importing ligatures is now more resilient to individual errors.
+- Fixed some import / export bugs for SVG Fonts around the `.notdef` character and advanced Unicode ranges.
+- Some fit-and-finish style updates, including the new favicon
+- Bug fix for the `input-number` control not displaying it's current value correctly.
+
+&nbsp;
+
 ## v2.0.2 <badge type="tip">patch release</badge>
 
 _released 2024-01-03_
@@ -22,6 +41,8 @@ _released 2024-01-03_
 - Global Actions are now more resilient to individual item failures.
 - Export Advance Widths of zero to be a very small number as to not cause OTF file failures.
 
+&nbsp;
+
 ## v2.0.1 <badge type="tip">patch release</badge>
 
 _released 2023-12-08_
@@ -32,6 +53,8 @@ _released 2023-12-08_
 - Better nav titles for kern groups, components, and ligatures with really long names.
 - Undo for kern group edits.
 - Export SVG now uses properly escaped values for characters that are also XML reserved characters.
+
+&nbsp;
 
 ## v2.0.0 <badge type="tip">major release</badge>
 
@@ -49,6 +72,8 @@ _released 2023-12-01_
 - New Kern Group actions let you search for or delete a specific letter pair.
 
 ... and a lot of bug fixes.
+
+&nbsp;
 
 ## v2.0.0-beta.2.1 <badge type="warning">pre-release</badge>
 
@@ -72,6 +97,8 @@ Beta 2.1 is the last Beta!
 - Help / Documentation updated.
 - Updated Oblegg, the example font.
 
+&nbsp;
+
 ## v2.0.0-beta.2.0 <badge type="warning">pre-release</badge>
 
 _released 2023-09-07_
@@ -89,6 +116,8 @@ Beta 2.1 will get us all the way there. In the mean time, here's the new stuff:
 - **Live Previews** - now much improved in functionality, the Live Preview Page has better scrolling options for sample text. Also a new Pop-out Window can be launched to display as many Live Previews as you want - great for seeing your changes in real time in a second window as you make edits in the main app window.
 - **Combine Shapes** - now when you select two or more paths on the edit canvas, a "Combine shapes" action will allow you to merge multiple paths into as few paths as possible.
 
+&nbsp;
+
 ## v2.0.0-beta.1.1 <badge type="warning">pre-release</badge>
 
 _released 2023-06-14_
@@ -99,6 +128,8 @@ Beta 1.1 got rid of the old built-in SVG Parser, and replaced it with
 the new SVG-to-Bezier library. You can read more about why and how over
 at the blog:
 https://www.glyphrstudio.com/blog/2023/06/14/svg-to-bezier-a-gs2-side-quest/
+
+&nbsp;
 
 ## v2.0.0-beta.1.0 <badge type="warning">pre-release</badge>
 
@@ -126,6 +157,8 @@ It also introduces two new areas of functionality in addition to several minor i
 - Importing OTF fonts automatically enables named Unicode ranges in your project.
 - Like, a bazillion bug fixes
 
+&nbsp;
+
 ## v2.0.0-alpha.2 <badge type="danger">pre-release</badge>
 
 _released 2023-02-01_
@@ -144,6 +177,8 @@ helpful:
 - Export OTF or SVG Font files
 - Update options on the Settings page for the App, your Project, or your Font
 - Use the Live Preview page to view your font as sentences or blocks of text
+
+&nbsp;
 
 ## v2.0.0-alpha.1 <badge type="danger">pre-release</badge>
 
