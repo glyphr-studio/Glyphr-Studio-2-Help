@@ -8,6 +8,16 @@ https://github.com/glyphr-studio/Glyphr-Studio-2/releases
 
 &nbsp;
 
+## v2.1.0 <badge type="tip">major release</badge>
+
+_released 2024-01-15_
+
+### New features
+
+Across the main site, the app, and the help documentation, many URLs and descriptions have been updated to reflect that v2 is now the default experience for Glyphr Studio.
+
+&nbsp;
+
 ## v2.0.3 <badge type="tip">patch release</badge>
 
 _released 2024-01-14_
