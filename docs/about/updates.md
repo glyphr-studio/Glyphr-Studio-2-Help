@@ -8,6 +8,19 @@ https://github.com/glyphr-studio/Glyphr-Studio-2/releases
 
 &nbsp;
 
+## v2.1.1 <badge type="tip">minor release</badge>
+
+_released 2024-01-19_
+
+### Bug fixes
+
+- Now only characters that are part of visible character ranges will be exported to fonts. Previously, all characters were exported, even if you had hidden certain character ranges from the Settings > Project page. **Note** Adding and removing character ranges from the Settings > Project page does not delete characters from your project. It only controls what is visible in the UI Character Picker, and what gets exported to fonts.
+- 'Lock aspect ratio' now works for multi-selected shapes.
+- Fixed a few bugs / increased resiliency for importing ligatures from fonts.
+- Using the keyboard shortcut `Ctrl`+`v` to paste SVG code directly onto the edit canvas, this is now working better, but not perfect (seems to work as expected in Firefox). **Note** Using the operating system clipboard is only possible if the Glyphr Studio clipboard is empty. There is a new "Clear Glyphr Studio Clipboard" action that does this, or you can just do `Ctrl`+`c` copy on nothing, to clear the clipboard.
+
+&nbsp;
+
 ## v2.1.0 <badge type="tip">major release</badge>
 
 _released 2024-01-15_
@@ -28,7 +41,7 @@ Getting in some bug fixes before the v1/v2 switch happens!
 
 - Importing ligatures is now more resilient to individual errors.
 - Fixed some import / export bugs for SVG Fonts around the `.notdef` character and advanced Unicode ranges.
-- Some fit-and-finish style updates, including the new favicon
+- Some fit-and-finish style updates, including the new favicon.
 - Bug fix for the `input-number` control not displaying it's current value correctly.
 
 &nbsp;
