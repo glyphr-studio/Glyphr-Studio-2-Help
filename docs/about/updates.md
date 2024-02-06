@@ -8,6 +8,53 @@ https://github.com/glyphr-studio/Glyphr-Studio-2/releases
 
 &nbsp;
 
+## v2.1.4 <badge type="tip">minor release</badge>
+
+_released 2024-02-06_
+
+### New features
+
+- New Shape Combine actions. Since v1 "Combine Shapes" action has existed... although it was very buggy and not dependable. For this release, we switched to using Paper.js to handle these "boolean" combine actions. In addition to Unite, the other complementing actions were added, including: Divide, Subtract, Overlap, and Exclusion. These actions are the same as multi-shape actions in other graphic design programs, like Pathfinder commands in Adobe Illustrator.
+- We brought back the "Previous Item" / "Next Item" buttons that were in v1. They are now located in the details pane, below the cards in the Attributes panel. These let you easily cycle through all the characters in your project.
+
+### Bug fixes
+
+- Fixed an Export to OTF bug regarding the `.notdef` character having zero advance width.
+- Fixed an Export to OTF bug around handling paths with no path points.
+- Fixed a bug around deleting Kern Groups.
+- Added resiliency around automatically falling back to existing enabled Character Ranges on delete or navigation.
+
+## v2.1.3 <badge type="tip">minor release</badge>
+
+_released 2024-01-26_
+
+### New features
+
+- Advanced handling for Character Ranges:
+  - Easily show & hide ranges. Hidden ranges do not display in the character chooser, or get exported to fonts. But they remain saved in the project data.
+  - Option to delete all the project character data within a range.
+- Ability to delete items (Characters, Ligatures, or Components) that act as component roots. There is a new setting that controls the behavior of what happens to component instances when a root gets deleted. The default behavior is now that component instances will be unlinked and converted into stand-alone paths if their component root is deleted.
+- New export toggles for Ligatures and Kerning
+
+### Bug fixes
+
+- Fixed a bug in exporting to OTF where the `space` character was being interpreted as the `.notdef` character
+
+&nbsp;
+
+## v2.1.2 <badge type="tip">minor release</badge>
+
+_released 2024-01-22_
+
+Fixing bugs that were introduced in 2.1.1
+
+### Bug fixes
+
+- Navigation works to Kerning, Components, and Ligatures
+- Deleting the last item now falls back to the default Character
+
+&nbsp;
+
 ## v2.1.1 <badge type="tip">minor release</badge>
 
 _released 2024-01-19_
