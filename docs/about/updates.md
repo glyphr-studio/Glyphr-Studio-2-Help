@@ -6,7 +6,22 @@ https://github.com/glyphr-studio/Glyphr-Studio-2/releases
 
 &nbsp;
 
-&nbsp;
+## v2.1.6 <badge type="tip">minor release</badge>
+
+_released 2024-03-05_
+
+### Bug fixes
+
+- Importing two files, now the second project that gets created does not overwrite the first one.
+- Handling the "Basic Latin Controls" Character Range, it can now be selected from dropdowns and can be hidden from the Settings > App page. Also updated the behavior of importing font files to automatically hide "Basic Latin Controls" range if it only has the `0x0` ".notdef" character.
+
+## v2.1.5 <badge type="tip">minor release</badge>
+
+_released 2024-02-09_
+
+### Bug fixes
+
+- Quick bug fix for metadata imported from OTF or WOFF files
 
 ## v2.1.4 <badge type="tip">minor release</badge>
 
