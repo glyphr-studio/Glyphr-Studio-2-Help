@@ -26,6 +26,18 @@ export default {
 				],
 			},
 			{
+				text: 'FAQs',
+				items: [
+					{
+						text: 'Transparent overlaps',
+						link: '/faq/transparent-overlaps.md',
+					},
+					{ text: 'Font family', link: '/faq/font-family.md' },
+					{ text: 'Curly quotes', link: '/faq/curly-quotes.md' },
+					{ text: 'Run locally', link: '/faq/run-locally.md' },
+				],
+			},
+			{
 				text: 'Getting started',
 				items: [
 					{ text: 'Navigation', link: '/getting-started/navigation.md' },

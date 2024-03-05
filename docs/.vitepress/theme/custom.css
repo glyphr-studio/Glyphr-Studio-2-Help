@@ -23,6 +23,8 @@ https: //github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/va
 	--vp-c-green-2: hsl(200, 100%, 40%);
 	--vp-c-green-3: hsl(200, 100%, 30%);
 
+	--vp-code-color: hsl(200, 50%, 75%);
+	
 	--vp-c-indigo-1: hsl(200, 100%, 50%);
 	--vp-c-indigo-2: hsl(200, 100%, 40%);
 	--vp-c-indigo-3: hsl(200, 100%, 30%);
