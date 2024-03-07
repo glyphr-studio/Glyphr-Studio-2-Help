@@ -22,7 +22,7 @@ Possibly the easiest solution is to take the `.otf` file that got exported from 
 
 This solution is more of a recommendation to change your typeface design process. There is a best practice / recommendation for creating fonts that character paths be as simplified as possible. Yes, it's easy to design a Capital Letter E as one vertical rectangle and three horizontal rectangles... but it's considered better to have this just be a single complex shape as opposed to four overlapping rectangles.
 
-No matter if you are starting your design in Glyphr Studio, or if you are using another graphic design program like Adobe Illustrator or Inkscape, it is often times advantageous for your first past to have many stacked shapes. Whatever you feel like you need to do to get your letter form ideas turned into designs faster - step one is optimizing for speed.
+No matter if you are starting your design in Glyphr Studio, or if you are using another graphic design program like Adobe Illustrator or Inkscape, it is often times easier for your first design iteration to use many stacked shapes. Whatever you feel like you need to do to get your letter form ideas turned into designs faster - step one is optimizing for speed.
 
 At a certain point, you can call your overlapping designs mostly complete, and start step two. Duplicate your Glyphr Studio project or your graphic design save file, and do the extra work of 'flattening' or 'merging' all the shapes into as few paths as possible.
 

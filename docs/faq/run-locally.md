@@ -6,7 +6,7 @@ Many web services require a "back-end" to function - if you log in or save infor
 service, there is a database and some additional web stuff going on in the background to make that happen.
 The "back-end" for websites is simply some other computer across the internet that plays the role of a server.
 
-Glyphr Studio is a web app, does not depend on things that are considered back-end components. It is 100% HTML, CSS, and JavaScript, all of which can be 
+Glyphr Studio is a web app, but it does not depend on things that are considered back-end components. It is 100% HTML, CSS, and JavaScript, all of which can be 
 run locally on your computer. Even though most people use the app from the hosted location at https://www.glyphrstudio.com/app,
 this technically isn't required. You can use Glyphr Studio locally, without an internet connection!
 
