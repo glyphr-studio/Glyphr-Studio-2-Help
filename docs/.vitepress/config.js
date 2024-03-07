@@ -25,6 +25,7 @@ export default {
 					{ text: 'Licensing', link: '/about/licensing.md' },
 				],
 			},
+
 			{
 				text: 'Getting started',
 				items: [
@@ -38,6 +39,18 @@ export default {
 						text: 'Working with multiple projects',
 						link: '/getting-started/working-with-multiple-projects.md',
 					},
+				],
+			},
+			{
+				text: 'FAQs',
+				items: [
+					{
+						text: 'Transparent overlaps',
+						link: '/faq/transparent-overlaps.md',
+					},
+					{ text: 'Curly quotes', link: '/faq/curly-quotes.md' },
+					{ text: 'Font family', link: '/faq/font-family.md' },
+					{ text: 'Run locally', link: '/faq/run-locally.md' },
 				],
 			},
 			{
