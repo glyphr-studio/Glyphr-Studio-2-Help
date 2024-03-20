@@ -6,7 +6,16 @@ https://github.com/glyphr-studio/Glyphr-Studio-2/releases
 
 &nbsp;
 
-## v2.1.6 <badge type="tip">minor release</badge>
+## v2.1.7 <badge type="tip">patch release</badge>
+
+_released 2024-03-20_
+
+### Bug fixes
+
+- On the Settings > Font page, made updates to the `Font weight` property. This was categorized as a "SVG Font" only property, but it does get exported to OTF files as well. Updated the inline help description for this property, and moved it into the "Other font metrics" section.
+- Fixed an export bug in naming ligature characters. OTF glyphs have character restrictions for what a glyph's name can be. Regular glyphs were being exported with appropriate "short" names, but the generated names for ligatures were (erroneously) using accented characters and some special characters.
+
+## v2.1.6 <badge type="tip">patch release</badge>
 
 _released 2024-03-05_
 
@@ -15,7 +24,7 @@ _released 2024-03-05_
 - Importing two files, now the second project that gets created does not overwrite the first one.
 - Handling the "Basic Latin Controls" Character Range, it can now be selected from dropdowns and can be hidden from the Settings > App page. Also updated the behavior of importing font files to automatically hide "Basic Latin Controls" range if it only has the `0x0` ".notdef" character.
 
-## v2.1.5 <badge type="tip">minor release</badge>
+## v2.1.5 <badge type="tip">patch release</badge>
 
 _released 2024-02-09_
 
@@ -23,7 +32,7 @@ _released 2024-02-09_
 
 - Quick bug fix for metadata imported from OTF or WOFF files
 
-## v2.1.4 <badge type="tip">minor release</badge>
+## v2.1.4 <badge type="tip">patch release</badge>
 
 _released 2024-02-06_
 
@@ -39,7 +48,7 @@ _released 2024-02-06_
 - Fixed a bug around deleting Kern Groups.
 - Added resiliency around automatically falling back to existing enabled Character Ranges on delete or navigation.
 
-## v2.1.3 <badge type="tip">minor release</badge>
+## v2.1.3 <badge type="tip">patch release</badge>
 
 _released 2024-01-26_
 
@@ -57,7 +66,7 @@ _released 2024-01-26_
 
 &nbsp;
 
-## v2.1.2 <badge type="tip">minor release</badge>
+## v2.1.2 <badge type="tip">patch release</badge>
 
 _released 2024-01-22_
 
@@ -70,7 +79,7 @@ Fixing bugs that were introduced in 2.1.1
 
 &nbsp;
 
-## v2.1.1 <badge type="tip">minor release</badge>
+## v2.1.1 <badge type="tip">patch release</badge>
 
 _released 2024-01-19_
 
@@ -83,7 +92,7 @@ _released 2024-01-19_
 
 &nbsp;
 
-## v2.1.0 <badge type="tip">major release</badge>
+## v2.1.0 <badge type="tip">minor release</badge>
 
 _released 2024-01-15_
 
