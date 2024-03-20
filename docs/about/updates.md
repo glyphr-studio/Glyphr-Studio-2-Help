@@ -1,58 +1,60 @@
 # Updates
 
-All releases and more information can be found at GitHub:
+This info and more can be found on the [Glyphr Studio 2 Github Releases Page](https://github.com/glyphr-studio/Glyphr-Studio-2/releases).
 
-https://github.com/glyphr-studio/Glyphr-Studio-2/releases
+## Latest release
 
-&nbsp;
-
-## v2.1.7 <badge type="tip">patch release</badge>
+### v2.1.7 <badge type="tip">patch release</badge>
 
 _released 2024-03-20_
 
-### Bug fixes
+#### Bug fixes
 
 - On the Settings > Font page, made updates to the `Font weight` property. This was categorized as a "SVG Font" only property, but it does get exported to OTF files as well. Updated the inline help description for this property, and moved it into the "Other font metrics" section.
 - Fixed an export bug in naming ligature characters. OTF glyphs have character restrictions for what a glyph's name can be. Regular glyphs were being exported with appropriate "short" names, but the generated names for ligatures were (erroneously) using accented characters and some special characters.
 
-## v2.1.6 <badge type="tip">patch release</badge>
+&nbsp;
+
+## Version 2.1.x
+
+### v2.1.6 <badge type="tip">patch release</badge>
 
 _released 2024-03-05_
 
-### Bug fixes
+#### Bug fixes
 
 - Importing two files, now the second project that gets created does not overwrite the first one.
 - Handling the "Basic Latin Controls" Character Range, it can now be selected from dropdowns and can be hidden from the Settings > App page. Also updated the behavior of importing font files to automatically hide "Basic Latin Controls" range if it only has the `0x0` ".notdef" character.
 
-## v2.1.5 <badge type="tip">patch release</badge>
+### v2.1.5 <badge type="tip">patch release</badge>
 
 _released 2024-02-09_
 
-### Bug fixes
+#### Bug fixes
 
 - Quick bug fix for metadata imported from OTF or WOFF files
 
-## v2.1.4 <badge type="tip">patch release</badge>
+### v2.1.4 <badge type="tip">patch release</badge>
 
 _released 2024-02-06_
 
-### New features
+#### New features
 
 - New Shape Combine actions. Since v1 "Combine Shapes" action has existed... although it was very buggy and not dependable. For this release, we switched to using Paper.js to handle these "boolean" combine actions. In addition to Unite, the other complementing actions were added, including: Divide, Subtract, Overlap, and Exclusion. These actions are the same as multi-shape actions in other graphic design programs, like Pathfinder commands in Adobe Illustrator.
 - We brought back the "Previous Item" / "Next Item" buttons that were in v1. They are now located in the details pane, below the cards in the Attributes panel. These let you easily cycle through all the characters in your project.
 
-### Bug fixes
+#### Bug fixes
 
 - Fixed an Export to OTF bug regarding the `.notdef` character having zero advance width.
 - Fixed an Export to OTF bug around handling paths with no path points.
 - Fixed a bug around deleting Kern Groups.
 - Added resiliency around automatically falling back to existing enabled Character Ranges on delete or navigation.
 
-## v2.1.3 <badge type="tip">patch release</badge>
+### v2.1.3 <badge type="tip">patch release</badge>
 
 _released 2024-01-26_
 
-### New features
+#### New features
 
 - Advanced handling for Character Ranges:
   - Easily show & hide ranges. Hidden ranges do not display in the character chooser, or get exported to fonts. But they remain saved in the project data.
@@ -60,30 +62,30 @@ _released 2024-01-26_
 - Ability to delete items (Characters, Ligatures, or Components) that act as component roots. There is a new setting that controls the behavior of what happens to component instances when a root gets deleted. The default behavior is now that component instances will be unlinked and converted into stand-alone paths if their component root is deleted.
 - New export toggles for Ligatures and Kerning
 
-### Bug fixes
+#### Bug fixes
 
 - Fixed a bug in exporting to OTF where the `space` character was being interpreted as the `.notdef` character
 
 &nbsp;
 
-## v2.1.2 <badge type="tip">patch release</badge>
+### v2.1.2 <badge type="tip">patch release</badge>
 
 _released 2024-01-22_
 
 Fixing bugs that were introduced in 2.1.1
 
-### Bug fixes
+#### Bug fixes
 
 - Navigation works to Kerning, Components, and Ligatures
 - Deleting the last item now falls back to the default Character
 
 &nbsp;
 
-## v2.1.1 <badge type="tip">patch release</badge>
+### v2.1.1 <badge type="tip">patch release</badge>
 
 _released 2024-01-19_
 
-### Bug fixes
+#### Bug fixes
 
 - Now only characters that are part of visible character ranges will be exported to fonts. Previously, all characters were exported, even if you had hidden certain character ranges from the Settings > Project page. **Note** Adding and removing character ranges from the Settings > Project page does not delete characters from your project. It only controls what is visible in the UI Character Picker, and what gets exported to fonts.
 - 'Lock aspect ratio' now works for multi-selected shapes.
@@ -92,23 +94,25 @@ _released 2024-01-19_
 
 &nbsp;
 
-## v2.1.0 <badge type="tip">minor release</badge>
+### v2.1.0 <badge type="tip">minor release</badge>
 
 _released 2024-01-15_
 
-### New features
+#### New features
 
 Across the main site, the app, and the help documentation, many URLs and descriptions have been updated to reflect that v2 is now the default experience for Glyphr Studio.
 
 &nbsp;
 
-## v2.0.3 <badge type="tip">patch release</badge>
+## Version 2.0.x
+
+### v2.0.3 <badge type="tip">patch release</badge>
 
 _released 2024-01-14_
 
 Getting in some bug fixes before the v1/v2 switch happens!
 
-### Bug fixes
+#### Bug fixes
 
 - Importing ligatures is now more resilient to individual errors.
 - Fixed some import / export bugs for SVG Fonts around the `.notdef` character and advanced Unicode ranges.
@@ -117,15 +121,15 @@ Getting in some bug fixes before the v1/v2 switch happens!
 
 &nbsp;
 
-## v2.0.2 <badge type="tip">patch release</badge>
+### v2.0.2 <badge type="tip">patch release</badge>
 
 _released 2024-01-03_
 
-### New features
+#### New features
 
 - New App Setting to specify the number of items in the Item Chooser, applies to Ligatures, Components, and Kern Groups. If you have a project with a large number of these, you the Item Chooser will now page through smaller sets of items to help performance.
 
-### Bug fixes
+#### Bug fixes
 
 - Loading and Saving files now works in FireFox.
 - Creating a new project with a custom name now actually applies the name to the Project Name and Font Family properties.
@@ -137,11 +141,11 @@ _released 2024-01-03_
 
 &nbsp;
 
-## v2.0.1 <badge type="tip">patch release</badge>
+### v2.0.1 <badge type="tip">patch release</badge>
 
 _released 2023-12-08_
 
-### Bug fixes
+#### Bug fixes
 
 - Importing kern groups from projects.
 - Better nav titles for kern groups, components, and ligatures with really long names.
@@ -150,7 +154,7 @@ _released 2023-12-08_
 
 &nbsp;
 
-## v2.0.0 <badge type="tip">major release</badge>
+### v2.0.0 <badge type="tip">major release</badge>
 
 _released 2023-12-01_
 
@@ -169,7 +173,9 @@ _released 2023-12-01_
 
 &nbsp;
 
-## v2.0.0-beta.2.1 <badge type="warning">pre-release</badge>
+## Version 2 Alphas and Betas
+
+### v2.0.0-beta.2.1 <badge type="warning">pre-release</badge>
 
 _released 2023-10-06_
 
@@ -193,7 +199,7 @@ Beta 2.1 is the last Beta!
 
 &nbsp;
 
-## v2.0.0-beta.2.0 <badge type="warning">pre-release</badge>
+### v2.0.0-beta.2.0 <badge type="warning">pre-release</badge>
 
 _released 2023-09-07_
 
@@ -212,7 +218,7 @@ Beta 2.1 will get us all the way there. In the mean time, here's the new stuff:
 
 &nbsp;
 
-## v2.0.0-beta.1.1 <badge type="warning">pre-release</badge>
+### v2.0.0-beta.1.1 <badge type="warning">pre-release</badge>
 
 _released 2023-06-14_
 
@@ -225,7 +231,7 @@ https://www.glyphrstudio.com/blog/2023/06/14/svg-to-bezier-a-gs2-side-quest/
 
 &nbsp;
 
-## v2.0.0-beta.1.0 <badge type="warning">pre-release</badge>
+### v2.0.0-beta.1.0 <badge type="warning">pre-release</badge>
 
 _released 2023-06-01_
 
@@ -253,7 +259,7 @@ It also introduces two new areas of functionality in addition to several minor i
 
 &nbsp;
 
-## v2.0.0-alpha.2 <badge type="danger">pre-release</badge>
+### v2.0.0-alpha.2 <badge type="danger">pre-release</badge>
 
 _released 2023-02-01_
 
@@ -274,7 +280,7 @@ helpful:
 
 &nbsp;
 
-## v2.0.0-alpha.1 <badge type="danger">pre-release</badge>
+### v2.0.0-alpha.1 <badge type="danger">pre-release</badge>
 
 _released 2022-11-01_
 
