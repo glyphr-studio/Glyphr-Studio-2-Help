@@ -8,6 +8,18 @@ Ligatures are a `Glyph` data type - they are a feature of fonts where a specifie
 
 Some common Latin ligatures have an assigned Unicode code point (so, some Ligatures are Unicode Characters). But, _Ligatures can be defined by any sequence of two or more characters_. In a text editing program that has ligatures enabled, this sequence of characters is recognized, then replaced with the custom ligature character that you design. These custom Ligature characters are part of a font file, but they do not have an associated Unicode code point (some Ligatures are not Unicode Characters).
 
+### Note about ligature characters and their source characters
+**Source characters must be below `U+FFFF`**
+
+Unicode characters above the Basic Multilingual Plane (above `U+FFFF`) are sometimes interpreted as a sequence of two characters, even though they have a single code point. In Glyphr Studio, this confuses how we define a Ligature. Specifying characters above `U+FFFF` is not allowed, as it causes unexpected behavior.
+
+**Source characters must exist in the project**
+
+Within the font file, Ligature characters are saved as a type of character that references two or more other characters in the font. Taking `ﬃ` as an example - usually you would design the `f` character and the `i` character, as well as create a Ligature for `ﬃ`, defined as `f` `f` `i`. In this case, the font has entries for all the 'source' characters in the ligature.
+
+You could, though, create a ligature for `ﬃ` without designing the individual `f` character. But, the missing `f` character would cause an error in the resulting font, because the ligature has nothing to reference. In this case, Glyphr Studio will create the `f` character for you to avoid this error. On export, for all of these 'missing source characters', a new character will be added to your project. This added character won't have any shapes or advance width, but it will be exported to your font file.
+
+
 ## Common use cases
 
 ### Traditional Latin

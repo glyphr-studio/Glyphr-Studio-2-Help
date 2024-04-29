@@ -12,6 +12,7 @@ _released 2024-03-20_
 
 - On the Settings > Font page, made updates to the `Font weight` property. This was categorized as a "SVG Font" only property, but it does get exported to OTF files as well. Updated the inline help description for this property, and moved it into the "Other font metrics" section.
 - Fixed an export bug in naming ligature characters. OTF glyphs have character restrictions for what a glyph's name can be. Regular glyphs were being exported with appropriate "short" names, but the generated names for ligatures were (erroneously) using accented characters and some special characters.
+- Added a warning about using Unicode characters above the BMP (U+FFFF) in ligatures. These characters will cause errors if you try to use them as ligature characters.
 
 &nbsp;
 

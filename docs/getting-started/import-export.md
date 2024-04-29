@@ -53,7 +53,7 @@ amounts of data, and much of this is _not_ imported.
 
 #### Importing Kerning data
 
-✅ Kerning data **is** imported.
+✅ Kerning data **is** imported. (`GPOS` table, type 2 only)
 
 #### Importing Metadata
 
@@ -89,7 +89,7 @@ OTF file to other formats.
 
 #### Exporting Ligatures
 
-✅ Exporting Ligature information **is supported**.
+✅ Exporting Ligature information **is supported**. (Ligature source characters must be in the BMP, below `U+FFFF`)
 
 #### Exporting Kerning data
 
