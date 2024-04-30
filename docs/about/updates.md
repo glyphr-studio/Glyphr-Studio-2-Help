@@ -4,6 +4,24 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
+### v2.1.8 <badge type="tip">patch release</badge>
+
+_released 2024-04-30_
+
+#### New features
+ - Multi-select shapes from the Layers Panel by holding down `Ctrl` key. 
+ - OTF Import now supports reading Kern data from `GPOS` type 2 table.
+
+#### Bug fixes
+- The 2nd screen Live Preview window now works in Firefox!
+- Fixed an import and export SVG bug related to the Basic Latin Controls range.
+- Fixed an import SVG bug related to the semicolon character.
+- Advance Widths of zero can now be exported to OTF.
+
+&nbsp;
+
+## Version 2.1.x
+
 ### v2.1.7 <badge type="tip">patch release</badge>
 
 _released 2024-03-20_
@@ -15,8 +33,6 @@ _released 2024-03-20_
 - Added a warning about using Unicode characters above the BMP (U+FFFF) in ligatures. These characters will cause errors if you try to use them as ligature characters.
 
 &nbsp;
-
-## Version 2.1.x
 
 ### v2.1.6 <badge type="tip">patch release</badge>
 
