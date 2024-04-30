@@ -25,7 +25,12 @@ export default {
 					{ text: 'Licensing', link: '/about/licensing.md' },
 				],
 			},
-
+			{
+				text: 'Tutorial',
+				items: [
+					{ text: 'Making your first font', link: '/tutorial/tutorial.md' },
+				],
+			},
 			{
 				text: 'Getting started',
 				items: [
