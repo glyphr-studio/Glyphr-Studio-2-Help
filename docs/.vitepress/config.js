@@ -27,9 +27,7 @@ export default {
 			},
 			{
 				text: 'Tutorial',
-				items: [
-					{ text: 'Making your first font', link: '/tutorial/tutorial.md' },
-				],
+				items: [{ text: 'Making your first font', link: '/tutorial/' }],
 			},
 			{
 				text: 'Getting started',
