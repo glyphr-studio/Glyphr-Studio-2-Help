@@ -9,3 +9,7 @@ Some letter combinations, like `VA` as an example, if the default side bearing s
 ## Class-based kerning
 
 Font files encode kerning values as three pieces of information: a left character, a right character, and a horizontal adjustment value. Fonts with many characters can end up having a huge amount of kern pairs. Glyphr Studio uses a system called Class-based Kerning, where groups of characters with similar edges (like `VvWw`) can be treated as a single left-hand group, and a group of right-hand characters (for example,`A/`) can be treated as single group - which can be given a single value. When a font is exported, the permutations are saved as individual kern pairs. But, while editing, grouping common characters often simplifies the overall kerning process.
+
+## Please note
+
+ - It is not possible to kern Ligature characters in Glyphr Studio. If you need this functionality, please use another font editor, like Fontforge.
