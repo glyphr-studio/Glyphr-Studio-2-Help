@@ -47,15 +47,17 @@ and let Glyphr Studio read character outline data. There is also a limited set o
 metadata that is imported into a Glyphr Studio Project. Font files can contain massive
 amounts of data, and much of this is _not_ imported.
 
-#### Importing Ligatures
+#### ✅ Importing Ligatures
 
-✅ Ligature information and glyph shapes **are** imported.
+ - Ligature information and glyph shapes **are** imported.
 
-#### Importing Kerning data
+#### ✅ Importing Kerning data
 
-✅ Kerning data **is** imported. (`GPOS` table, type 2 only)
+ - Kerning data **is** imported.
+ - `GPOS` table, type 2 only
+ - Kerning data for Ligature characters is **not** supported
 
-#### Importing Metadata
+#### ✅ Importing Metadata
 
 Here is a list of font metadata that does get imported. If that piece of data is not found, the Glyphr Studio default is shown in the last column.
 
@@ -87,16 +89,17 @@ a project from a TTF or WOFF file, Glyphr Studio can only export OTF files. If y
 additional file formats, we recommend using another tool (like Font Forge) to convert your
 OTF file to other formats.
 
-#### Exporting Ligatures
+#### ✅ Exporting Ligatures
 
-✅ Exporting Ligature information **is supported**. (Ligature source characters must be in the BMP, below `U+FFFF`)
+ - Exporting Ligature information **is supported**. 
+ - Ligature source characters must be in the BMP, below `U+FFFF`
 
-#### Exporting Kerning data
+#### ❌ Exporting Kerning data
 
-❌ Kerning data is **not** exported.
+ - Kerning data is **not** exported.
 We are investigating if this will be possible (Currently an open issue with OpenType.js).
 
-#### Exporting Metadata
+#### ✅ Exporting Metadata
 
 The following pieces of metadata are passed off to OpenType.js to create the OTF file.
 
@@ -118,15 +121,16 @@ back and forth between editors.
 
 ### Importing SVG Fonts
 
-#### Importing SVG Font Ligatures
+#### ✅ Importing Ligatures
 
-✅ Importing ligatures is supported!
+ - Importing Ligature information **is supported**. 
+ - Ligature source characters must be in the BMP, below `U+FFFF`
 
-#### Importing SVG Font Kerning data
+#### ✅ Importing Kerning data
 
-✅ Importing kern data is supported!
+ - Importing kern data is supported!
 
-#### Importing SVG Font Metadata
+#### ✅ Importing Metadata
 
 Here is the set of SVG Font Metadata that is imported. On the right is shown the
 Glyphr Studio Project default value that will be used in case this piece of data
@@ -154,8 +158,15 @@ is not found:
 
 ### Exporting SVG Fonts
 
-✅ Exported data to SVG Fonts will include **Glyph**, **Kern** (horizontal), and **Ligature**
-information.
+#### ✅ Exporting SVG Font Ligatures
+
+ - Exporting ligatures is supported!
+
+#### ✅ Exporting SVG Font Kerning data
+
+ - Exporting kern data is supported!
+
+#### ✅ Exporting SVG Font Metadata
 
 The following metadata attributes will be exported:
 

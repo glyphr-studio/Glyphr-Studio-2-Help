@@ -4,23 +4,38 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
+### v2.1.9 <badge type="tip">patch release</badge>
+
+_released 2024-05-06_
+
+#### Bug fixes
+
+- Importing Kern data from font files supports `GPOS` Lookup Type 2 tables, now supports coverage tables types 1 and 2.
+- Importing Kern data with multiple subtables is now supported.
+- Fixed a bug where Kern data was being imported with the wrong (+/-) sign.
+- Fixed a bug that occurred while importing glyphs from a v1 project, and having correct side bearings and advance width.
+
+&nbsp;
+
+## Version 2.1.x
+
 ### v2.1.8 <badge type="tip">patch release</badge>
 
 _released 2024-04-30_
 
 #### New features
- - Multi-select shapes from the Layers Panel by holding down `Ctrl` key. 
- - OTF Import now supports reading Kern data from `GPOS` type 2 table.
+
+- Multi-select shapes from the Layers Panel by holding down `Ctrl` key.
+- OTF Import now supports reading Kern data from `GPOS` type 2 table.
 
 #### Bug fixes
+
 - The 2nd screen Live Preview window now works in Firefox!
 - Fixed an import and export SVG bug related to the Basic Latin Controls range.
 - Fixed an import SVG bug related to the semicolon character.
 - Advance Widths of zero can now be exported to OTF.
 
 &nbsp;
-
-## Version 2.1.x
 
 ### v2.1.7 <badge type="tip">patch release</badge>
 
