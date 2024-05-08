@@ -4,6 +4,22 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
+### v2.1.10 <badge type="tip">patch release</badge>
+
+_released 2024-05-08_
+
+#### Bug fixes
+
+- Importing Kern data from font files supports `GPOS` Lookup Type 2 tables.
+  - Cannot import subtables with Pair Position Format 2 (Bug fixed here).
+  - Can only import subtables with Pair Position Format 1.
+- Importing Kern data with multiple subtables is now **actually** supported.
+- Fixed the `display-canvas` element used for Font Preview on the Overview page and the Projects menu.
+
+&nbsp;
+
+## Version 2.1.x
+
 ### v2.1.9 <badge type="tip">patch release</badge>
 
 _released 2024-05-06_
@@ -16,9 +32,6 @@ _released 2024-05-06_
 - Fixed a bug that occurred while importing glyphs from a v1 project, and having correct side bearings and advance width.
 
 &nbsp;
-
-## Version 2.1.x
-
 ### v2.1.8 <badge type="tip">patch release</badge>
 
 _released 2024-04-30_

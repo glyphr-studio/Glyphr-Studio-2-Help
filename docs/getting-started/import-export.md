@@ -49,13 +49,14 @@ amounts of data, and much of this is _not_ imported.
 
 #### ✅ Importing Ligatures
 
- - Ligature information and glyph shapes **are** imported.
+- Ligature information and glyph shapes **are** imported.
 
 #### ✅ Importing Kerning data
 
- - Kerning data **is** imported.
- - `GPOS` table, type 2 only
- - Kerning data for Ligature characters is **not** supported
+- Some kerning data **is** imported:
+  - Importing Kern data from font files is supported for the `GPOS` table, Lookup Type 2 format.
+    - Can only import subtables with Pair Position Format 1. Subtables with Pair Position Format 2 are not supported.
+  - Kerning data for Ligature characters is **not** supported: kerned characters must have a Unicode code point.
 
 #### ✅ Importing Metadata
 
@@ -91,13 +92,13 @@ OTF file to other formats.
 
 #### ✅ Exporting Ligatures
 
- - Exporting Ligature information **is supported**. 
- - Ligature source characters must be in the BMP, below `U+FFFF`
+- Exporting Ligature information **is supported**.
+- Ligature source characters must be in the BMP, below `U+FFFF`
 
 #### ❌ Exporting Kerning data
 
- - Kerning data is **not** exported.
-We are investigating if this will be possible (Currently an open issue with OpenType.js).
+- Kerning data is **not** exported.
+  We are investigating if this will be possible (Currently an open issue with OpenType.js).
 
 #### ✅ Exporting Metadata
 
@@ -123,12 +124,12 @@ back and forth between editors.
 
 #### ✅ Importing Ligatures
 
- - Importing Ligature information **is supported**. 
- - Ligature source characters must be in the BMP, below `U+FFFF`
+- Importing Ligature information **is supported**.
+- Ligature source characters must be in the BMP, below `U+FFFF`
 
 #### ✅ Importing Kerning data
 
- - Importing kern data is supported!
+- Importing kern data is supported!
 
 #### ✅ Importing Metadata
 
@@ -160,11 +161,11 @@ is not found:
 
 #### ✅ Exporting SVG Font Ligatures
 
- - Exporting ligatures is supported!
+- Exporting ligatures is supported!
 
 #### ✅ Exporting SVG Font Kerning data
 
- - Exporting kern data is supported!
+- Exporting kern data is supported!
 
 #### ✅ Exporting SVG Font Metadata
 

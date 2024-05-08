@@ -13,3 +13,5 @@ Font files encode kerning values as three pieces of information: a left characte
 ## Please note
 
  - It is not possible to kern Ligature characters in Glyphr Studio. If you need this functionality, please use another font editor, like Fontforge.
+- Importing Kern data from font files is supported for `GPOS` table, Lookup Type 2 format.
+  - Can only import subtables with Pair Position Format 1. Subtables with Pair Position Format 2 are not supported.
