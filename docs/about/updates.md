@@ -4,6 +4,26 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
+### v2.3.0 <badge type="tip">minor release</badge>
+
+_released 2024-06-19_
+
+#### New features
+
+- For the Glyph card "Get paths" and "Add component instance" actions, there is now a new option that will maintain the Right Side Bearing. If the new paths or components that get added are wider than the existing shapes, this option will keep the Right Side Bearing constant.
+- New Glyph card action "Import SVG". This does the same thing as dragging+dropping a `.svg` file on the edit canvas, except it launches your browser's Open File dialog box, so you can navigate and select a `.svg` file that way. Also, the "Export SVG" glyph action icon was updated.
+- New setting and new glyph tile visuals that help you work with an item's edit state. Glyphr Studio now keeps track of each item's state: previously saved, was changed but not saved yet, was created but not edited, and not created yet. These states influence how an item's glyph tile name is displayed. Also, there is an option in Settings > App that toggles whether or not the empty items ("created but not edited") are exported to fonts or not.
+- For projects that have unsaved changes, a dot is now shown after the title in the browser tab.
+
+#### Bug fixes
+
+- Ligatures that (somehow) got created without their `gsub` property now have one generated based on its Ligature ID. This was causing a bug that caused navigating to a Ligature to fail.
+- Fixed a bug that was drawing random shapes in an Item's thumbnail if that item did not exist. Now it just draws nothing!
+- Fixed a bug for DevMode only, now honors not auto-saving.
+- Fixed a bug for Firefox that was causing extra stuff to show up on the Edit Canvas while dragging.
+
+## Version 2.1.x
+
 ### v2.2.0 <badge type="tip">minor release</badge>
 
 _released 2024-05-16_
@@ -19,8 +39,6 @@ _released 2024-05-16_
 - Fixed (yet another) bug around importing fonts with certain types of kern data. Along with this, improved the automated test coverage for importing different types of font files.
 
 &nbsp;
-
-## Version 2.1.x
 
 ### v2.1.10 <badge type="tip">patch release</badge>
 
