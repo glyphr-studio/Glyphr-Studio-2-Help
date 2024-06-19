@@ -4,6 +4,24 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
+### v2.2.0 <badge type="tip">minor release</badge>
+
+_released 2024-05-16_
+
+#### New features
+
+- SVG Import now supports the `transform` and the `transform-origin` attributes for svg tags. This builds on a recent release of our sister project, [SVG to Bezier](https://github.com/mattlag/SVG-to-Bezier).
+  - Specifically, the `transform` attribute has many options for transformation commands, and we now support all of these different types of transformations: `matrix`, `translate`, `scale`, `rotate`, `skewX`, `skewY`.
+  - We have a fairly extensive set of svg test files... but, as always, there may be some edge cases where svg code does not import as expected. If you encounter any unexpected behavior, please send the svg file to mail@glyphrstudio.com, and that will help us immensely with finding bugs and improving Glyphr Studio!
+
+#### Bug fixes
+
+- Fixed (yet another) bug around importing fonts with certain types of kern data. Along with this, improved the automated test coverage for importing different types of font files.
+
+&nbsp;
+
+## Version 2.1.x
+
 ### v2.1.10 <badge type="tip">patch release</badge>
 
 _released 2024-05-08_
@@ -18,8 +36,6 @@ _released 2024-05-08_
 
 &nbsp;
 
-## Version 2.1.x
-
 ### v2.1.9 <badge type="tip">patch release</badge>
 
 _released 2024-05-06_
@@ -32,6 +48,7 @@ _released 2024-05-06_
 - Fixed a bug that occurred while importing glyphs from a v1 project, and having correct side bearings and advance width.
 
 &nbsp;
+
 ### v2.1.8 <badge type="tip">patch release</badge>
 
 _released 2024-04-30_

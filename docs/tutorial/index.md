@@ -95,11 +95,6 @@ Shapes in fonts don't have strokes with weights, they are just simple filled sha
 - **Adobe Illustrator** - Select the path and do Object > Path > Outline Stroke
 - **Inkscape** - Select the path and do Path > Stroke to Path
 
-### Reset bounding boxes
-In Adobe Illustrator, it's possible to rotate a shape and have that rotation be 'remembered'.  You can tell these shapes if the bounding box is at an angle when the shape is selected.  This, unfortunately, is read as a Transform in SVG, and Glyphr Studio does not honor Transforms (yet).
-
-If you have rotated shapes with rotated bounding boxes, Right Click that shape and select Transform > Reset Bounding Box.  Your shape will look the same, but the selection bounding box should be at right angles.
-
 ### Export Layers or Artboards to Files
 If you are going the route of handling all your characters in layers or artboards, then now would be a good time to run the script that exports individual `.svg` files.  There is no native way to do this, so you'll have to find an Extension or Plug-in. A good place to start your search is either the official [Inkscape Extensions](https://inkscape.org/en/gallery/%3Dextension/) page or the [Adobe Illustrator Plug-ins](https://helpx.adobe.com/illustrator/plug-ins.html) page.
 
