@@ -4,6 +4,20 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
+### v2.3.1 <badge type="tip">patch release</badge>
+
+_released 2024-07-29_
+
+#### Bug fixes
+- Fixed an edge case for exporting Ligatures where glyph indexes were not correct.
+
+#### Quality improvements
+- All code now has complete JSDoc documentation, with the ability to do type checking
+- Added Storybook coverage for all basic UI components
+- Vitest now supports functions that depend on Canvas
+
+## Version 2.2.x
+
 ### v2.3.0 <badge type="tip">minor release</badge>
 
 _released 2024-06-19_
@@ -22,8 +36,6 @@ _released 2024-06-19_
 - Fixed a bug for DevMode only, now honors not auto-saving.
 - Fixed a bug for Firefox that was causing extra stuff to show up on the Edit Canvas while dragging.
 
-## Version 2.1.x
-
 ### v2.2.0 <badge type="tip">minor release</badge>
 
 _released 2024-05-16_
@@ -39,6 +51,8 @@ _released 2024-05-16_
 - Fixed (yet another) bug around importing fonts with certain types of kern data. Along with this, improved the automated test coverage for importing different types of font files.
 
 &nbsp;
+
+## Version 2.1.x
 
 ### v2.1.10 <badge type="tip">patch release</badge>
 
