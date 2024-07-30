@@ -4,19 +4,30 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
+### v2.3.2 <badge type="tip">patch release</badge>
+
+_released 2024-07-30_
+
+#### Bug fixes
+
+- Fixed a bug that prevented navigating to the Kerning page.
+- Fixed a bug that was closing dialog boxes when trying to click on inputs.
+
+## Version 2.2.x
+
 ### v2.3.1 <badge type="tip">patch release</badge>
 
 _released 2024-07-29_
 
 #### Bug fixes
+
 - Fixed an edge case for exporting Ligatures where glyph indexes were not correct.
 
 #### Quality improvements
-- All code now has complete JSDoc documentation, with the ability to do type checking
-- Added Storybook coverage for all basic UI components
-- Vitest now supports functions that depend on Canvas
 
-## Version 2.2.x
+- All code now has complete JSDoc documentation, with the ability to do type checking.
+- Added Storybook coverage for all basic UI components.
+- Vitest now supports functions that depend on Canvas.
 
 ### v2.3.0 <badge type="tip">minor release</badge>
 
