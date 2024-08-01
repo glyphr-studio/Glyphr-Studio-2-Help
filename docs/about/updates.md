@@ -4,6 +4,20 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
+### v2.3.3 <badge type="tip">patch release</badge>
+
+_released 2024-08-01_
+
+#### Bug fixes
+
+- Fixed a bug on the Cross Project Actions page that was causing item selection to fail.
+
+#### Quality improvements
+
+- Added tests for boolean combine actions and page navigation.
+
+## Version 2.2.x
+
 ### v2.3.2 <badge type="tip">patch release</badge>
 
 _released 2024-07-30_
@@ -12,8 +26,6 @@ _released 2024-07-30_
 
 - Fixed a bug that prevented navigating to the Kerning page.
 - Fixed a bug that was closing dialog boxes when trying to click on inputs.
-
-## Version 2.2.x
 
 ### v2.3.1 <badge type="tip">patch release</badge>
 
