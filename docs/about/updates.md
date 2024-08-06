@@ -4,6 +4,16 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
+### v2.3.4 <badge type="tip">patch release</badge>
+
+_released 2024-08-05_
+
+#### Bug fixes
+
+- Fixed a bug where imported fonts were not having the appropriate Character Ranges created and enabled.
+
+## Version 2.2.x
+
 ### v2.3.3 <badge type="tip">patch release</badge>
 
 _released 2024-08-01_
@@ -15,8 +25,6 @@ _released 2024-08-01_
 #### Quality improvements
 
 - Added tests for boolean combine actions and page navigation.
-
-## Version 2.2.x
 
 ### v2.3.2 <badge type="tip">patch release</badge>
 
