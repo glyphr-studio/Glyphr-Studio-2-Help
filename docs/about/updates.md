@@ -12,8 +12,6 @@ _released 2024-08-05_
 
 - Fixed a bug where imported fonts were not having the appropriate Character Ranges created and enabled.
 
-## Version 2.2.x
-
 ### v2.3.3 <badge type="tip">patch release</badge>
 
 _released 2024-08-01_
@@ -49,6 +47,8 @@ _released 2024-07-29_
 - Added Storybook coverage for all basic UI components.
 - Vitest now supports functions that depend on Canvas.
 
+## Version 2.3.x
+
 ### v2.3.0 <badge type="tip">minor release</badge>
 
 _released 2024-06-19_
@@ -66,6 +66,8 @@ _released 2024-06-19_
 - Fixed a bug that was drawing random shapes in an Item's thumbnail if that item did not exist. Now it just draws nothing!
 - Fixed a bug for DevMode only, now honors not auto-saving.
 - Fixed a bug for Firefox that was causing extra stuff to show up on the Edit Canvas while dragging.
+
+## Version 2.2.x
 
 ### v2.2.0 <badge type="tip">minor release</badge>
 
