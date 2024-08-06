@@ -12,6 +12,8 @@ _released 2024-08-05_
 
 - Fixed a bug where imported fonts were not having the appropriate Character Ranges created and enabled.
 
+## Version 2.3.x
+
 ### v2.3.3 <badge type="tip">patch release</badge>
 
 _released 2024-08-01_
@@ -46,8 +48,6 @@ _released 2024-07-29_
 - All code now has complete JSDoc documentation, with the ability to do type checking.
 - Added Storybook coverage for all basic UI components.
 - Vitest now supports functions that depend on Canvas.
-
-## Version 2.3.x
 
 ### v2.3.0 <badge type="tip">minor release</badge>
 
