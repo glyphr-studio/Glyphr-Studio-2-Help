@@ -4,6 +4,19 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
+### v2.4.0 <badge type="tip">minor release</badge>
+
+_released 2024-08-09_
+
+#### New features
+
+- Drag to select. Now you can use the Shape Select (arrow) tool to drag a rectangle and select shapes within it. And you can use the Path Edit (pen) tool to select path points within a rectangle.
+- Holding down the `Ctrl` button will allow you to add to the current Shape or Path Point selection. Either by individually clicking items, or by doing additional drag-to-select areas.
+- For Ligatures, Components, and Kern Groups, there is now an additional "Create new" button at the bottom of the Attributes panel, in addition to the bottom of the item chooser.
+- Add many Ligatures at once - there is now a checkbox in the Create new Ligature dialog box that allows you to specify a comma separated list of many Ligatures to create in bulk. This option only works if your ligatures do not contain commas or spaces.
+
+## Version 2.3.x
+
 ### v2.3.4 <badge type="tip">patch release</badge>
 
 _released 2024-08-05_
@@ -11,8 +24,6 @@ _released 2024-08-05_
 #### Bug fixes
 
 - Fixed a bug where imported fonts were not having the appropriate Character Ranges created and enabled.
-
-## Version 2.3.x
 
 ### v2.3.3 <badge type="tip">patch release</badge>
 
