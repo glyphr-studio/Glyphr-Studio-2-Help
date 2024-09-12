@@ -4,6 +4,16 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
+### v2.4.1 <badge type="tip">patch release</badge>
+
+_released 2024-09-12_
+
+#### Feature improvements
+
+- Added paging to the Item Chooser for Characters. In Settings > App you can control the page size for pages; it defaults to 256 which is enough to cover most Unicode Character Ranges, but you can reduce this number if your Item Chooser is loading slowly. Previously, paging was only was applied to the Item Chooser for Ligatures, Components, and Kern Groups.
+
+## Version 2.4.x
+
 ### v2.4.0 <badge type="tip">minor release</badge>
 
 _released 2024-08-09_
@@ -25,6 +35,8 @@ _released 2024-08-05_
 
 - Fixed a bug where imported fonts were not having the appropriate Character Ranges created and enabled.
 
+&nbsp;
+
 ### v2.3.3 <badge type="tip">patch release</badge>
 
 _released 2024-08-01_
@@ -37,6 +49,8 @@ _released 2024-08-01_
 
 - Added tests for boolean combine actions and page navigation.
 
+&nbsp;
+
 ### v2.3.2 <badge type="tip">patch release</badge>
 
 _released 2024-07-30_
@@ -45,6 +59,8 @@ _released 2024-07-30_
 
 - Fixed a bug that prevented navigating to the Kerning page.
 - Fixed a bug that was closing dialog boxes when trying to click on inputs.
+
+&nbsp;
 
 ### v2.3.1 <badge type="tip">patch release</badge>
 
@@ -59,6 +75,8 @@ _released 2024-07-29_
 - All code now has complete JSDoc documentation, with the ability to do type checking.
 - Added Storybook coverage for all basic UI components.
 - Vitest now supports functions that depend on Canvas.
+
+&nbsp;
 
 ### v2.3.0 <badge type="tip">minor release</badge>
 
