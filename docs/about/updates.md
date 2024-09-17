@@ -4,19 +4,17 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
-### v2.4.1 <badge type="tip">patch release</badge>
-
-_released 2024-09-12_
+### v2.4.1 <badge>patch release</badge><badge type="info">2024-09-12</badge>
 
 #### Feature improvements
 
 - Added paging to the Item Chooser for Characters. In Settings > App you can control the page size for pages; it defaults to 256 which is enough to cover most Unicode Character Ranges, but you can reduce this number if your Item Chooser is loading slowly. Previously, paging was only was applied to the Item Chooser for Ligatures, Components, and Kern Groups.
 
+&nbsp;
+
 ## Version 2.4.x
 
-### v2.4.0 <badge type="tip">minor release</badge>
-
-_released 2024-08-09_
+### v2.4.0 <badge>minor release</badge><badge type="info">2024-08-09</badge>
 
 #### New features
 
@@ -25,11 +23,11 @@ _released 2024-08-09_
 - For Ligatures, Components, and Kern Groups, there is now an additional "Create new" button at the bottom of the Attributes panel, in addition to the bottom of the item chooser.
 - Add many Ligatures at once - there is now a checkbox in the Create new Ligature dialog box that allows you to specify a comma separated list of many Ligatures to create in bulk. This option only works if your ligatures do not contain commas or spaces.
 
+&nbsp;
+
 ## Version 2.3.x
 
-### v2.3.4 <badge type="tip">patch release</badge>
-
-_released 2024-08-05_
+### v2.3.4 <badge>patch release</badge><badge type="info">2024-08-05</badge>
 
 #### Bug fixes
 
@@ -37,9 +35,7 @@ _released 2024-08-05_
 
 &nbsp;
 
-### v2.3.3 <badge type="tip">patch release</badge>
-
-_released 2024-08-01_
+### v2.3.3 <badge>patch release</badge><badge type="info">2024-08-01</badge>
 
 #### Bug fixes
 
@@ -51,9 +47,7 @@ _released 2024-08-01_
 
 &nbsp;
 
-### v2.3.2 <badge type="tip">patch release</badge>
-
-_released 2024-07-30_
+### v2.3.2 <badge>patch release</badge><badge type="info">2024-07-30</badge>
 
 #### Bug fixes
 
@@ -62,9 +56,7 @@ _released 2024-07-30_
 
 &nbsp;
 
-### v2.3.1 <badge type="tip">patch release</badge>
-
-_released 2024-07-29_
+### v2.3.1 <badge>patch release</badge><badge type="info">2024-07-29</badge>
 
 #### Bug fixes
 
@@ -78,9 +70,7 @@ _released 2024-07-29_
 
 &nbsp;
 
-### v2.3.0 <badge type="tip">minor release</badge>
-
-_released 2024-06-19_
+### v2.3.0 <badge>minor release</badge><badge type="info">2024-06-19</badge>
 
 #### New features
 
@@ -96,11 +86,11 @@ _released 2024-06-19_
 - Fixed a bug for DevMode only, now honors not auto-saving.
 - Fixed a bug for Firefox that was causing extra stuff to show up on the Edit Canvas while dragging.
 
+&nbsp;
+
 ## Version 2.2.x
 
-### v2.2.0 <badge type="tip">minor release</badge>
-
-_released 2024-05-16_
+### v2.2.0 <badge>minor release</badge><badge type="info">2024-05-16</badge>
 
 #### New features
 
@@ -116,9 +106,7 @@ _released 2024-05-16_
 
 ## Version 2.1.x
 
-### v2.1.10 <badge type="tip">patch release</badge>
-
-_released 2024-05-08_
+### v2.1.10 <badge>patch release</badge><badge type="info">2024-05-08</badge>
 
 #### Bug fixes
 
@@ -130,9 +118,7 @@ _released 2024-05-08_
 
 &nbsp;
 
-### v2.1.9 <badge type="tip">patch release</badge>
-
-_released 2024-05-06_
+### v2.1.9 <badge>patch release</badge><badge type="info">2024-05-06</badge>
 
 #### Bug fixes
 
@@ -143,9 +129,7 @@ _released 2024-05-06_
 
 &nbsp;
 
-### v2.1.8 <badge type="tip">patch release</badge>
-
-_released 2024-04-30_
+### v2.1.8 <badge>patch release</badge><badge type="info">2024-04-30</badge>
 
 #### New features
 
@@ -161,9 +145,7 @@ _released 2024-04-30_
 
 &nbsp;
 
-### v2.1.7 <badge type="tip">patch release</badge>
-
-_released 2024-03-20_
+### v2.1.7 <badge>patch release</badge><badge type="info">2024-03-20</badge>
 
 #### Bug fixes
 
@@ -173,26 +155,24 @@ _released 2024-03-20_
 
 &nbsp;
 
-### v2.1.6 <badge type="tip">patch release</badge>
-
-_released 2024-03-05_
+### v2.1.6 <badge>patch release</badge><badge type="info">2024-03-05</badge>
 
 #### Bug fixes
 
 - Importing two files, now the second project that gets created does not overwrite the first one.
 - Handling the "Basic Latin Controls" Character Range, it can now be selected from dropdowns and can be hidden from the Settings > App page. Also updated the behavior of importing font files to automatically hide "Basic Latin Controls" range if it only has the `0x0` ".notdef" character.
 
-### v2.1.5 <badge type="tip">patch release</badge>
+&nbsp;
 
-_released 2024-02-09_
+### v2.1.5 <badge>patch release</badge><badge type="info">2024-02-09</badge>
 
 #### Bug fixes
 
 - Quick bug fix for metadata imported from OTF or WOFF files
 
-### v2.1.4 <badge type="tip">patch release</badge>
+&nbsp;
 
-_released 2024-02-06_
+### v2.1.4 <badge>patch release</badge><badge type="info">2024-02-06</badge>
 
 #### New features
 
@@ -206,9 +186,9 @@ _released 2024-02-06_
 - Fixed a bug around deleting Kern Groups.
 - Added resiliency around automatically falling back to existing enabled Character Ranges on delete or navigation.
 
-### v2.1.3 <badge type="tip">patch release</badge>
+&nbsp;
 
-_released 2024-01-26_
+### v2.1.3 <badge>patch release</badge><badge type="info">2024-01-26</badge>
 
 #### New features
 
@@ -224,9 +204,7 @@ _released 2024-01-26_
 
 &nbsp;
 
-### v2.1.2 <badge type="tip">patch release</badge>
-
-_released 2024-01-22_
+### v2.1.2 <badge>patch release</badge><badge type="info">2024-01-22</badge>
 
 Fixing bugs that were introduced in 2.1.1
 
@@ -237,9 +215,7 @@ Fixing bugs that were introduced in 2.1.1
 
 &nbsp;
 
-### v2.1.1 <badge type="tip">patch release</badge>
-
-_released 2024-01-19_
+### v2.1.1 <badge>patch release</badge><badge type="info">2024-01-19</badge>
 
 #### Bug fixes
 
@@ -250,9 +226,7 @@ _released 2024-01-19_
 
 &nbsp;
 
-### v2.1.0 <badge type="tip">minor release</badge>
-
-_released 2024-01-15_
+### v2.1.0 <badge>minor release</badge><badge type="info">2024-01-15</badge>
 
 #### New features
 
@@ -262,9 +236,7 @@ Across the main site, the app, and the help documentation, many URLs and descrip
 
 ## Version 2.0.x
 
-### v2.0.3 <badge type="tip">patch release</badge>
-
-_released 2024-01-14_
+### v2.0.3 <badge>patch release</badge><badge type="info">2024-01-14</badge>
 
 Getting in some bug fixes before the v1/v2 switch happens!
 
@@ -277,9 +249,7 @@ Getting in some bug fixes before the v1/v2 switch happens!
 
 &nbsp;
 
-### v2.0.2 <badge type="tip">patch release</badge>
-
-_released 2024-01-03_
+### v2.0.2 <badge>patch release</badge><badge type="info">2024-01-03</badge>
 
 #### New features
 
@@ -297,9 +267,7 @@ _released 2024-01-03_
 
 &nbsp;
 
-### v2.0.1 <badge type="tip">patch release</badge>
-
-_released 2023-12-08_
+### v2.0.1 <badge>patch release</badge><badge type="info">2023-12-08</badge>
 
 #### Bug fixes
 
@@ -310,9 +278,7 @@ _released 2023-12-08_
 
 &nbsp;
 
-### v2.0.0 <badge type="tip">major release</badge>
-
-_released 2023-12-01_
+### v2.0.0 <badge>major release</badge><badge type="info">2023-12-01</badge>
 
 #### Main features
 
@@ -331,9 +297,7 @@ _released 2023-12-01_
 
 ## Version 2 Alphas and Betas
 
-### v2.0.0-beta.2.1 <badge type="warning">pre-release</badge>
-
-_released 2023-10-06_
+### v2.0.0-beta.2.1 <badge type="warning">pre-release</badge><badge type="info">2023-10-06</badge>
 
 #### Description
 
@@ -355,9 +319,7 @@ Beta 2.1 is the last Beta!
 
 &nbsp;
 
-### v2.0.0-beta.2.0 <badge type="warning">pre-release</badge>
-
-_released 2023-09-07_
+### v2.0.0-beta.2.0 <badge type="warning">pre-release</badge><badge type="info">2023-09-07</badge>
 
 #### Description
 
@@ -374,9 +336,7 @@ Beta 2.1 will get us all the way there. In the mean time, here's the new stuff:
 
 &nbsp;
 
-### v2.0.0-beta.1.1 <badge type="warning">pre-release</badge>
-
-_released 2023-06-14_
+### v2.0.0-beta.1.1 <badge type="warning">pre-release</badge><badge type="info">2023-06-14</badge>
 
 #### Description
 
@@ -387,9 +347,7 @@ https://www.glyphrstudio.com/blog/2023/06/14/svg-to-bezier-a-gs2-side-quest/
 
 &nbsp;
 
-### v2.0.0-beta.1.0 <badge type="warning">pre-release</badge>
-
-_released 2023-06-01_
+### v2.0.0-beta.1.0 <badge type="warning">pre-release</badge><badge type="info">2023-06-01</badge>
 
 #### Description
 
@@ -415,9 +373,7 @@ It also introduces two new areas of functionality in addition to several minor i
 
 &nbsp;
 
-### v2.0.0-alpha.2 <badge type="danger">pre-release</badge>
-
-_released 2023-02-01_
+### v2.0.0-alpha.2 <badge type="danger">pre-release</badge><badge type="info">2023-02-01</badge>
 
 #### Description
 
@@ -436,9 +392,7 @@ helpful:
 
 &nbsp;
 
-### v2.0.0-alpha.1 <badge type="danger">pre-release</badge>
-
-_released 2022-11-01_
+### v2.0.0-alpha.1 <badge type="danger">pre-release</badge><badge type="info">2022-11-01</badge>
 
 #### Description
 
