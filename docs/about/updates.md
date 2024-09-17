@@ -4,15 +4,22 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Latest release
 
+### v2.4.2 <badge>patch release</badge><badge type="info">2024-09-17</badge>
+
+#### Bug fixes
+
+- Fixed a bug where the "Show non-graphic control characters" setting was not being honored by the Item Chooser.
+- Fixed a bug in the Tab control where changes in one tab were not being reflected in another.
+
+&nbsp;
+
+## Version 2.4.x
+
 ### v2.4.1 <badge>patch release</badge><badge type="info">2024-09-12</badge>
 
 #### Feature improvements
 
 - Added paging to the Item Chooser for Characters. In Settings > App you can control the page size for pages; it defaults to 256 which is enough to cover most Unicode Character Ranges, but you can reduce this number if your Item Chooser is loading slowly. Previously, paging was only was applied to the Item Chooser for Ligatures, Components, and Kern Groups.
-
-&nbsp;
-
-## Version 2.4.x
 
 ### v2.4.0 <badge>minor release</badge><badge type="info">2024-08-09</badge>
 
