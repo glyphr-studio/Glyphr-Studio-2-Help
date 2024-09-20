@@ -2,7 +2,19 @@
 
 This info and more can be found on the [Glyphr Studio 2 Github Releases Page](https://github.com/glyphr-studio/Glyphr-Studio-2/releases).
 
-## Latest release
+## Version 2.4.x
+
+### v2.4.3 <badge>patch release</badge><badge type="info">2024-09-20</badge>
+
+#### Bug fixes
+
+- Fixed a bug where the item chooser in the "Get shapes from another project" dialog were not showing items from the right project.
+- Fixed a bug where Component Instances were not being resolved properly as they were imported from another project.
+- Fixed a bug where projects with the same Em size were failing to select items from another project.
+- (Tried) to fix a bug where Safari was not displaying menu dropdowns at the right height.
+- Fixed a bug where `Ctrl`+`v` was not able to paste SVG text onto the edit canvas to import.
+
+&nbsp;
 
 ### v2.4.2 <badge>patch release</badge><badge type="info">2024-09-17</badge>
 
@@ -12,8 +24,6 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 - Fixed a bug in the Tab control where changes in one tab were not being reflected in another.
 
 &nbsp;
-
-## Version 2.4.x
 
 ### v2.4.1 <badge>patch release</badge><badge type="info">2024-09-12</badge>
 
