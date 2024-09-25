@@ -4,6 +4,18 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.4.x
 
+### v2.4.4 <badge>patch release</badge><badge type="info">2024-09-25</badge>
+
+#### Bug fixes
+
+- The "Get paths from another project" dialog now displays Components and Ligatures from the correct project.
+
+#### Feature improvements
+
+- The Guides panel is now available on the Components page.
+- Horizontal guides now have a width of either the Advance Width, or the rightmost edge of shapes (whichever is greater).
+- The "Add component instance" dialog now defaults to display Components (if they exist). Component instances can be linked to glyphs of any type: Characters, Ligatures, or (you guessed it) Components. Instead of just defaulting the item chooser to Characters everywhere, this particular dialog box now defaults the item chooser to show Components.
+
 ### v2.4.3 <badge>patch release</badge><badge type="info">2024-09-20</badge>
 
 #### Bug fixes
