@@ -95,10 +95,10 @@ OTF file to other formats.
 - Exporting Ligature information **is supported**.
 - Ligature source characters must be in the BMP, below `U+FFFF`
 
-#### ❌ Exporting Kerning data
+#### ✅ Exporting Kerning data
 
-- Kerning data is **not** exported.
-  We are investigating if this will be possible (Currently an open issue with OpenType.js).
+- Kerning data **is exported**.
+  Kern information will be exported using the `GPOS` table.
 
 #### ✅ Exporting Metadata
 
@@ -129,7 +129,7 @@ back and forth between editors.
 
 #### ✅ Importing Kerning data
 
-- Importing kern data is supported!
+- Importing kern data **is supported**.
 
 #### ✅ Importing Metadata
 
@@ -161,11 +161,11 @@ is not found:
 
 #### ✅ Exporting SVG Font Ligatures
 
-- Exporting ligatures is supported!
+- Exporting ligatures **is supported**.
 
 #### ✅ Exporting SVG Font Kerning data
 
-- Exporting kern data is supported!
+- Exporting kern data **is supported**.
 
 #### ✅ Exporting SVG Font Metadata
 

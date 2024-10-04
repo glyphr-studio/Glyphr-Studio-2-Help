@@ -243,11 +243,11 @@ What text to show when previewing a project or switching between projects. If le
 ### Importing & exporting
 <br>
 
-#### _Export Ligatures to fonts (.otf and .svg)_ <badge type="info">Boolean</badge>
+#### _Export Ligatures to fonts_ <badge type="info">Boolean</badge>
 
 Uncheck this option if don't want ligature data exported to fonts.
 
-#### _Export Kern information to fonts (.svg only)_ <badge type="info">Boolean</badge>
+#### _Export Kern information to fonts_ <badge type="info">Boolean</badge>
 
 Uncheck this option if don't want kern data exported to fonts.
 

@@ -2,6 +2,19 @@
 
 This info and more can be found on the [Glyphr Studio 2 Github Releases Page](https://github.com/glyphr-studio/Glyphr-Studio-2/releases).
 
+## Version 2.5.x
+
+### v2.5.0 <badge>minor release</badge><badge type="info">2024-10-04</badge>
+
+#### New feature
+
+- Kern information can now be exported to OTF files!
+- Kern value has been inverted, so now the value represents an adjustment to the advance width of the left character. AKA: negative values will decrease the space between characters. Projects created before v2.5 will have their Kern Group values updated.
+
+#### Bug fixes
+
+- Paging control now resets to page 1 when switching between different character ranges.
+
 ## Version 2.4.x
 
 ### v2.4.4 <badge>patch release</badge><badge type="info">2024-09-25</badge>
@@ -15,6 +28,8 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 - The Guides panel is now available on the Components page.
 - Horizontal guides now have a width of either the Advance Width, or the rightmost edge of shapes (whichever is greater).
 - The "Add component instance" dialog now defaults to display Components (if they exist). Component instances can be linked to glyphs of any type: Characters, Ligatures, or (you guessed it) Components. Instead of just defaulting the item chooser to Characters everywhere, this particular dialog box now defaults the item chooser to show Components.
+
+&nbsp;
 
 ### v2.4.3 <badge>patch release</badge><badge type="info">2024-09-20</badge>
 
