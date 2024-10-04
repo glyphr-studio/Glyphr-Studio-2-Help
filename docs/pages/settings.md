@@ -22,7 +22,6 @@ The app version this project file was first created with.
 
 A unique ID used to identify this project.
 
-
 ## Font
 
 #### _Font family_ <badge type="info">Text</badge>
@@ -63,8 +62,8 @@ All zeros describe this font as 'any', which basically leaves it undefined.
 
 The first digit is the major designator, where digit 2 represents Latin typefaces.
 
-
 ### Font metrics - Key metrics
+
 <br>
 
 #### _Units per Em (UPM)_ <badge type="info">Em</badge>
@@ -90,21 +89,19 @@ Distance from the baseline to the top of square capital letters (Like: A B E F H
 Distance from the baseline to the top of square lowercase letters (Like: v x z).
 
 ### Font metrics - Other metrics
+
 <br>
 
 #### _Overshoot_ <badge type="info">Em</badge>
 
 Rounded characters are usually slightly larger than square characters to compensate for visual weight. For example, a lowercase 'o' will extend slightly above and below a lowercase 'x'. Overshoot is the measure of this distance.
 
-#### _Line gap_ <badge type="info">Em</badge>
-
-When text wraps onto multiple lines, this is the distance between the bottom of one Em Square to the top of the next line's Em Square.
-
 #### _Italic angle_ <badge type="info">Degree</badge>
 
 Most common degree of slant for glyphs in an italic font.
 
 ### Links
+
 <br>
 
 #### _Designer_ <badge type="info">Text</badge>
@@ -198,6 +195,7 @@ The ideal height of an overline.
 ## App
 
 ### Saving
+
 <br>
 
 #### _Warn about unsaved changes on window close_ <badge type="info">Boolean</badge>
@@ -217,6 +215,7 @@ When enabled, this option will use your browser's local storage to keep backups.
 Glyphr Studio uses your browser's local storage to keep auto-saved backups. If you use Glyphr Studio from a different browser, or on a different computer, you'll have to go there to restore or delete backups.
 
 ### Behavior
+
 <br>
 
 #### _Unlink component instances when deleting their root_ <badge type="info">Boolean</badge>
@@ -224,6 +223,7 @@ Glyphr Studio uses your browser's local storage to keep auto-saved backups. If y
 When selected, this option will unlink component instances and turn them into normal paths if their component root is deleted (the glyph will look the same, but some component instances will end up as stand-alone path objects).<br>If this option is unselected, component instances will be deleted when their component root is deleted (the glyph will look different because it will have less shapes).
 
 ### Visibility
+
 <br>
 
 #### _Show non-graphic control characters_ <badge type="info">Boolean</badge>
@@ -241,6 +241,7 @@ For Ligatures, Components, and Kern Groups, this is how many items to show in th
 What text to show when previewing a project or switching between projects. If left blank, the string 'Aa Bb Cc Xx Yy Zz' will be used.
 
 ### Importing & exporting
+
 <br>
 
 #### _Export Ligatures to fonts_ <badge type="info">Boolean</badge>

@@ -49,6 +49,8 @@ Moving characters or ligatures while maintaining all their current component lin
 
 ## Details for each cross-project action
 
+&nbsp;
+
 ### Copy character or ligature shapes
 
 <Badge type="tip">This is a copy action, so nothing will be deleted from the destination project.</Badge>
@@ -65,6 +67,8 @@ If the character or ligature object does not exist in the destination project, a
 > - Update the destination item's Advance Width to maintain right-side bearing.
 > - Reverse copied shapes' windings.
 
+&nbsp;
+
 ### Overwrite characters or ligatures
 
 <Badge type="warning">This is an overwrite action, so items in the destination project will be deleted and replaced.</Badge>
@@ -79,6 +83,8 @@ This action deals with glyph-level objects, so all associated metadata for the g
 >
 > - Scale copied items, if the source and destination Em sizes do not match.
 > - Reverse copied shapes' windings.
+
+&nbsp;
 
 ### Add component roots
 
@@ -95,6 +101,8 @@ project to another.
 > - Scale copied items, if the source and destination Em sizes do not match.
 > - Reverse copied shapes' windings.
 
+&nbsp;
+
 ### Add kern groups
 
 <Badge type="tip">This is an add action, so new items will be created in the destination project.</Badge>
@@ -104,6 +112,8 @@ This action will duplicate the selected kern groups from the source project, and
 > Options:
 >
 > - Scale copied items, if the source and destination Em sizes do not match.
+
+&nbsp;
 
 ### Overwrite settings
 
