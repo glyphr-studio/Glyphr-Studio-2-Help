@@ -6,7 +6,7 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ### v2.5.0 <badge>minor release</badge><badge type="info">2024-10-04</badge>
 
-#### New feature
+#### New features
 
 - Kern information can now be exported to OTF files!
 - Kern value has been inverted, so now the value represents an adjustment to the advance width of the left character. AKA: negative values will decrease the space between characters. Projects created before v2.5 will have their Kern Group values updated.
@@ -57,6 +57,8 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 #### Feature improvements
 
 - Added paging to the Item Chooser for Characters. In Settings > App you can control the page size for pages; it defaults to 256 which is enough to cover most Unicode Character Ranges, but you can reduce this number if your Item Chooser is loading slowly. Previously, paging was only was applied to the Item Chooser for Ligatures, Components, and Kern Groups.
+
+&nbsp;
 
 ### v2.4.0 <badge>minor release</badge><badge type="info">2024-08-09</badge>
 
