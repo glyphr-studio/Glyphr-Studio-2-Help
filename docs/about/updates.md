@@ -4,6 +4,15 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.5.x
 
+### v2.5.1 <badge>patch release</badge><badge type="info">2024-10-10</badge>
+
+#### Bug fixes
+
+- Better resiliency for importing fonts with different data formats (fixing a specific bug for a `.ttf` file with no OS2 table).
+- Fixed a bug affecting path point handles, toggling them on and off between switching the path point type.
+
+&nbsp;
+
 ### v2.5.0 <badge>minor release</badge><badge type="info">2024-10-04</badge>
 
 #### New features
