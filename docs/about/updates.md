@@ -4,6 +4,14 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.5.x
 
+### v2.5.2 <badge>patch release</badge><badge type="info">2024-10-17</badge>
+
+#### Bug fixes
+
+- Updated the default name for `.null`, which was `null` and causing OTF export to fail.
+
+&nbsp;
+
 ### v2.5.1 <badge>patch release</badge><badge type="info">2024-10-10</badge>
 
 #### Bug fixes
