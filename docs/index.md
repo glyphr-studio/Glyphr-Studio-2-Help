@@ -19,11 +19,12 @@ These blog posts has a ton of information about the switch from v1 to v2:
 | Website              | [glyphrstudio.com](https://www.glyphrstudio.com)                    |
 | :------------------- | :------------------------------------------------------------------ |
 | Email                | [mail@glyphrstudio.com](mailto:mail@glyphrstudio.com)               |
-| App                  | [glyphrstudio.com/app](https://www.glyphrstudio.com/app)      |
-| Help & Documentation | [glyphrstudio.com/help](https://www.glyphrstudio.com/help/)   |
+| App                  | [glyphrstudio.com/app](https://www.glyphrstudio.com/app)            |
+| Help & Documentation | [glyphrstudio.com/help](https://www.glyphrstudio.com/help/)         |
 | Blog                 | [glyphrstudio.com/blog](https://www.glyphrstudio.com/blog/)         |
 |                      |                                                                     |
 | Mastodon             | [@glyphrstudio@typo.social](https://typo.social/@glyphrstudio)      |
+| Bluesky              | [@glyphrstudio.com](https://bsky.app/profile/glyphrstudio.com)      |
 | Reddit               | [reddit.com/r/GlyphrStudio](https://www.reddit.com/r/GlyphrStudio/) |
 | Twitter              | [@glyphrstudio](https://twitter.com/glyphrstudio)                   |
 | GitHub               | [github.com/glyphr-studio](https://github.com/glyphr-studio)        |
