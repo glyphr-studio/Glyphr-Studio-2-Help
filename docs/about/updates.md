@@ -7,6 +7,7 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 ### v2.5.3 <badge>patch release</badge><badge type="info">2024-11-18</badge>
 
 #### Quality improvements
+
 - Added links to the main pages on the help site from the Help page in the app.
 - Added links to our new social media outlet, Bluesky.
 - Any error that happens during OTF export will result in a Glyphr Studio error dialog, as opposed to a JavaScript error that crashes the app.
@@ -14,7 +15,7 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 #### Bug fixes
 
-- Fixed a bug where a project has too many kern pairs that are able to be exported to an OTF font. Kern Groups in Glyphr Studio are permutated into individual kern pairs on export. The maximum number of supported kern pairs is 16,146. If your project exceeds this number, only the first 16146 kern pairs will be exported and the rest will be skipped.
+- Fixed a bug where a project has too many kern pairs that are able to be exported to an OTF font. Kern Groups in Glyphr Studio are permutated into individual kern pairs on export. The maximum number of supported kern pairs is 16,146. If your project exceeds this number, only the first 16,146 kern pairs will be exported and the rest will be skipped.
 - Kern pairs where one character does not exist previously caused OTF export to fail. Kern pairs will now be skipped on export if one or both of the characters do not exist in the project.
 - Component names can now be saved and loaded from project files.
 
