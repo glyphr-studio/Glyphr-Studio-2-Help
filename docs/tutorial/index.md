@@ -87,7 +87,7 @@ Here are a few things you may want to do before importing SVG into Glyphr Studio
 ### Flatten your characters
 Many times it's easy to design characters using lots of shapes.  For example, a Capital H is pretty easy to make with 3 rectangles.  In a Font File, these same three rectangles are perfectly valid, but it's a best practice to try to minimize the number of shapes in your characters as much as possible.  In the H example, those three rectangles can be combined to one path with 12 points.  
 
-Partially this is for font file efficiency, but there is also a very strange bug with certain programs that read font files - [sometimes overlaps are shown as white at small font sizes](overlap_bug.png)... there is no way to fix this besides having a well-formatted font file to begin with.
+Partially this is for font file efficiency, but there is also a very strange bug with certain programs that read font files. Sometimes overlaps are shown as transparent, but only at small font sizes ([see an example](../img/overlap-issue.png)). There is no way to fix this besides having a well-formatted font file to begin with.
 
 ### Outline any strokes
 Shapes in fonts don't have strokes with weights, they are just simple filled shapes.  You may have used stroke weights on paths in your design file, but you'll need to convert these to shapes before you import them.
@@ -120,6 +120,7 @@ In Glyphr Studio v2, importing your SVG is as easy as drag+dropping a file or co
 ### Some Notes
 - **Imported shapes are positioned far away from the origin?** On the **Settings** page **App** tab, toward the bottom there is an option called **Move shapes when drag+dropping an SVG file**. If your imported shapes are positioned oddly, this option will move the shapes back to `0,0` after they are imported.
 - **Winding is important**, that is the direction, either clockwise or counterclockwise, that your path travels.  In graphic design, path winding is not important.  But in typeface design, paths with different winding 'cut out' each other, or appear transparent in the regions where they overlap.  Compound shapes should import to Glyphr Studio as paths with different winding - but if some shapes seem like they should have transparent regions but don't, go check that path's winding.  In Glyphr Studio the **winding** attribute is on the **Path** card for the selected shape.
+- For each character, remember to add **Advance Width**, or update the **Side Bearings**. These are crucial properties for a character in a font (how much horizontal space it takes up) but your graphic design program has no concept of it. If you use the Live Preview tool in Glyphr Studio, or export and install your font and all the characters are just stacking on top of each other, then the Advance Width was probably left at zero.
 
 
 # Thank you!
