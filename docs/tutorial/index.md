@@ -87,7 +87,7 @@ Here are a few things you may want to do before importing SVG into Glyphr Studio
 ### Flatten your characters
 Many times it's easy to design characters using lots of shapes.  For example, a Capital H is pretty easy to make with 3 rectangles.  In a Font File, these same three rectangles are perfectly valid, but it's a best practice to try to minimize the number of shapes in your characters as much as possible.  In the H example, those three rectangles can be combined to one path with 12 points.  
 
-Partially this is for font file efficiency, but there is also a very strange bug with certain programs that read font files. Sometimes overlaps are shown as transparent, but only at small font sizes ([see an example](../img/overlap-issue.png)). There is no way to fix this besides having a well-formatted font file to begin with.
+Partially this is for font file efficiency, but there is also a very strange bug with certain programs that read font files. Sometimes overlaps are shown as transparent, but only at small font sizes ([read our faq on this topic](../faq/transparent-overlaps.md)). There is no way to fix this besides having a well-formatted font file to begin with.
 
 ### Outline any strokes
 Shapes in fonts don't have strokes with weights, they are just simple filled shapes.  You may have used stroke weights on paths in your design file, but you'll need to convert these to shapes before you import them.
