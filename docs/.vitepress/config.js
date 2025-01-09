@@ -52,6 +52,7 @@ export default {
 						link: '/faq/transparent-overlaps.md',
 					},
 					{ text: 'Curly quotes', link: '/faq/curly-quotes.md' },
+					{ text: 'Not a valid font', link: '/faq/not-a-valid-font.md' },
 					{ text: 'Font family', link: '/faq/font-family.md' },
 					{ text: 'Run locally', link: '/faq/run-locally.md' },
 				],
