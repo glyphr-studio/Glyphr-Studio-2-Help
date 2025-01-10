@@ -4,6 +4,18 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.5.x
 
+### v2.5.4 <badge>patch release</badge><badge type="info">2025-01-10</badge>
+
+#### Bug fixes
+
+- Accurately import falsy project metadata values (like zero or empty string) and not fall back to default values.
+- OTF import/export now accurately handles the Italic Angle property.
+- OTF import now reads the Weight Class property.
+- Import progress bar and counter now accurately reflect current item and item total.
+
+### Quality improvements
+- Ligatures are now sorted better. They are first sorted by length (longer sequences first). Then, they are sorted by Unicode Code Point number. Previously they were sorted by JavaScript's "Locale Compare" function... but this was resulting in an unpredictable sort order.
+
 ### v2.5.3 <badge>patch release</badge><badge type="info">2024-11-18</badge>
 
 #### Quality improvements

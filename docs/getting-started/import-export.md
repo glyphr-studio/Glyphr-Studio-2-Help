@@ -110,7 +110,7 @@ OTF file to other formats.
 
 The following pieces of metadata are passed off to OpenType.js to create the OTF file.
 
-`unitsPerEm`, `ascender`, `descender`, `familyName`, `styleName`, `designer`, `designerURL`, `manufacturer`, `manufacturerURL`, `license`, `licenseURL`, `version`, `description`, `copyright`, `trademark`
+`unitsPerEm`, `ascender`, `descender`, `familyName`, `styleName`, `italicAngle`, `weight`, `designer`, `designerURL`, `manufacturer`, `manufacturerURL`, `license`, `licenseURL`, `version`, `description`, `copyright`, `trademark`
 
 These properties can be edited via the Settings > Font Metadata page in Glyphr Studio.
 
