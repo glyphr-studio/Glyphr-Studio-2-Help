@@ -4,6 +4,18 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.5.x
 
+### v2.5.5 <badge>patch release</badge><badge type="info">2025-01-24</badge>
+
+#### New features
+New features in a patch release? Yeah, these are bug fixes, but big enough to also be called new functionality.
+- SVG Import now supports SVG files that contain the `<use>` tag. 
+- Characters that are Surrogate Pairs are now supported. JavaScript uses UTF-16 to encode its strings. Some Unicode Code Points are so big they need two bytes (16-bit) are used to represent one Unicode Code Point. This only affects Code Points between 0x10000 and 0x10FFFF - most people don't use this range, but some Emojis are here, plus a private use area. This fix / new functionality impacted Importing and Exporting Projects, OTF, and SVG Fonts. It also impacted Live Preview, Context Characters, Ligatures, and Kerning.
+
+#### Bug fixes
+- Projects that started with an OTF import can now perform Global Actions and utilize Components.
+- Fixed a bug where the bounding box was being calculated incorrectly.
+- SVG Import now correctly converts path tags that use `HhVv` commands, and also `m` commands across compound shapes that use `z`.
+
 ### v2.5.4 <badge>patch release</badge><badge type="info">2025-01-10</badge>
 
 #### Bug fixes
