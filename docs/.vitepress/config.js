@@ -4,6 +4,7 @@ export default {
 	description: 'Help and documentation for Glyphr Studio v2.',
 	lastUpdated: true,
 	outDir: '../dist',
+	cacheDir: '../cache',
 	base: '/help/',
 	head: [
 		['link', { rel: 'icon', type: 'image/x-icon', href: './favicon.ico' }],
