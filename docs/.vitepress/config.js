@@ -34,6 +34,7 @@ export default {
 				items: [
 					{ text: 'Navigation', link: '/getting-started/navigation.md' },
 					{ text: 'Editing', link: '/getting-started/editing.md' },
+					{ text: 'Keyboard shortcuts', link: '/getting-started/keyboard-shortcuts.md' },
 					{
 						text: 'Import / Export',
 						link: '/getting-started/import-export.md',
