@@ -46,6 +46,8 @@ either Paths or Path Points.
 
 For the Add Path Point tool, holding down `Shift` will round the coordinate values of the new point to whole numbers.
 
+Read our complete list of edit canvas functionality on the [Keyboard shortcuts](./keyboard-shortcuts.md) page.
+
 ## Edit canvas
 
 The Edit Canvas is the visual representation of project data. Changes here will update

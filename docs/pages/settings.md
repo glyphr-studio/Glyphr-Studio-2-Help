@@ -96,9 +96,27 @@ Distance from the baseline to the top of square lowercase letters (Like: v x z).
 
 Rounded characters are usually slightly larger than square characters to compensate for visual weight. For example, a lowercase 'o' will extend slightly above and below a lowercase 'x'. Overshoot is the measure of this distance.
 
+#### _Font weight_ <badge type="info">Text</badge>
+
+How bold this font is. Can be 'normal', 'bold', or a number between 100 and 900:
+
+How bold this font is - a number between 100 and 900.
+
+Examples:
+
+Thin = `100` ,
+Extra-Light = `200` ,
+Light = `300` ,
+Regular = `400` ,
+Medium = `500` ,
+Semi-Bold = `600` ,
+Bold = `700` ,
+Extra-Bold = `800` ,
+Black = `900` ,
+
 #### _Italic angle_ <badge type="info">Degree</badge>
 
-Most common degree of slant for glyphs in an italic font.
+Most common degree of slant for glyphs in an italic font. Should be negative if leaning to the right.
 
 ### Links
 
@@ -143,10 +161,6 @@ _These properties only get exported with SVG Fonts, not OTF fonts_
 #### _Font variant_ <badge type="info">Text</badge>
 
 Either 'normal' or 'small-caps'.
-
-#### _Font weight_ <badge type="info">Text</badge>
-
-How bold this font is. Can be 'normal', 'bold', or a number between 100 and 900.
 
 #### _Font stretch_ <badge type="info">Text</badge>
 
@@ -206,6 +220,10 @@ This will stop closing the window or tab with an "Are you sure?" message if you 
 
 Glyphr Studio Project files (.gs2) are text files in JSON format. By default, this file is saved to optimize for smaller file size. Setting this option to true formats the file to be more easily read by a human, but could increase the file size by 2x or more.
 
+#### _Save live previews_ <badge type="info">Boolean</badge>
+
+Save the text blocks that you have defined for your Live Previews (both the page, and the 2nd window). These could be long, so you may want to turn them off for file size reasons.
+
 #### _Auto-save a copy of the project with each change_ <badge type="info">Boolean</badge>
 
 When enabled, this option will use your browser's local storage to keep backups. These backups can be restored from the Open Projects page. Your browser's local storage is confined to this browser on this computer. If you use Glyphr Studio from another browser or on another computer, those backups will be available from there.
@@ -221,6 +239,10 @@ Glyphr Studio uses your browser's local storage to keep auto-saved backups. If y
 #### _Unlink component instances when deleting their root_ <badge type="info">Boolean</badge>
 
 When selected, this option will unlink component instances and turn them into normal paths if their component root is deleted (the glyph will look the same, but some component instances will end up as stand-alone path objects).<br>If this option is unselected, component instances will be deleted when their component root is deleted (the glyph will look different because it will have less shapes).
+
+#### _Directly click and drag curves to edit them_ <badge type="info">Boolean</badge>
+
+On the edit canvas, when in Path Edit mode (Pen tool) hover over a path's curve, then click and drag to move the curve directly. This will edit the handles of the two adjacent path points.
 
 ### Visibility
 
@@ -263,3 +285,35 @@ In the glyph chooser, these empty items' names are shown in a green color.
 #### _Move shapes when drag+dropping an SVG file_ <badge type="info">Boolean</badge>
 
 When importing SVG by dragging and dropping a .svg file onto the canvas, move the imported shapes to the origin (x = 0, y = shapes height). Setting up your other vector editor (like Adobe or InkScape) to have coordinates that match Glyphr Studio's coordinates can be challenging - sometimes resulting in imported SVG shapes being very far away from the origin. This is a simplistic option to at least get the imported shapes near the right area of the canvas.
+
+#### _Add default Side Bearings when importing an SVG file_ <badge type="info">Em</badge>
+
+When importing SVG to a single item, move the imported shapes such that the left hand side x is at the Side Bearing value, and the set the Advance With of the item so that there is a Side Bearing's worth of space on the right hand side.
+
+Set this value to -1 to disable it.
+
+This setting overrides the 'Move shapes when importing an SVG file' setting.
+
+### Quality checks
+
+#### _Highlight points that are near other points_ <badge type="info">Em</badge>
+This option will highlight points that are very close to other points. Sometimes this happens when exporting SVG code from another app. It is best practice to reduce the number of points in a path as much as possible.
+
+This option can be toggled from the Quality control panel.
+
+#### _Highlight points with short handles_ <badge type="info">Em</badge>
+This option will highlight points that have very short handles.  Sometimes this happens when exporting SVG code from another app. It is best practice to reduce the number of unnecessary handles in a path as much as possible.
+
+This option can be toggled from the Quality control panel.
+
+#### _Highlight points that are near x=0_ <badge type="info">Em</badge>
+This option will highlight points that are near x=0. Sometimes this happens when exporting SVG code from another app.
+
+This option can be toggled from the Quality control panel.
+
+#### _Highlight points that are near y=0_ <badge type="info">Em</badge>
+This option will highlight points that are near y=0. Sometimes this happens when exporting SVG code from another app.
+
+This option can be toggled from the Quality control panel.
+
+	
