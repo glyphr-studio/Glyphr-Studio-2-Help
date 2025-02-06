@@ -37,7 +37,7 @@ The main detail cards are:
 | New&nbsp;Oval            | ![Icon Tool - New Oval](../img/icon-tool_new_oval.png)             | Draws a new oval path.                                                                                                                                                                                                                                |
 | New&nbsp;Path            | ![Icon Tool - New Path](../img/icon-tool_new_path.png)             | Draws a new path. Click once to add corner points. Click and drag to add a point with symmetric handles (this can be changed later). Once you're done creating a new path, you can select a different tool, or press the "Done creating path" button. |
 | Add&nbsp;Path&nbsp;Point | ![Icon Tool - Add Path Point](../img/icon-tool_add_path_point.png) | Adds a path point to a path that already exists.                                                                                                                                                                                                      |
-| Path&nbsp;edit           | ![Icon Tool - Path edit](../img/icon-tool_path_edit.png)           | This is the Pen tool, it allows you to select points, then move that point or move it's handles.                                                                                                                                                      |
+| Path&nbsp;edit           | ![Icon Tool - Path edit](../img/icon-tool_path_edit.png)           | This is the Pen tool, it allows you to select points, then move that point or move it's handles. The path edit tool can also directly drag path segments (not just path points) to adjust their curve.                                                |
 | Resize                   | ![Icon Tool - Resize](../img/icon-tool_resize.png)                 | This is the Arrow tool, it allows you to select a whole path, then move it or resize it.                                                                                                                                                              |
 | Kern                     | ![Icon Tool - Kern](../img/icon-tool_kern.png)                     | On the Kern page, this is the only tool, which adjusts the kern value.                                                                                                                                                                                |
 
@@ -53,6 +53,16 @@ Read our complete list of edit canvas functionality on the [Keyboard shortcuts](
 The Edit Canvas is the visual representation of project data. Changes here will update
 the Panel area details as well.
 
+### Importing directly to the Edit Canvas
+If you have an `.svg` file that represents a single Character (or Ligature or Component), you can drag and drop that file directly onto the Edit Canvas to import it. Alternatively, if you have some SVG code copied to your OS Clipboard, you can click on the Edit Canvas to give it focus, then press `Ctrl` `V` to paste, which will import that SVG code to the current item. Your Glyphr Studio clipboard has to be empty for this to work (there is a 'Clear Glyphr Studio Clipboard' command on the Glyph card).
+
+Three things to note that will help importing SVG directly to the edit canvas:
+ - It is very helpful if your SVG document is set up such that 1px = 1em. Otherwise, your imported shapes may be very large or very small compared to the font design space.
+ - There is a setting "Move shapes when importing SVG file" which by default is turned off. When turned on, this will move the imported shapes to near the origin. Sometimes SVG data has unexpected overall positioning for imported shapes.
+ - There is a more advanced setting called "Add default Side Bearings when importing an SVG file" which overrides the previous setting. This setting will not only move the imported shapes, but it will also add in Left and Right Side Bearings to give the imported shape an overall Advance Width.
+
+### View controls
+
 Along the bottom there are canvas view controls, from left to right they are:
 | View&nbsp;Tool | Icon | Description |
 | --- | --- | --- |
@@ -61,3 +71,5 @@ Along the bottom there are canvas view controls, from left to right they are:
 | Zoom&nbsp;1:1 | ![Icon Tool - Zoom 1:1](../img/icon-tool_zoom_1_1.png) | The Zoom 1:1 button sets the zoom level such that 1 pixel on your screen is equal to 1 Em unit from your project. |
 | Zoom&nbsp;to&nbsp;fit | ![Icon Tool - Zoom to fit](../img/icon-tool_zoom_fit.png) | This will auto-fit the current glyph to however big your window is currently. |
 | Live&nbsp;Preview | ![Icon Tool - Live Preview](../img/icon-tool_pop_out.png) | Pop out a second screen for a live preview of your font. |
+
+You can also use the keyboard shortcut `Ctrl` `Space` to toggle the Distraction Free Preview. This is an overlay that just shows the current glyph (or context characters) against a white background, hiding all the UI, grid, and guide lines to be able to focus on the shapes alone.

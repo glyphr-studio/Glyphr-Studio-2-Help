@@ -282,7 +282,7 @@ If this option is checked, these empty items will be exported to fonts. If this 
 these empty items will be filtered out, and not exported to fonts.<br>
 In the glyph chooser, these empty items' names are shown in a green color.
 
-#### _Move shapes when drag+dropping an SVG file_ <badge type="info">Boolean</badge>
+#### _Move shapes when importing an SVG file_ <badge type="info">Boolean</badge>
 
 When importing SVG by dragging and dropping a .svg file onto the canvas, move the imported shapes to the origin (x = 0, y = shapes height). Setting up your other vector editor (like Adobe or InkScape) to have coordinates that match Glyphr Studio's coordinates can be challenging - sometimes resulting in imported SVG shapes being very far away from the origin. This is a simplistic option to at least get the imported shapes near the right area of the canvas.
 
