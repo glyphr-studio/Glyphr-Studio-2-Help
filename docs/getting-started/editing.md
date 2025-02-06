@@ -21,13 +21,18 @@ those changes will update on the Edit Canvas (and vise-versa, changes on the Edi
 will update the detail cards). Cards also display various actions you can take on that
 selected item.
 
-### Detail cards
+Here are the main panels and their function:
+- **Attributes** - Shows the detail cards for the current selection.
+	- **Glyph** - if nothing is selected, the Glyph card is the only one displayed.
+	- **Path** - shows information about the currently selected Path.
+	- **Path Point** - shows information about the currently selected point on the path.
+- **Layers** - Shows the shapes in the current item in their stack order.
+- **Context characters** - Specify other characters to show around the character you are currently editing.
+- **History** - A list of actions in the Undo queue.
+- **Guides** - Show, hide, and edit built in and custom guide lines.
+- **Character info** - Various pieces of metadata from Unicode about the current character.
+- **Quality checks** - Toggle various best practices to have them highlighted on the Edit Canvas.
 
-The main detail cards are:
-
-- **Glyph** - if nothing is selected, the Glyph card is the only one displayed.
-- **Path** - shows information about the currently selected Path.
-- **Path Point** - shows information about the currently selected point on the path.
 
 ## Tools
 
