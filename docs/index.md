@@ -5,7 +5,7 @@
 ### Welcome to the Glyphr Studio v2 docs
 
 If you have any questions or feedback, please
-send us an email! mail@glyphrstudio.com
+send us an email! [mail@glyphrstudio.com](mailto:mail@glyphrstudio.com)
 
 ## Links
 
