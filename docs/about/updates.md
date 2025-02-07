@@ -2,6 +2,35 @@
 
 This info and more can be found on the [Glyphr Studio 2 Github Releases Page](https://github.com/glyphr-studio/Glyphr-Studio-2/releases).
 
+## Version 2.6.x
+
+### v2.6.0 <badge>minor release</badge><badge type="info">2025-02-07</badge>
+
+#### New features
+
+- Merge Path Points action - when you select two adjacent points, they can now be merged into one. This is designed for points that are very close together, often times the result of importing SVG. The outside handles remain in the same position, and the new single Path Point is an average of the two previous point positions.
+- Align Path Points - when two or more Path Points are selected, they can be aligned: left, center, right, top, middle, bottom.
+- Curve drag - Using the Path Edit (Pen) tool, you can now directly grab the arc of a curve, and drag it to edit it. Previously, only Path Points and Handles were selectable for curve editing. There is a setting to disable this feature if needed.
+- Quality Checks Panel - select tests for common issues that visually highlight errors on the Edit Canvas. The first tests are for points that are very close together, very short handles, and points that are very close to x or y = 0.
+- Character Info Panel - displays character information, HTML codes, and Unicode range information about the current character.
+- Distraction Free Mode - press `Ctrl` `Space` to temporarily hide all UI and guidelines, showing just the glyph you are working on.
+- Global Actions now has the ability to filter based on Components, Ligatures, or any Character Range.
+- New setting for automatically adding Advance Width and Side Bearings on SVG Import.
+- Total revamp of Keyboard Shortcuts. New functionally includes selecting and multi-selecting path points and shapes, adjusting shape layer order, and selecting tools (and more...).
+
+#### Quality improvements
+
+- New color scheme and design for Action Icons.
+- Keyboard shortcuts now work everywhere, not just when the Edit Canvas has focus.
+- Default handle length is now based on the project's overall UPM. This is used for the "Reset Handles" action, and also when showing handles for points that were created initially as corner points. The previous default length was much too large for projects with very small UPM sizes.
+
+#### Bug fixes
+
+- Fixed a bug in the Convert to All Caps Global Action.
+- New Path tool, the minimum drag distance to create handles is now a static pixel size, as opposed to growing and shrinking with the Edit Canvas zoom.
+- Rounding points with hidden handles now accurately rounds the hidden handles' values as well.
+- For edge cases where a Path shape has an empty Path Points array, the UI will not fail, and these Paths will not be imported or exported.
+
 ## Version 2.5.x
 
 ### v2.5.5 <badge>patch release</badge><badge type="info">2025-01-24</badge>
