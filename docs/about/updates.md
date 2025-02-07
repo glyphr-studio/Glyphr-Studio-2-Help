@@ -4,10 +4,18 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.6.x
 
+### v2.6.1 <badge>patch release</badge><badge type="info">2025-02-07</badge>
+
+#### Bug fixes
+
+- Fixed a bug that was causing New Path to fail.
+- Updated check for Paths with no Path Points for project import.
+
 ### v2.6.0 <badge>minor release</badge><badge type="info">2025-02-07</badge>
 
 #### New features
 
+- Merge Path Points action - when you select two adjacent points, they can now be merged into one. This is designed for points that are very close together, often times the result of importing SVG. The outside handles remain in the same position, and the new single Path Point is an average of the two previous point positions.
 - Merge Path Points action - when you select two adjacent points, they can now be merged into one. This is designed for points that are very close together, often times the result of importing SVG. The outside handles remain in the same position, and the new single Path Point is an average of the two previous point positions.
 - Align Path Points - when two or more Path Points are selected, they can be aligned: left, center, right, top, middle, bottom.
 - Curve drag - Using the Path Edit (Pen) tool, you can now directly grab the arc of a curve, and drag it to edit it. Previously, only Path Points and Handles were selectable for curve editing. There is a setting to disable this feature if needed.
