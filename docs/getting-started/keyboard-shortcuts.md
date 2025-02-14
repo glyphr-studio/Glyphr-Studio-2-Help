@@ -9,7 +9,6 @@ Most of the Keyboard Shortcuts in Glyphr Studio are focused on pages where you e
 | `Ctrl` `S`      | Save a Glyphr Studio Project File (.gs2) |
 | `Ctrl` `E`      | Export an OTF Font (.otf)                |
 | `Ctrl` `G`      | Export an SVG Font (.svg)                |
-| `Ctrl` `G`      | Export an SVG Font (.svg)                |
 | `Ctrl` `O`      | Open a project in a new tab              |
 
 ### Selecting and navigating
