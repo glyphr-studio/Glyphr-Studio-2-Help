@@ -28,12 +28,13 @@ Here is an overview of the types of actions you can take:
 **Move and resize**
 
 - Move all glyphs
-- Vertically scale all glyphs
 - Horizontally scale all glyphs
+- Vertically scale all glyphs
 - Re-size all glyphs
 - Convert all Component Instances into Paths
 - Side bearings
 - Round all point values
+- Remove items from your project (Characters, Ligatures, Components)
 
 **Font types**
 

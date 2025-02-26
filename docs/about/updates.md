@@ -2,6 +2,26 @@
 
 This info and more can be found on the [Glyphr Studio 2 Github Releases Page](https://github.com/glyphr-studio/Glyphr-Studio-2/releases).
 
+## Version 2.7.x
+
+### v2.7.0 <badge>minor release</badge><badge type="info">2025-02-26</badge>
+
+#### New features
+
+- Path point snapping: hold `Shift` to snap point movement to vertical or horizontal.
+- Handle snapping: hold `Shift` to retain original handle angle, and hold `Ctrl` `Shift` to snap the handle to either vertical or horizontal.
+- Shape resizing: hold `Shift` to maintain aspect ratio.
+- Shape moving: hold `Shift` to snap movement to vertical or horizontal.
+- New global action for "Remove items from project" - a good way to delete large ranges of items (Characters, Ligatures, Components) from a project.
+- On-canvas control for editing Left and Right Side Bearings. When the Resize (arrow) tool is selected, hovering over the left or right side guide lines will give an option to click+drag to edit the side bearings directly on the canvas.
+
+#### Bug fixes
+
+- The Character Info panel now works for custom character ranges, and characters outside of the Unicode standard.
+- Fixed a bug where points were misidentified as passing/failing Quality Checks.
+- Fixed a bug where Ligature source sequence definitions being linked to the wrong Ligature character, after OFT export.
+- Disallowed pasting Component Instances where they would create circular references. This check already happened through the "Add Component Instance" action, but not through the keyboard shortcut. Also added resilience to displaying glyphs that (somehow) contain circular references.
+
 ## Version 2.6.x
 
 ### v2.6.1 <badge>patch release</badge><badge type="info">2025-02-07</badge>
