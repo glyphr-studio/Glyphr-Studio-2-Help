@@ -294,26 +294,34 @@ Set this value to -1 to disable it.
 
 This setting overrides the 'Move shapes when importing an SVG file' setting.
 
+#### _Add default Right Side Bearing when the first shape is added_ <badge type="info">Em</badge>
+
+When you add the first shape to a new Character or Ligature, automatically update the Advance Width such that the Right Side Bearing is the value specified here. This automatic Advance Width update will only happen one time per item, and won't apply to shapes imported from an SVG file.
+
+Set this value to -1 to disable it.`,
+
 ### Quality checks
 
 #### _Highlight points that are near other points_ <badge type="info">Em</badge>
+
 This option will highlight points that are very close to other points. Sometimes this happens when exporting SVG code from another app. It is best practice to reduce the number of points in a path as much as possible.
 
 This option can be toggled from the Quality control panel.
 
 #### _Highlight points with short handles_ <badge type="info">Em</badge>
-This option will highlight points that have very short handles.  Sometimes this happens when exporting SVG code from another app. It is best practice to reduce the number of unnecessary handles in a path as much as possible.
+
+This option will highlight points that have very short handles. Sometimes this happens when exporting SVG code from another app. It is best practice to reduce the number of unnecessary handles in a path as much as possible.
 
 This option can be toggled from the Quality control panel.
 
 #### _Highlight points that are near x=0_ <badge type="info">Em</badge>
+
 This option will highlight points that are near x=0. Sometimes this happens when exporting SVG code from another app.
 
 This option can be toggled from the Quality control panel.
 
 #### _Highlight points that are near y=0_ <badge type="info">Em</badge>
+
 This option will highlight points that are near y=0. Sometimes this happens when exporting SVG code from another app.
 
 This option can be toggled from the Quality control panel.
-
-	
