@@ -4,6 +4,26 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.7.x
 
+### v2.7.1 <badge>minor release</badge><badge type="info">2025-03-19</badge>
+
+#### New features
+
+- Merge Path Points now works with more than just 2 points. Please note, this is still optimized for points that are very close together.
+- New feature that automatically adds a Right Side Bearing value (updates the Advance Width) for the first shape that is added to a glyph. There is a setting where this can be customized or turned off.
+
+#### Bug fixes
+
+- Fixed the 'near zero' quality check, which was triggering at zero when it shouldn't have.
+- Character Range counts now update more reliably.
+- Improved the canvas so it wouldn't have a flash of shapes drawn at the default view.
+- Fixed an Import OTF bug, related to how OpenType.js was converting postscript to svg paths.
+- In OTF files, `glyph` entries that are mapped to multiple `characters` are now imported to all the appropriate characters in Glyphr Studio.
+
+#### Quality improvements
+
+- Menus now behave more like menus in other programs. They will stay open until they lose focus. Previously, menus would close when the mouse left them.
+- Big review and additional code updates based on linting rules.
+
 ### v2.7.0 <badge>minor release</badge><badge type="info">2025-02-26</badge>
 
 #### New features

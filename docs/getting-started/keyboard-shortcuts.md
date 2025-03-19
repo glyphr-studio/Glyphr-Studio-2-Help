@@ -55,11 +55,11 @@ Most of the Keyboard Shortcuts in Glyphr Studio are focused on pages where you e
 | `Ctrl` `Shift` `[`                | Move shape to the bottom                                                                                                                     |
 | `Delete` or `Backspace`           | Delete the selected shapes or path points                                                                                                    |
 | `⭠` `⭡` `➝` `⭣`                   | Nudge the selected shape or path point <span class="number">1em</span><br>Press <code>Shift</code> to nudge <span class="number">10em</span> |
-| `Shift` _`Resize shape`_          | [Resize (Arrow) Tool] Maintain aspect ratio                                                                                                            |
+| `Shift` _`Resize shape`_          | [Resize (Arrow) Tool] Maintain aspect ratio                                                                                                  |
 | `Shift` _`Drag shape`_            | [Resize (Arrow) Tool - hovering over a shape] Snap shape movement to horizontal or vertical                                                  |
 | `Shift` _`Drag path point`_       | [Path Edit (Pen) Tool - hovering over a path point] Snap point movement to horizontal or vertical                                            |
 | `Shift` _`Drag handle`_           | [Path Edit (Pen) Tool - hovering over a handle] Maintain original handle angle                                                               |
-| `Ctrl` _`Shift`_ `Drag handle`    | [Path Edit (Pen) Tool - hovering over a handle] Snap handle movement to horizontal or vertical                                               |
+| `Ctrl` `Shift` _`Drag handle`_    | [Path Edit (Pen) Tool - hovering over a handle] Snap handle movement to horizontal or vertical                                               |
 | `Shift` _`Shape Rotation handle`_ | [Shape Rotate Handle] Snap rotation degrees to whole numbers                                                                                 |
 | `Ctrl` `R`                        | Round values for the current selection<br>(Whole Shapes for the Resize tool, Path Points + Handles for the Path Edit tool)                   |
 | `Shift` _`Click`_                 | [New Path Tool] Snap the new point's coordinates to whole numbers                                                                            |
