@@ -10,13 +10,13 @@ When expanded, shows all the pages:
 
 ## Editor pages
 
-The Characters, Components, and Ligatures pages are pages that include editing controls. They also have additional navigation options in the upper left. The Page navigation is reduced in size, and an additional Glyph Chooser and Panel Chooser is shown.
+The Characters, Components, Ligatures, and Kern Groups are pages that include editing controls. They also have additional navigation options in the upper left. The Page navigation is reduced in size, and an additional Item Chooser and Panel Chooser is shown.
 
 ![Editor page navigation](../img/nav_editor-page.png)
 
-### Glyph Chooser
+### Item Chooser
 
-The Glyph Chooser is labeled "Editing" and shows the name of the glyph that is currently being worked on. Selecting this will launch a large Glyph Chooser flyout where you can select any character in your project.
+The Item Chooser is labeled "Editing" and shows the name of the item (Character, Ligature, Component, or Kern Group) that is currently being worked on. Selecting this will launch a large Item Chooser flyout where you can select any item in your project.
 
 #### Glyph tiles and their states
 
@@ -26,11 +26,11 @@ The different edit states are (from left to right):
 
 ![Glyph tile edit states](../img/glyph-tile-state-colors.png)
 
- - **Blue**: is the currently selected item.
- - **Black**: is a regular item (that was previously created and saved).
- - **Purple**: is an item that unsaved edits (recently edited).
- - **Green**: is an 'empty' item. This item was created, but no edits were made to it. There is an option in Settings > App that toggles whether or not these items are exported to fonts.
- - **Gray**: For characters, these are characters in the current Character Range that have not been created yet.
+- **Blue**: is the currently selected item.
+- **Black**: is a regular item (that was previously created and saved).
+- **Purple**: is an item that has unsaved edits (recently edited).
+- **Green**: is an 'empty' item. This item was created, but no edits were made to it. There is an option in Settings > App that toggles whether or not these items are exported to fonts.
+- **Gray**: For characters, these are characters in the current Character Range that have not been created yet.
 
 ### Panel Chooser
 
