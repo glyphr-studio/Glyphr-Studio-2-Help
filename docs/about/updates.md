@@ -4,6 +4,20 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.7.x
 
+### v2.7.2 <badge>minor release</badge><badge type="info">2025-07-30</badge>
+
+#### Bug fixes
+
+- Fixed an edge case where having a certain panel selected caused page navigation to fail.
+- The Combine: Subtract action now uses shape layer order to determine the "top" cutting shape, as opposed to the first shape selected.
+- Characters with Unicode Code Points that map to unallocated space in Unicode can now be imported without error.
+
+#### Quality improvements
+
+- Item link thumbnails and Live Preview views now update better when Advance Width and the Pen tool are being used.
+- Char Chips that show member characters of Kern Groups will now display with a Red / Warning color if that character does not exist in the project.
+- With the Pen tool, clicking and dragging the center of a straight line segment now moves the two points its connected to - previously "Curve Drag" only applied to curved line segments with one or two handles enabled.
+
 ### v2.7.1 <badge>minor release</badge><badge type="info">2025-03-19</badge>
 
 #### New features
