@@ -4,6 +4,16 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.7.x
 
+### v2.7.3 <badge>minor release</badge><badge type="info">2025-08-06</badge>
+
+#### Bug fixes
+
+- Fixed a bug where OTF Export was erroneously carrying over information from previous exports (mainly Ligatures).
+
+#### Quality improvements
+
+- Character ranges with very long names now display better in dropdown menus and list views.
+
 ### v2.7.2 <badge>minor release</badge><badge type="info">2025-07-30</badge>
 
 #### Bug fixes
