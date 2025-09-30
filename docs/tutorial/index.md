@@ -130,6 +130,7 @@ Once you're ready to export:
 3. **Use one wide artboard showing characters side by side**
    - Using the Selection (arrow) tool, select the shapes that correspond to a single character.
    - Copy them, either by Right Click > Copy menu, or `Ctrl`+`C` keyboard command.
+     - In Adobe Illustrator, it's possible to select shapes and use `Ctrl`+`C` to copy SVG code to your OS Clipboard. You may need to enable this setting in **Edit** > **Preferences** > **Clipboard Handling** then check the "Include SVG Code" checkbox.
    - Switch your window to Glyphr Studio. Make sure your Key Metrics are set up appropriately as discussed in the first section. On the Characters page, navigate to the Character that you are working with.
    - Use your keyboard to paste, `Ctrl`+`V`.
 
@@ -199,6 +200,7 @@ In Glyphr Studio v2, importing your SVG is as easy as drag+dropping a file or co
 - Using the upper left **Page** menu, navigate to the **Characters** page.
 - Using the **Editing** menu, navigate to the character that you want to import SVG for.
 - Drag and drop your SVG file right onto the edit canvas, or hit `Ctrl`+`V` to paste SVG code after you've clicked on the edit canvas.
+  - In Adobe Illustrator, it's possible to select shapes and use `Ctrl`+`C` to copy SVG code to your OS Clipboard. You may need to enable this setting in **Edit** > **Preferences** > **Clipboard Handling** then check the "Include SVG Code" checkbox.
 
 ### Some Notes
 

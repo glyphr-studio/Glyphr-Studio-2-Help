@@ -56,6 +56,7 @@ export default {
 					{ text: 'Curly quotes', link: '/faq/curly-quotes.md' },
 					{ text: 'Not a valid font', link: '/faq/not-a-valid-font.md' },
 					{ text: 'Font family', link: '/faq/font-family.md' },
+					{ text: 'Touch / mobile support', link: '/faq/touch-app.md' },
 					{ text: 'Run locally', link: '/faq/run-locally.md' },
 				],
 			},
