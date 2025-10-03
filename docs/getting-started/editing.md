@@ -28,6 +28,10 @@ Here are the main panels and their function:
 	- **Path Point** - shows information about the currently selected point on the path.
 - **Layers** - Shows the shapes in the current item in their stack order.
 - **Context characters** - Specify other characters to show around the character you are currently editing.
+- **Transforms** - Select paths to have one of the available transforms applied:
+  - Horizontal skew - provide either an angle or a distance to skew selected paths.
+  - Offset path - provide a (positive) distance to expand selected paths, or a negative distance to shrink them.
+  - Rotation - provide an angle to rotate selected paths or component instances.
 - **History** - A list of actions in the Undo queue.
 - **Guides** - Show, hide, and edit built in and custom guide lines.
 - **Character info** - Various pieces of metadata from Unicode about the current character.

@@ -31,8 +31,12 @@ Here is an overview of the types of actions you can take:
 - Horizontally scale all glyphs
 - Vertically scale all glyphs
 - Re-size all glyphs
-- Convert all Component Instances into Paths
+- Skew all glyphs
 - Side bearings
+
+**Project cleanup**
+
+- Convert all Component Instances into Paths
 - Round all point values
 - Remove items from your project (Characters, Ligatures, Components)
 

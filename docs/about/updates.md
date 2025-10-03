@@ -2,9 +2,26 @@
 
 This info and more can be found on the [Glyphr Studio 2 Github Releases Page](https://github.com/glyphr-studio/Glyphr-Studio-2/releases).
 
+## Version 2.8.x
+
+### v2.8.0 <badge>minor release</badge><badge type="info">2025-10-03</badge>
+
+#### New features
+
+- Offset path: this algorithm either expands or contracts a given path by a given amount. This could be a good first step in making a Bold variant of a font.
+- Skew path: this skews a path either by a given angle or distance. This could be a good first step in making an Italic variant of a font.
+- Transforms panel: this is the new home for Skew and Offset functions, as well as a new entry point for Rotate functionality (formerly available on the edit canvas).
+- Skew global action: new ability to skew all paths from the Global Actions page.
+- Kern Group sort: you can now sort kern groups by ID (previous default) or alphabetically by left group or right group members.
+
+#### Bug fixes
+
+- Fixed the on-canvas side bearing readout that was sometimes displaying full decimal precision.
+- Fixed a bug that was hiding the Quality Control panel in some situations.
+
 ## Version 2.7.x
 
-### v2.7.3 <badge>minor release</badge><badge type="info">2025-08-06</badge>
+### v2.7.3 <badge>patch release</badge><badge type="info">2025-08-06</badge>
 
 #### Bug fixes
 
@@ -14,7 +31,7 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 - Character ranges with very long names now display better in dropdown menus and list views.
 
-### v2.7.2 <badge>minor release</badge><badge type="info">2025-07-30</badge>
+### v2.7.2 <badge>patch release</badge><badge type="info">2025-07-30</badge>
 
 #### Bug fixes
 
@@ -28,7 +45,7 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 - Char Chips that show member characters of Kern Groups will now display with a Red / Warning color if that character does not exist in the project.
 - With the Pen tool, clicking and dragging the center of a straight line segment now moves the two points its connected to - previously "Curve Drag" only applied to curved line segments with one or two handles enabled.
 
-### v2.7.1 <badge>minor release</badge><badge type="info">2025-03-19</badge>
+### v2.7.1 <badge>patch release</badge><badge type="info">2025-03-19</badge>
 
 #### New features
 
