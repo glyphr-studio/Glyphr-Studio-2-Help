@@ -4,6 +4,20 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.8.x
 
+### v2.8.1 <badge>patch release</badge><badge type="info">2025-10-06</badge>
+
+#### Bug fixes
+
+Pulled in upstream bug fixes from the `svg-to-bezier` library, which is now available as an NPM package: https://www.npmjs.com/package/svg-to-bezier
+
+- Better handling for paths closed with `z` command. These now add a new line segment back to the first point.
+- Better handling of importing SVG that has disconnected path segments.
+- updated `transform()` functions for `matrix`, `scale`, `skewx` and `skewy` to honor `transform-origin` properties.
+
+#### Quality improvements
+
+- SVG import now tests more SVG features, like `use:` links.
+
 ### v2.8.0 <badge>minor release</badge><badge type="info">2025-10-03</badge>
 
 #### New features
