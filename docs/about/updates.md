@@ -4,6 +4,18 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.8.x
 
+### v2.8.2 <badge>patch release</badge><badge type="info">2025-10-15</badge>
+
+#### New features
+- New "Outline Mode" view for the edit canvas. This toggles the view to only show the outlines of shapes - Clockwise paths will be shown as a slightly lighter blue outline than their counter-clockwise counterparts. Component Instances will be outlined in dark green. This view may be helpful to visualize characters with especially complex paths. This is a setting that is saved to the Project File > App preferences, and can also be toggled from a new button in the lower-right part of the Edit Canvas.
+- Ligature and Kern support for Emojis, and other characters outside of the Basic Multilingual Plane (Characters above U+FFFF).
+- Better fallback names for Unicode characters. Instead of defaulting to "[name not found]", the new default is the Unicode Code Point, like "U+12345". This was being shown some places, but now it's the default behavior for all use cases.
+
+#### Bug fixes
+- Text input for Surrogate Pairs is now supported (Unicode code points outside of the Basic Multilingual Plane, above U+FFFF). This was causing issues where users were typing in text as input in these places: the Live Preview page, Context Characters, or creating new Ligatures and Kern Groups. Not handling surrogate pairs meant text input for individual characters in these ranges was resulting in two characters being read in by Glyphr Studio, which was a buggy behavior.
+- Removed a dev action button that we were using to help debug new Path Offset functionality.
+
+
 ### v2.8.1 <badge>patch release</badge><badge type="info">2025-10-06</badge>
 
 #### Bug fixes
