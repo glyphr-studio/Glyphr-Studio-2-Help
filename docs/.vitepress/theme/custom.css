@@ -30,22 +30,35 @@ https: //github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/va
 	--vp-c-indigo-3: hsl(200, 100%, 30%);
 }
 
-ul {
+.vp-doc ul {
 	margin-top: 8px !important;
 }
 
-h3 {
-	margin-top: 16px !important;
+.vp-doc h1, 
+.vp-doc h1 + p,
+.vp-doc h2, 
+.vp-doc h3 {
+	position: relative;
+	left: -12px;
+}
+
+.vp-doc h3 {
+	margin-top: 36px !important;
 	margin-bottom: 8px !important;
 }
 
-h2 + p,
-h3 + p,
-h4 + p {
+.vp-doc h4 {
+	margin-top: 4px !important;
+	margin-bottom: 4px !important;
+}
+
+.vp-doc h2 + p,
+.vp-doc h3 + p,
+.vp-doc h4 + p {
 	margin-top: 4px !important;
 }
 
-p + h3,
-ul + h3 {
+.vp-doc p + h3,
+.vp-doc ul + h3 {
 	margin-top: 24px !important;
 }
