@@ -248,6 +248,14 @@ On the edit canvas, when in Path Edit mode (Pen tool) hover over a path's curve,
 
 <br>
 
+#### _Canvas display mode "Filled"_ <badge type="info">Boolean</badge>
+
+For shapes on the edit canvas, when the display mode is "Filled" the shapes will be shown as filled with black, similar to how they will appear in a text editor. When the display mode is "Outline" (or unselected), the shapes will be shown as outlines, which may help when editing complex shapes.
+
+You can toggle this setting directly on the edit canvas, next to the lower-right view controls.
+
+Clockwise paths will be shown as a slightly lighter blue outline than their counter-clockwise counterparts. Component Instances will be outlined in dark green.
+
 #### _Show non-graphic control characters_ <badge type="info">Boolean</badge>
 
 Show the Unicode code points represent things that aren't letters. In Unicode, the C0 and C1 control code or control character sets define control codes for use in text by computer systems that use ASCII and derivatives of ASCII.
@@ -290,7 +298,7 @@ When importing SVG by dragging and dropping a .svg file onto the canvas, move th
 
 When importing SVG to a single item, move the imported shapes such that the left hand side x is at the Side Bearing value, and the set the Advance With of the item so that there is a Side Bearing's worth of space on the right hand side.
 
-Set this value to -1 to disable it.
+Set this value to `-1` to disable it.
 
 This setting overrides the 'Move shapes when importing an SVG file' setting.
 
@@ -298,7 +306,7 @@ This setting overrides the 'Move shapes when importing an SVG file' setting.
 
 When you add the first shape to a new Character or Ligature, automatically update the Advance Width such that the Right Side Bearing is the value specified here. This automatic Advance Width update will only happen one time per item, and won't apply to shapes imported from an SVG file.
 
-Set this value to -1 to disable it.`,
+Set this value to `-1` to disable it.
 
 ### Quality checks
 
