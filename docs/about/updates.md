@@ -4,6 +4,13 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.8.x
 
+### v2.8.3 <badge>patch release</badge><badge type="info">2025-10-24</badge>
+
+#### Bug fixes
+- Fixed a navigation bug where deleting the last Ligature caused the app to crash.
+- Better error case handling for loading files on the Open Project page.
+- Fixed an edge case where flipping shapes was causing the app to crash.
+
 ### v2.8.2 <badge>patch release</badge><badge type="info">2025-10-15</badge>
 
 #### New features
