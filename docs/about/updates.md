@@ -4,6 +4,11 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.8.x
 
+### v2.8.4 <badge>patch release</badge><badge type="info">2025-12-12</badge>
+
+#### Bug Fixes
+- Integrated an upstream fix from the SVG-to-Bezier library that enables the `rx` and `ry` radius corner attributes for rectangles.
+
 ### v2.8.3 <badge>patch release</badge><badge type="info">2025-10-24</badge>
 
 #### Bug fixes
