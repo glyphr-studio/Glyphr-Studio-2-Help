@@ -4,6 +4,18 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.8.x
 
+### v2.8.5 <badge>patch release</badge><badge type="info">2026-01-07</badge>
+
+Happy New Year!
+
+#### New Features
+- Added the ability to use Glyphr Studio as a Web App (thank you GitHub user Medeyros).
+- Improved the formatting for the display name of Ligatures.
+
+#### Bug Fixes
+- Fixed a bug that was preventing Kern Pairs from being imported from SVG Fonts.
+- Improved the Bezier math used to find bounding boxes for curves. This fixes a bug where imported SVG shapes had incorrect / small bounding boxes.
+
 ### v2.8.4 <badge>patch release</badge><badge type="info">2025-12-12</badge>
 
 #### Bug Fixes
