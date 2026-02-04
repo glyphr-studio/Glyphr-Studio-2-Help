@@ -4,26 +4,41 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.8.x
 
+### v2.8.6 <badge>patch release</badge><badge type="info">2026-02-04</badge>
+
+#### New Features
+
+- Glyphr Studio can now be treated like a Progressive Web App (thank you GitHub user Medeyros).
+
+#### Bug Fixes
+
+- Live Preview: Line Gap can now be 0. Font size is now limited to be positive.
+- `Ctrl` + `Z` for Undo was added to the list of keyboard shortcuts. The functionality was there, just not the shortcut in help.
+
 ### v2.8.5 <badge>patch release</badge><badge type="info">2026-01-07</badge>
 
 Happy New Year!
 
 #### New Features
+
 - Added the ability to use Glyphr Studio as a Web App (thank you GitHub user Medeyros).
 - Improved the formatting for the display name of Ligatures.
 
 #### Bug Fixes
+
 - Fixed a bug that was preventing Kern Pairs from being imported from SVG Fonts.
 - Improved the Bezier math used to find bounding boxes for curves. This fixes a bug where imported SVG shapes had incorrect / small bounding boxes.
 
 ### v2.8.4 <badge>patch release</badge><badge type="info">2025-12-12</badge>
 
 #### Bug Fixes
+
 - Integrated an upstream fix from the SVG-to-Bezier library that enables the `rx` and `ry` radius corner attributes for rectangles.
 
 ### v2.8.3 <badge>patch release</badge><badge type="info">2025-10-24</badge>
 
 #### Bug fixes
+
 - Fixed a navigation bug where deleting the last Ligature caused the app to crash.
 - Better error case handling for loading files on the Open Project page.
 - Fixed an edge case where flipping shapes was causing the app to crash.
@@ -31,14 +46,15 @@ Happy New Year!
 ### v2.8.2 <badge>patch release</badge><badge type="info">2025-10-15</badge>
 
 #### New features
+
 - New "Outline Mode" view for the edit canvas. This toggles the view to only show the outlines of shapes - Clockwise paths will be shown as a slightly lighter blue outline than their counter-clockwise counterparts. Component Instances will be outlined in dark green. This view may be helpful to visualize characters with especially complex paths. This is a setting that is saved to the Project File > App preferences, and can also be toggled from a new button in the lower-right part of the Edit Canvas.
 - Ligature and Kern support for Emojis, and other characters outside of the Basic Multilingual Plane (Characters above U+FFFF).
 - Better fallback names for Unicode characters. Instead of defaulting to "[name not found]", the new default is the Unicode Code Point, like "U+12345". This was being shown some places, but now it's the default behavior for all use cases.
 
 #### Bug fixes
+
 - Text input for Surrogate Pairs is now supported (Unicode code points outside of the Basic Multilingual Plane, above U+FFFF). This was causing issues where users were typing in text as input in these places: the Live Preview page, Context Characters, or creating new Ligatures and Kern Groups. Not handling surrogate pairs meant text input for individual characters in these ranges was resulting in two characters being read in by Glyphr Studio, which was a buggy behavior.
 - Removed a dev action button that we were using to help debug new Path Offset functionality.
-
 
 ### v2.8.1 <badge>patch release</badge><badge type="info">2025-10-06</badge>
 
