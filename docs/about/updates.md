@@ -2,6 +2,13 @@
 
 This info and more can be found on the [Glyphr Studio 2 Github Releases Page](https://github.com/glyphr-studio/Glyphr-Studio-2/releases).
 
+## Version 2.9.x
+
+### v2.9.0 <badge>minor release</badge><badge type="info">2026-03-28</badge>
+
+#### Quality improvements
+- Removed Paper.js as an external dependency. As an aside, created the Bezier Boolean project which now supports path combine actions. https://www.npmjs.com/package/bezier-boolean
+
 ## Version 2.8.x
 
 ### v2.8.6 <badge>patch release</badge><badge type="info">2026-02-04</badge>
