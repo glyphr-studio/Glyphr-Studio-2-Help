@@ -4,9 +4,25 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.9.x
 
+### v2.9.2 <badge>minor release</badge><badge type="info">2026-05-22</badge>
+
+#### New features
+Thank you @fecitekme for adding Redo functionality: Redo action and clickable history states (#339)
+ - Adds redo button + Ctrl+Y / Ctrl+Shift+Z shortcut
+ - Adds redo button to the History panel
+ - Makes history entries clickable to jump to any past state
+
+
+### v2.9.1 <badge>minor release</badge><badge type="info">2026-03-30</badge>
+
+#### Bug Fixes
+
+- Fixed typos on the About page.
+
 ### v2.9.0 <badge>minor release</badge><badge type="info">2026-03-28</badge>
 
-#### Quality improvements
+#### Quality Improvements
+
 - Removed Paper.js as an external dependency. As an aside, created the Bezier Boolean project which now supports path combine actions. https://www.npmjs.com/package/bezier-boolean
 
 ## Version 2.8.x
