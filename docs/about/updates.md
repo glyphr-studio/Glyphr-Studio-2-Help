@@ -4,6 +4,11 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.9.x
 
+### v2.9.3 <badge>patch release</badge><badge type="info">2026-06-04</badge>
+
+#### Bug fixes
+Updated to the latest version of `bezier-boolean` to fix a Combine Shapes bug.
+
 ### v2.9.2 <badge>minor release</badge><badge type="info">2026-05-22</badge>
 
 #### New features
