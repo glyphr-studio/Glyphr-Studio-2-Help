@@ -9,7 +9,7 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 #### Bug fixes
 Updated to the latest version of `bezier-boolean` to fix a Combine Shapes bug.
 
-### v2.9.2 <badge>minor release</badge><badge type="info">2026-05-22</badge>
+### v2.9.2 <badge>patch release</badge><badge type="info">2026-05-22</badge>
 
 #### New features
 Thank you @fecitekme for adding Redo functionality: Redo action and clickable history states (#339)
@@ -18,7 +18,7 @@ Thank you @fecitekme for adding Redo functionality: Redo action and clickable hi
  - Makes history entries clickable to jump to any past state
 
 
-### v2.9.1 <badge>minor release</badge><badge type="info">2026-03-30</badge>
+### v2.9.1 <badge>patch release</badge><badge type="info">2026-03-30</badge>
 
 #### Bug Fixes
 
