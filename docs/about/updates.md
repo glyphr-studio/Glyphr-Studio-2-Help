@@ -2,6 +2,15 @@
 
 This info and more can be found on the [Glyphr Studio 2 Github Releases Page](https://github.com/glyphr-studio/Glyphr-Studio-2/releases).
 
+## Version 2.10.x
+
+### v2.10.0 <badge>minor release</badge><badge type="info">2026-06-08</badge>
+
+#### New Features
+- Replaced OpenType.js with Font Flux JS. Read more at https://www.glyphrstudio.com/fontfluxjs . FFJS can convert any binary font file into JSON data, handle changes made in JavaScript, then export any binary font file out again.
+- Added export targets - in addition to OTF, Glyphr Studio can now export TTF, WOFF, or WOFF2 formats.
+
+
 ## Version 2.9.x
 
 ### v2.9.3 <badge>patch release</badge><badge type="info">2026-06-04</badge>
