@@ -14,11 +14,14 @@ Since this is a bug with how an Operating System displays a font file, Glyphr St
 
 ### Simple Solution
 
-Possibly the easiest solution is to take the `.otf` file that got exported from Glyphr Studio, and use some online file converter to convert it to an `.ttf` file. For whatever reason, once converted to TTF, these overlaps appear correctly at all sizes. 
+The easiest solution is to export a `.ttf` file instead of an `.otf` file. Glyphr Studio can
+export `.otf`, `.ttf`, `.woff`, and `.woff2` files directly from the **File** menu. For whatever
+reason, the TTF format shows these overlaps correctly at all sizes. (If you only have an `.otf`
+file, you can also use an online file converter to convert it to a `.ttf` file with the same result.)
 
 ### More involved solution
 
-*TLDR: if overlaps are causing problems, merge shapes together to eliminate overlaps.*
+_TLDR: if overlaps are causing problems, merge shapes together to eliminate overlaps._
 
 This solution is more of a recommendation to change your typeface design process. There is a best practice / recommendation for creating fonts that character paths be as simplified as possible. Yes, it's easy to design a Capital Letter E as one vertical rectangle and three horizontal rectangles... but it's considered better to have this just be a single complex shape as opposed to four overlapping rectangles.
 

@@ -21,7 +21,7 @@ You can use your OS File Chooser to select a file, or drag and drop one of the f
 - Glyphr Studio Project file `.txt` (this is the v1 format, must be at least version 1.13.2)
 - OpenType font file `.otf`
 - TrueType font file `.ttf`
-- Web Open Font Format `.woff`
+- Web Open Font Format `.woff` and `.woff2`
 - SVG Font `.svg` (note, this needs to be a "SVG Font" file, not just any SVG file.)
 
 ## Restore

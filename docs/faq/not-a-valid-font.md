@@ -10,6 +10,5 @@ If you encounter this error, please take the `.gs2` project file that generated 
 
 ### The solution
 
- - Sometimes, making additional edits to your project then re-exporting an `.otf` file will magically fix something.
- - If the above doesn't work, use another program or some online font converter, and convert the `.otf` file to a `.ttf` file. TTF and OTF formats are cross-compatible (at least for the set of features Glyphr Studio supports) so converting back and forth should not result in any loss of data. It *does*, however, tend to fix errors like this. (By the way, this is also the suggested fix for the [Transparent overlaps](transparent-overlaps.md) problem).
-
+- Sometimes, making additional edits to your project then re-exporting an `.otf` file will magically fix something.
+- If the above doesn't work, try exporting a `.ttf` file instead. Glyphr Studio can now export `.otf`, `.ttf`, `.woff`, and `.woff2` files directly from the **File** menu. TTF and OTF formats are cross-compatible (at least for the set of features Glyphr Studio supports), so switching between them should not result in any loss of data. It _does_, however, tend to fix errors like this. (If you only have an `.otf` file, another program or an online font converter can convert it to `.ttf` as well. By the way, this is also the suggested fix for the [Transparent overlaps](transparent-overlaps.md) problem).

@@ -22,6 +22,9 @@ Very often we get questions like "Does Glyphr Studio support [something]". Font 
 ### Supported export font formats
 
 - OTF
+- TTF
+- WOFF
+- WOFF2
 - SVG Font
 
 ## What _is not_ supported
@@ -36,8 +39,6 @@ Very often we get questions like "Does Glyphr Studio support [something]". Font 
 
 ### Not supported export font formats
 
-- TTF
-- WOFF
 - UFO
 - (everything else)
 

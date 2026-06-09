@@ -4,7 +4,7 @@ This page contains detailed information about what is imported and exported from
 Glyphr Studio supports three main file types:
 
 - **Glyphr Studio Project files** - `.gs2` for v2 projects, and `.txt` for v1 projects
-- **Font files** - generically `.otf`, `.ttf`, and `.woff` files
+- **Font files** - generically `.otf`, `.ttf`, `.woff` and `.woff2` files
 - **SVG Font files** - a deprecated file format that is supported by Glyphr Studio
 
 ## Glyphr Studio Project file
@@ -39,14 +39,16 @@ v2 project files cannot be loaded into the v1 app. But, v1 project files (create
 can be imported into the Glyphr Studio v2 app. The project file structure from v1 will be copied and translated into
 the new v2 format.
 
-## OTF, TTF, and WOFF
+## OTF, TTF, WOFF and WOFF2
 
-### Importing OTF, TTF, and WOFF
+### Importing OTF, TTF and WOFF
 
-Glyphr Studio uses OpenType.js to import font files. These three formats are supported,
-and let Glyphr Studio read character outline data. There is also a limited set of font
-metadata that is imported into a Glyphr Studio Project. Font files can contain massive
-amounts of data, and much of this is _not_ imported.
+Glyphr Studio uses Font Flux JS to import font files. For importing, three formats are
+supported: `.otf`, `.ttf`, and `.woff`. (WOFF2 files can be _exported_, but not imported -
+if you need to bring a WOFF2 font into Glyphr Studio, convert it to one of the supported
+formats first.) Importing lets Glyphr Studio read character outline data. There is also a
+limited set of font metadata that is imported into a Glyphr Studio Project. Font files can
+contain massive amounts of data, and much of this is _not_ imported.
 
 #### ✅ Importing Ligatures
 
@@ -54,52 +56,53 @@ amounts of data, and much of this is _not_ imported.
 
 #### ✅ Importing Kerning data
 
-- Some kerning data **is** imported:
-  - Importing Kern data from font files is supported for the `GPOS` table, Lookup Type 2 format.
-    - Can only import subtables with Pair Position Format 1. Subtables with Pair Position Format 2 are not supported.
-  - Kerning data for Ligature characters is **not** supported: kerned characters must have a Unicode code point.
+- Kerning data **is** imported:
+  - Font Flux JS reads kerning pairs from both the legacy `kern` table and the modern `GPOS` table, so kerning from most fonts is imported automatically.
+  - Kerning data for Ligature characters is **not** supported: each side of a kern pair must be a character with a Unicode code point.
 
 #### ✅ Importing Metadata
 
-Here is a list of font metadata that does get imported. If that piece of data is not found, the Glyphr Studio default is shown in the last column.
+Font Flux JS parses each font table into a simplified `info` object, and Glyphr Studio reads
+its values from there. Here is a list of font metadata that does get imported. If a piece of
+data is not found, the Glyphr Studio default is shown in the last column.
 
-| Font data name                                | Glyphr Studio default | Glyphr Studio name    |
-| --------------------------------------------- | --------------------- | --------------------- |
-| font.familyName                               | "My Font"             | Font family           |
-| font.tables.name.fontSubfamily                | "Regular"             | Font style            |
-| font.tables.head.fontRevision or font.version | "Version 0.1"         | Font version          |
-| font.tables.name.description                  | ""                    | Font description      |
-| font.tables.os2.panose                        | "0 0 0 0 0 0 0 0 0 0" | Panose-1              |
-| font.unitsPerEm                               | 2048                  | Units per Em (UPM)    |
-| font.ascender                                 | 1550                  | Ascent                |
-| font.descender                                | -440                  | Descent               |
-| font.tables.os2.sCapHeight                    | 1480                  | Capital letter height |
-| font.tables.os2.sxHeight                      | 1100                  | X height              |
-| --                                            | 30                    | Overshoot             |
-| font.tables.os2.usWeightClass                 | 400                   | Font weight           |
-| font.tables.post.italicAngle                  | 0                     | Italic angle          |
-| font.tables.name.designer                     | ""                    | Designer              |
-| font.tables.name.designerURL                  | ""                    | Designer's URL        |
-| font.tables.name.manufacturer                 | ""                    | Manufacturer          |
-| font.tables.name.manufacturerURL              | ""                    | Manufacturer's URL    |
-| font.tables.name.license                      | ""                    | License               |
-| font.tables.name.licenseURL                   | ""                    | License URL           |
-| font.tables.name.copyright                    | ""                    | Copyright             |
-| font.tables.name.trademark                    | ""                    | Trademark             |
+| Font Flux JS `info` property | Glyphr Studio default | Glyphr Studio name    |
+| ---------------------------- | --------------------- | --------------------- |
+| info.familyName              | "My Font"             | Font family           |
+| info.styleName               | "Regular"             | Font style            |
+| info.version                 | "Version 0.1"         | Font version          |
+| info.description             | ""                    | Font description      |
+| info.panose                  | "0 0 0 0 0 0 0 0 0 0" | Panose-1              |
+| info.unitsPerEm              | 2048                  | Units per Em (UPM)    |
+| info.ascender                | 1550                  | Ascent                |
+| info.descender               | -440                  | Descent               |
+| info.capHeight               | 1480                  | Capital letter height |
+| info.xHeight                 | 1100                  | X height              |
+| --                           | 20                    | Overshoot             |
+| info.weight                  | 400                   | Font weight           |
+| info.italicAngle             | 0                     | Italic angle          |
+| info.designer                | ""                    | Designer              |
+| info.designerURL             | ""                    | Designer's URL        |
+| info.manufacturer            | ""                    | Manufacturer          |
+| info.vendorURL               | ""                    | Manufacturer's URL    |
+| info.license                 | ""                    | License               |
+| info.licenseURL              | ""                    | License URL           |
+| info.copyright               | ""                    | Copyright             |
+| info.trademark               | ""                    | Trademark             |
 
-- A note about Overshoot - this is not a piece of data that is saved to OTF files. But, Glyphr Studio does save it to Project Files, and displays it on the Edit Canvas to help with creating glyphs.
+- A note about Overshoot - this is not a piece of data that is saved to font files, so it is not imported. Glyphr Studio sets a sensible default on import (20, or 30 for fonts with a UPM above 2000), saves it to Project Files, and displays it on the Edit Canvas to help with creating glyphs.
 
-### Exporting OTF
+### Exporting OTF, TTF, WOFF and WOFF2
 
-For font files, there is only one Export format: `.otf`. Even if you imported and started
-a project from a TTF or WOFF file, Glyphr Studio can only export OTF files. If you need
-additional file formats, we recommend using another tool (like Font Forge) to convert your
-OTF file to other formats.
+Glyphr Studio can export your project as a font file in four formats: `.otf`, `.ttf`,
+`.woff`, and `.woff2`. These are all available from the **File** menu. Font Flux JS handles
+generating the correct font technology for each format (for example, CFF/PostScript outlines
+for `.otf` and quadratic TrueType outlines for `.ttf`), so there's no longer any need to use
+a separate tool to convert between font file formats.
 
 #### ✅ Exporting Ligatures
 
-- Exporting Ligature information **is supported**.
-- Ligature source characters must be in the BMP, below `U+FFFF`
+- Exporting Ligature information **is supported**, via the `GSUB` table (`liga` feature).
 
 #### ✅ Exporting Kerning data
 
@@ -108,9 +111,9 @@ OTF file to other formats.
 
 #### ✅ Exporting Metadata
 
-The following pieces of metadata are passed off to OpenType.js to create the OTF file.
+The following pieces of metadata are passed to Font Flux JS to create the font file.
 
-`unitsPerEm`, `ascender`, `descender`, `familyName`, `styleName`, `italicAngle`, `weight`, `designer`, `designerURL`, `manufacturer`, `manufacturerURL`, `license`, `licenseURL`, `version`, `description`, `copyright`, `trademark`
+`unitsPerEm`, `ascender`, `descender`, `lineGap`, `capHeight`, `xHeight`, `familyName`, `styleName`, `italicAngle`, `weight`, `designer`, `designerURL`, `manufacturer`, `manufacturerURL`, `license`, `licenseURL`, `version`, `description`, `copyright`, `trademark`
 
 These properties can be edited via the Settings > Font Metadata page in Glyphr Studio.
 
