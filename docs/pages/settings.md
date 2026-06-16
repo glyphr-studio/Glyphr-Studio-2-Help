@@ -22,6 +22,19 @@ The app version this project file was first created with.
 
 A unique ID used to identify this project.
 
+#### _Export components as composite glyphs_ <badge type="info">Boolean</badge>
+
+Default is checked (on). When enabled, glyphs that are built purely from positioned Component Instances are exported as TrueType _composite glyphs_ - the exported font references the component's outlines and stores only an x/y offset, instead of flattening every component into its own stand-alone outlines. This keeps exported fonts smaller, and preserves the component relationship so the font can be re-imported into Glyphr Studio with its components intact.
+
+There are a few things to keep in mind:
+
+- **TrueType only.** Composite glyphs only exist in TrueType-flavored fonts (`.ttf`, `.woff`, `.woff2`). When exporting to OTF/CFF (`.otf`), components are _always_ flattened to outlines regardless of this setting, because the CFF format cannot store composites. In other words, this setting is effectively ignored for `.otf` exports.
+- **Pure-position components only.** A Component Instance is exported as a composite reference only when it is a plain translation (an x/y offset). If a Component Instance has any resize (width/height scaling), rotation, horizontal/vertical flip, or reversed winding, that component is flattened to outlines instead. A single glyph can be partially composite and partially flattened, on a per-component basis.
+- **Round-trip fidelity.** Same-format round-trips (TTF → Glyphr Studio → TTF) preserve component structure with high fidelity. When the format changes (for example TTF → OTF), only the conceptual/visual result is preserved, not the composite structure.
+- **Turning it off.** Unchecking this produces fully flattened outlines for every glyph - the previous/legacy export behavior. This can be useful for maximum compatibility with tools that don't handle composite glyphs well.
+
+See [Exporting fonts with components](./components#exporting-fonts-with-components) for more detail.
+
 ## Font
 
 #### _Font family_ <badge type="info">Text</badge>
