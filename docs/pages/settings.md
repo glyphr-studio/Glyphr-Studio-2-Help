@@ -22,6 +22,19 @@ The app version this project file was first created with.
 
 A unique ID used to identify this project.
 
+#### _Import composite glyphs as components_ <badge type="info">Boolean</badge>
+
+Default is checked (on). When a font is opened or imported, TrueType _composite glyphs_ (for example accented letters like `à á â`, or the dotted `i` and `j`) are imported as Components and Component Instances, instead of being flattened into plain outlines.
+
+For each referenced base glyph, a Component Root is created once and then linked (re-used) by every character that references it. For example, the `a` outline becomes a single Component shared by `à á â ã ä å ā ă ą`, and the combining dot becomes one Component shared by `i`, `j`, and the dotted accents. The composite's per-character x/y offset is preserved as the Component Instance's translate values.
+
+There are a few things to keep in mind:
+
+- **Pure-position composites only.** Only composites whose components are a plain translation (an x/y offset) are imported as Components. Composite components that are scaled, rotated, or use point-matching (anchor attachment) are flattened to outlines instead.
+- **When unchecked.** Composite glyphs are flattened into plain outlines on import - the previous behavior.
+
+This is the companion of the _Export components as composite glyphs_ setting below; with both on (the default), Components survive a full import → export round-trip through TrueType formats. See [Components & composite glyphs round-tripping](./components#components-composite-glyphs-round-tripping) for more detail.
+
 #### _Export components as composite glyphs_ <badge type="info">Boolean</badge>
 
 Default is checked (on). When enabled, glyphs that are built purely from positioned Component Instances are exported as TrueType _composite glyphs_ - the exported font references the component's outlines and stores only an x/y offset, instead of flattening every component into its own stand-alone outlines. This keeps exported fonts smaller, and preserves the component relationship so the font can be re-imported into Glyphr Studio with its components intact.
@@ -33,7 +46,7 @@ There are a few things to keep in mind:
 - **Round-trip fidelity.** Same-format round-trips (TTF → Glyphr Studio → TTF) preserve component structure with high fidelity. When the format changes (for example TTF → OTF), only the conceptual/visual result is preserved, not the composite structure.
 - **Turning it off.** Unchecking this produces fully flattened outlines for every glyph - the previous/legacy export behavior. This can be useful for maximum compatibility with tools that don't handle composite glyphs well.
 
-See [Exporting fonts with components](./components#exporting-fonts-with-components) for more detail.
+See [Components & composite glyphs round-tripping](./components#components-composite-glyphs-round-tripping) for more detail.
 
 ## Font
 

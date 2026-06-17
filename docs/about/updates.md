@@ -4,28 +4,45 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.10.x
 
+### v2.10.1 <badge>minor release</badge><badge type="info">2026-06-17</badge>
+
+Continuing to work through the new Font Flux JS integration. Both inheriting new capabilities for Kerning and Components, and also fixing some bugs in both Glyphr Studio and FFJS.
+
+#### New Features
+
+- Kern classes are now imported and exported via Kern Groups in Glyphr Studio. Previously, all kern data was permutated out into 1:1 individual letter pairs, which was greatly increasing the number of import and export items for some fonts.
+- Composite Glyphs now import to Glyphr Studio as Components, and Components are exported as Composite Glyphs (wherever possible).
+- Imported font file type is now remembered, and the default export file type now matches it.
+
+#### Bug Fixes
+
+- Fixed a performance issue during import and export, they should both be much faster now.
+- Fixed a spacing bug where LSB (from the hmtx table) was being ignored, affecting character spacing.
+
 ### v2.10.0 <badge>minor release</badge><badge type="info">2026-06-08</badge>
 
 #### New Features
+
 - Replaced OpenType.js with Font Flux JS. Read more at https://www.glyphrstudio.com/fontfluxjs . FFJS can convert any binary font file into JSON data, handle changes made in JavaScript, then export any binary font file out again.
 - Added export targets - in addition to OTF, Glyphr Studio can now export TTF, WOFF, or WOFF2 formats.
-
 
 ## Version 2.9.x
 
 ### v2.9.3 <badge>patch release</badge><badge type="info">2026-06-04</badge>
 
 #### Bug fixes
+
 Updated to the latest version of `bezier-boolean` to fix a Combine Shapes bug.
 
 ### v2.9.2 <badge>patch release</badge><badge type="info">2026-05-22</badge>
 
 #### New features
-Thank you @fecitekme for adding Redo functionality: Redo action and clickable history states (#339)
- - Adds redo button + Ctrl+Y / Ctrl+Shift+Z shortcut
- - Adds redo button to the History panel
- - Makes history entries clickable to jump to any past state
 
+Thank you @fecitekme for adding Redo functionality: Redo action and clickable history states (#339)
+
+- Adds redo button + Ctrl+Y / Ctrl+Shift+Z shortcut
+- Adds redo button to the History panel
+- Makes history entries clickable to jump to any past state
 
 ### v2.9.1 <badge>patch release</badge><badge type="info">2026-03-30</badge>
 

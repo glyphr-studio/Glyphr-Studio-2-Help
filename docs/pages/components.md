@@ -8,7 +8,7 @@ Components are a type of `Glyph` that is not directly associated with a characte
 
 Diacritic glyphs (glyphs with accents) are just one example of where having a shared component root can be used across many individual characters.
 
-Glyphr Studio Components (the roots) are not exported to fonts - they are a concept that is only in place to help design a font. All Component Instances will be exported to your font, along with regular Paths. Depending on your export settings and target format, Component Instances are exported either as TrueType composite glyphs (referencing the component's outlines) or as standard flattened font outlines - see [Exporting fonts with components](#exporting-fonts-with-components) below.
+Glyphr Studio Components (the roots) are not exported to fonts - they are a concept that is only in place to help design a font. All Component Instances will be exported to your font, along with regular Paths. Depending on your export settings and target format, Component Instances are exported either as TrueType composite glyphs (referencing the component's outlines) or as standard flattened font outlines. Composite glyphs can also be imported back as Components - see [Components & composite glyphs round-tripping](#components-composite-glyphs-round-tripping) below.
 
 ## Component Roots and Component Instances
 
@@ -40,13 +40,22 @@ Component Instances _do not_ have size or position attributes. Everything is in 
 
 **\*Rotation Note** Glyph Studio uses an angle system of Degrees - 360° total, with the top being 0°, moving clockwise for positive values and counter-clockwise for negative values. The bottom of the circle (6 o'clock or 180°) the values switch between positive and negative. So, rotating a shape counter-clockwise will use angle values -1° through -179°, and rotating a shape clockwise will use angle values 0° through 180°.
 
-## Exporting fonts with components
+## Components & composite glyphs round-tripping
 
-Glyphr Studio Components (the roots) are never exported - they are a design-time concept. Component Instances, however, _are_ exported. By default Glyphr Studio exports them as TrueType _composite glyphs_, which reference the component's outlines and store only an offset, rather than flattening each instance into its own outlines. This is controlled by the **Export components as composite glyphs** setting on the [Project settings](./settings#project) page (on by default).
+Many fonts already use TrueType _composite glyphs_ - characters built by referencing another glyph's outlines at an x/y offset, rather than storing their own outlines. Accented letters like `à á â` and the dotted `i` and `j` are common examples. Glyphr Studio's Components map naturally onto this concept, so it can import and export composites while keeping your Components intact.
 
-A few rules determine whether a given Component Instance is actually exported as a composite reference or flattened to outlines:
+Two paired settings on the [Project settings](./settings#project) page control this, and both are on by default:
 
-- **TrueType only.** Composite glyphs only exist in TrueType-flavored fonts (`.ttf`, `.woff`, `.woff2`). Exporting to OTF/CFF (`.otf`) always flattens components to outlines, because the CFF format cannot store composites.
-- **Pure-position components only.** A Component Instance is kept as a composite reference only when it is a plain translation (an x/y offset). If it has any resize (Δ width / Δ height), rotation, horizontal/vertical flip, or reversed winding, that instance is flattened to outlines. A single glyph can be partially composite and partially flattened, on a per-component basis.
-- **Round-trip fidelity.** Same-format round-trips (TTF → Glyphr Studio → TTF) preserve component structure with high fidelity. When the format changes (for example TTF → OTF), only the conceptual/visual result is preserved, not the composite structure.
-- **Turning it off.** Unchecking the setting produces fully flattened outlines for every glyph - the previous/legacy export behavior - which can be useful for maximum compatibility with tools that don't handle composite glyphs well.
+- **Import composite glyphs as components** - when opening or importing a font, composite glyphs are brought in as Components and Component Instances instead of being flattened.
+- **Export components as composite glyphs** - when exporting, characters built from Components are written back out as composite glyphs instead of being flattened.
+
+With both on (the default), importing a font and re-exporting it as `.ttf`, `.woff`, or `.woff2` keeps Components intact end-to-end - accented characters and other composites stay editable as linked Components rather than collapsing into standalone outlines.
+
+### What qualifies
+
+The same core rules apply on both import and export:
+
+- **Pure-position only.** A component qualifies only when it is a plain translation (an x/y offset). On import, composite components that are scaled, rotated, or use point-matching (anchor attachment) are flattened to outlines. On export, Component Instances that have any resize (Δ width / Δ height), rotation, horizontal/vertical flip, or reversed winding are flattened. A single glyph can be partially composite and partially flattened, on a per-component basis.
+- **Shared roots are re-used.** On import, a Component Root is created once per referenced base glyph and then linked by every character that uses it. For example, the `a` outline becomes a single Component shared by `à á â ã ä å ā ă ą`, and the combining dot becomes one Component shared by `i`, `j`, and the dotted accents. The composite's per-character offset is preserved as the Component Instance's translate values.
+- **TrueType only / the `.otf` caveat.** Composite glyphs only exist in TrueType-flavored formats (`.ttf`, `.woff`, `.woff2`). OpenType/CFF (`.otf`) cannot store composites, so on export to `.otf` every component is always flattened to outlines regardless of the setting. Same-format round-trips (TTF → Glyphr Studio → TTF) preserve component structure with high fidelity; when the format changes (for example TTF → OTF), only the conceptual/visual result is preserved, not the composite structure.
+- **Turning either off.** Unchecking _Import composite glyphs as components_ flattens composites to plain outlines on import (the previous behavior). Unchecking _Export components as composite glyphs_ produces fully flattened outlines for every glyph on export - useful for maximum compatibility with tools that don't handle composite glyphs well.
