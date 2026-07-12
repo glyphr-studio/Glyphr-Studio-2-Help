@@ -4,6 +4,18 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.10.x
 
+### v2.10.2 <badge>minor release</badge><badge type="info">2026-07-12</badge>
+
+#### New Features
+
+- Live Preview can now switch between Glyphr Studio's built-in canvas based preview, and "real" OTF or TTF based previews. Thanks to the new Font Flux JS integration, real font binaries are generated with every project change. These real fonts are then used for the Live Previews, allowing you to type and see exactly how your font will look after it's exported.
+- Exported font metadata is now more complete with regards to Family information. This should help with other apps recognizing multiple fonts as a group or family.
+
+#### Bug Fixes
+
+- Fixed a bug where PANOSE information was not being exported.
+- Fixed a bug where very short handles were being hidden automatically when they shouldn't be.
+
 ### v2.10.1 <badge>minor release</badge><badge type="info">2026-06-17</badge>
 
 Continuing to work through the new Font Flux JS integration. Both inheriting new capabilities for Kerning and Components, and also fixing some bugs in both Glyphr Studio and FFJS.
