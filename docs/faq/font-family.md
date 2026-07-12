@@ -32,13 +32,16 @@ As opposed to just seeing "Font Name" with the Bold and Italic variants used whe
 
 If you are trying to design a font family and are encountering these signs, go back and ensure all the fonts' metadata is correct.
 
+<br><br><br>
+<hr>
+
 # (Way too) Detailed guidance
 
 Glyphr Studio handles most of this internally. But if you are curious about the details, the following sections show exactly what metadata needs to correspond in order for a collection of fonts to be interpreted as a family.
 
 Glyphr Studio does not directly surface all of these font fields, so if you want to go this deep, you'll have to use some other software to make these granular edits.
 
-## What makes multiple font files appear as one family?
+### What makes multiple font files appear as one family?
 
 For OpenType fonts, including both `.ttf` and `.otf`, family grouping depends mostly on coordinated metadata in the `name`, `OS/2`, `head`, and sometimes `STAT` and `fvar` tables.
 
@@ -64,7 +67,7 @@ The most important fields are:
 - `fvar` table:
   - Required for variable fonts
 
-## What is the single most important recommendation?
+### What is the single most important recommendation?
 
 Use **Name ID 16** as the true family name across all related fonts.
 
@@ -96,7 +99,7 @@ Name ID 17: Condensed Bold
 Name ID 17: Display Semibold Italic
 ```
 
-## How should I set legacy family names?
+### How should I set legacy family names?
 
 Use **Name ID 1** and **Name ID 2** for legacy four-style grouping.
 
@@ -123,7 +126,7 @@ Recommended pattern:
 
 Do not put values like `Light`, `Semibold`, or `Condensed` in Name ID 2 if maximum Windows/Office compatibility matters.
 
-## How should I set modern typographic names?
+### How should I set modern typographic names?
 
 Use **Name ID 16** and **Name ID 17** for the real family structure.
 
@@ -144,7 +147,7 @@ Rule of thumb:
 - Name ID 16 must be the same for every font in the family.
 - Name ID 17 must be unique for every style in that family.
 
-## How should I set the full font name?
+### How should I set the full font name?
 
 Use **Name ID 4** as the unique readable full name for each file.
 
@@ -161,7 +164,7 @@ Acme Sans Condensed Bold
 
 Every font file should have a unique Name ID 4.
 
-## How should I set the PostScript name?
+### How should I set the PostScript name?
 
 Use **Name ID 6** as a unique machine-safe name.
 
@@ -182,7 +185,7 @@ Rules:
 - Do not use spaces
 - Keep it short and stable
 
-## How should I set weight and width?
+### How should I set weight and width?
 
 Set `OS/2.usWeightClass` to match the visual weight.
 
@@ -212,7 +215,7 @@ Set `OS/2.usWidthClass` to match the visual width.
 | Extra-expanded | 8 |
 | Ultra-expanded | 9 |
 
-## How should I set bold, italic, regular, and oblique flags?
+### How should I set bold, italic, regular, and oblique flags?
 
 Coordinate `OS/2.fsSelection` and `head.macStyle`.
 
@@ -235,7 +238,7 @@ Avoid contradictions such as:
 - `fsSelection` says Bold, but `head.macStyle` does not
 - Multiple fonts in the same legacy group marked as Regular
 
-## When should I use Name IDs 21 and 22?
+### When should I use Name IDs 21 and 22?
 
 Use **Name IDs 21 and 22** only when you need a WWS grouping fallback.
 
@@ -264,7 +267,7 @@ Example:
 
 If the family only varies by weight, width, and italic/oblique, you usually do not need Name IDs 21/22.
 
-## Do I need a STAT table?
+### Do I need a STAT table?
 
 Yes, for modern font families, add a correct `STAT` table whenever possible.
 
@@ -305,7 +308,7 @@ wdth = 75
 ital = 1
 ```
 
-## What about variable fonts?
+### What about variable fonts?
 
 For variable fonts, coordinate all normal naming fields plus:
 
@@ -337,7 +340,7 @@ Example:
 | Condensed Bold | 700 | 75 | 0 |
 | Italic | 400 | 100 | 1 |
 
-## Recommended metadata pattern
+### Recommended metadata pattern
 
 For a family named `Acme Sans`:
 
@@ -352,7 +355,7 @@ For a family named `Acme Sans`:
 | AcmeSans-Semibold.ttf | Acme Sans Semibold | Regular | Acme Sans | Semibold | 600 | 5 |
 | AcmeSans-Condensed.ttf | Acme Sans Condensed | Regular | Acme Sans | Condensed | 400 | 3 |
 
-## Checklist for familying fonts together
+### Checklist for familying fonts together
 
 Use this checklist when editing font metadata:
 
@@ -372,7 +375,7 @@ Use this checklist when editing font metadata:
 - [ ] Validate the fonts after editing
 - [ ] Confirm the font license allows modification
 
-## Common mistakes
+### Common mistakes
 
 Avoid these mistakes:
 
@@ -386,7 +389,7 @@ Avoid these mistakes:
 - Treating optical size as weight or width
 - Editing commercial fonts without checking the license
 
-## Practical rule
+### Practical rule
 
 If the goal is to make Windows, Office, Canva, Affinity, and similar apps recognize related font files as one family:
 

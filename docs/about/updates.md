@@ -4,6 +4,12 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.10.x
 
+### v2.10.3 <badge>minor release</badge><badge type="info">2026-07-12</badge>
+
+#### Bug Fixes
+
+- Fixed a small bug with v2.10.2 that only showed up once uploaded to the website.
+
 ### v2.10.2 <badge>minor release</badge><badge type="info">2026-07-12</badge>
 
 #### New Features
