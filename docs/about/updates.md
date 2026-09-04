@@ -4,6 +4,19 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.10.x
 
+### v2.10.4 <badge>minor release</badge><badge type="info">2026-09-04</badge>
+
+#### New Features
+- Grid! The Guides Panel now has options to show a Grid (that is divisions of your Em square). It also has a toggle for snapping points to grid intersections. This will be handy if you are making a pixel-like font comprised mostly of rectangles. Thank you GitHub user viciscat for the feature contribution!
+
+#### Bug Fixes
+
+- Fixed a bug where editing shapes was clearing the Aspect Ratio checkbox on the Multi-Selected Shapes card in the Attributes Panel.
+- A handful of attributes from various cards in the Attributes Panel were not registering their changes with the History / Undo features. Now they are.
+
+#### Quality Improvements
+- The History functions (Undo and Redo) now rely on IndexDB instead of localStorage. For very long-running sessions, this should improve performance, as IndexDB is asynchronous with the UI, and more performant for large amounts of data. Thank you GitHub user Munetios for suggesting IndexDB.
+
 ### v2.10.3 <badge>minor release</badge><badge type="info">2026-07-12</badge>
 
 #### Bug Fixes
