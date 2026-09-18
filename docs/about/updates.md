@@ -4,10 +4,23 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.10.x
 
+### v2.10.5 <badge>minor release</badge><badge type="info">2026-09-18</badge>
+
+#### New Features
+- New Global Action for Combine all Paths, also some small feature improvements to Global Actions (thank you GitHub user `Zentheon`).
+- Some minor Ligatures improvements. The Glyph attributes card now shows the source characters for the current Ligature. Also, since many ligatures being edited in Glyphr Studio are also ligatures in the display font we use for the UI, each ligature name is now forced to show the source characters separated, as opposed to potentially combined into a ligature itself.
+
+#### Bug Fixes
+- Fixed an import/export bug that wasn't handling older style Ligatures.
+- Fixed some url typos on the About page (thank you GitHub user `cknoblauch`).
+
+#### Quality Improvements
+- Upgraded to use Font Flux JS v2.9
+
 ### v2.10.4 <badge>minor release</badge><badge type="info">2026-09-04</badge>
 
 #### New Features
-- Grid! The Guides Panel now has options to show a Grid (that is divisions of your Em square). It also has a toggle for snapping points to grid intersections. This will be handy if you are making a pixel-like font comprised mostly of rectangles. Thank you GitHub user viciscat for the feature contribution!
+- Grid! The Guides Panel now has options to show a Grid (that is divisions of your Em square). It also has a toggle for snapping points to grid intersections. This will be handy if you are making a pixel-like font comprised mostly of rectangles. Thank you GitHub user `viciscat` for the feature contribution!
 
 #### Bug Fixes
 
@@ -15,7 +28,7 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 - A handful of attributes from various cards in the Attributes Panel were not registering their changes with the History / Undo features. Now they are.
 
 #### Quality Improvements
-- The History functions (Undo and Redo) now rely on IndexDB instead of localStorage. For very long-running sessions, this should improve performance, as IndexDB is asynchronous with the UI, and more performant for large amounts of data. Thank you GitHub user Munetios for suggesting IndexDB.
+- The History functions (Undo and Redo) now rely on IndexDB instead of localStorage. For very long-running sessions, this should improve performance, as IndexDB is asynchronous with the UI, and more performant for large amounts of data. Thank you GitHub user `Munetios` for suggesting IndexDB.
 
 ### v2.10.3 <badge>minor release</badge><badge type="info">2026-07-12</badge>
 
@@ -93,7 +106,7 @@ Thank you @fecitekme for adding Redo functionality: Redo action and clickable hi
 
 #### New Features
 
-- Glyphr Studio can now be treated like a Progressive Web App (thank you GitHub user Medeyros).
+- Glyphr Studio can now be treated like a Progressive Web App (thank you GitHub user `Medeyros`).
 
 #### Bug Fixes
 
@@ -106,7 +119,7 @@ Happy New Year!
 
 #### New Features
 
-- Added the ability to use Glyphr Studio as a Web App (thank you GitHub user Medeyros).
+- Added the ability to use Glyphr Studio as a Web App (thank you GitHub user `Medeyros`).
 - Improved the formatting for the display name of Ligatures.
 
 #### Bug Fixes
