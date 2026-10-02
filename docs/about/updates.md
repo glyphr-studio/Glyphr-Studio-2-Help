@@ -4,7 +4,15 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.10.x
 
-### v2.10.5 <badge>minor release</badge><badge type="info">2026-09-18</badge>
+### v2.10.6 <badge>patch release</badge><badge type="info">2026-10-02</badge>
+
+#### Bug Fixes
+- Tool buttons now actually disable in appropriate circumstances. This has been bugging me for at least 4 years. Woot.
+- Moved Composite Character import/export settings to "App" where they should be. Thanks, AI.
+- Improved how characters are searched for within a Unicode range.
+- Fixed a typo in Quality Checks code.
+
+### v2.10.5 <badge>patch release</badge><badge type="info">2026-09-18</badge>
 
 #### New Features
 - New Global Action for Combine all Paths, also some small feature improvements to Global Actions (thank you GitHub user `Zentheon`).
@@ -17,7 +25,7 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 #### Quality Improvements
 - Upgraded to use Font Flux JS v2.9
 
-### v2.10.4 <badge>minor release</badge><badge type="info">2026-09-04</badge>
+### v2.10.4 <badge>patch release</badge><badge type="info">2026-09-04</badge>
 
 #### New Features
 - Grid! The Guides Panel now has options to show a Grid (that is divisions of your Em square). It also has a toggle for snapping points to grid intersections. This will be handy if you are making a pixel-like font comprised mostly of rectangles. Thank you GitHub user `viciscat` for the feature contribution!
@@ -30,13 +38,13 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 #### Quality Improvements
 - The History functions (Undo and Redo) now rely on IndexDB instead of localStorage. For very long-running sessions, this should improve performance, as IndexDB is asynchronous with the UI, and more performant for large amounts of data. Thank you GitHub user `Munetios` for suggesting IndexDB.
 
-### v2.10.3 <badge>minor release</badge><badge type="info">2026-07-12</badge>
+### v2.10.3 <badge>patch release</badge><badge type="info">2026-07-12</badge>
 
 #### Bug Fixes
 
 - Fixed a small bug with v2.10.2 that only showed up once uploaded to the website.
 
-### v2.10.2 <badge>minor release</badge><badge type="info">2026-07-12</badge>
+### v2.10.2 <badge>patch release</badge><badge type="info">2026-07-12</badge>
 
 #### New Features
 
@@ -48,7 +56,7 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 - Fixed a bug where PANOSE information was not being exported.
 - Fixed a bug where very short handles were being hidden automatically when they shouldn't be.
 
-### v2.10.1 <badge>minor release</badge><badge type="info">2026-06-17</badge>
+### v2.10.1 <badge>patch release</badge><badge type="info">2026-06-17</badge>
 
 Continuing to work through the new Font Flux JS integration. Both inheriting new capabilities for Kerning and Components, and also fixing some bugs in both Glyphr Studio and FFJS.
 
