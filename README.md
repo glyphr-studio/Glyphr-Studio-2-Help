@@ -19,19 +19,25 @@ Documentation and help site for Glyphr Studio 2
 ## Deployment
 
 The help site deploys when changes to `dist/` are pushed to `main`. The workflow
-uploads the contents of `dist/` over FTPS. It can also be run manually from the
+uploads the contents of `dist/` over SFTP. It can also be run manually from the
 GitHub Actions tab.
 
-Configure these repository secrets before the first deployment:
+Configure these organization secrets and share them with this repository:
 
-| Secret          | Value                                                        |
-| :-------------- | :----------------------------------------------------------- |
-| `FTP_SERVER`    | The hosting provider's FTP server hostname                   |
-| `FTP_USERNAME`  | The FTP account username                                     |
-| `FTP_PASSWORD`  | The FTP account password                                     |
-| `FTP_SERVER_DIR` | The server directory that serves `glyphrstudio.com/help/`   |
+| Organization secret | Value                               |
+| :------------------ | :---------------------------------- |
+| `SFTP_HOST`         | The hosting provider's SFTP hostname |
+| `SFTP_USERNAME`     | The SFTP account username           |
+| `SFTP_PASSWORD`     | The SFTP account password           |
+
+Also configure this repository secret:
+
+| Repository secret | Value                                                      |
+| :---------------- | :--------------------------------------------------------- |
+| `FTP_SERVER_DIR`  | The server directory that serves `glyphrstudio.com/help/`  |
 
 Set `FTP_SERVER_DIR` to the directory for the help site, including a trailing
 slash. Confirm its path with the hosting provider; it is often something like
-`/public_html/help/`. The deployment synchronizes that server directory with
-`dist/`, including removing files that were removed from `dist/`.
+`/public_html/help/`. The target directory must already exist on the server.
+The workflow uploads files from `dist/`; it does not remove files from the
+server.

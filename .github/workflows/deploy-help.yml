@@ -24,14 +24,14 @@ jobs:
 
       - name: Validate deployment secrets
         env:
-          FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
           FTP_SERVER_DIR: ${{ secrets.FTP_SERVER_DIR }}
         run: |
-          for name in FTP_SERVER FTP_USERNAME FTP_PASSWORD FTP_SERVER_DIR; do
+          for name in SFTP_HOST SFTP_USERNAME SFTP_PASSWORD FTP_SERVER_DIR; do
             if [ -z "${!name}" ]; then
-              echo "::error::Required repository secret $name is not configured."
+              echo "::error::Required secret $name is not configured or is not available to this repository."
               exit 1
             fi
           done
@@ -42,11 +42,11 @@ jobs:
           fi
 
       - name: Upload dist to website
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          local-dir: dist/
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          server: ${{ secrets.SFTP_HOST }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          sftp_only: true
+          local_path: ./dist/*
+          remote_path: ${{ secrets.FTP_SERVER_DIR }}
