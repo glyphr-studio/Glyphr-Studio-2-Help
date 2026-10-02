@@ -15,3 +15,23 @@ Documentation and help site for Glyphr Studio 2
 | Bluesky     | [@glyphrstudio.com](https://bsky.app/profile/glyphrstudio.com)          |
 | Reddit      | [reddit.com/r/GlyphrStudio](https://www.reddit.com/r/GlyphrStudio/)     |
 | GitHub      | [github.com/glyphr-studio](https://github.com/glyphr-studio)            |
+
+## Deployment
+
+The help site deploys when changes to `dist/` are pushed to `main`. The workflow
+uploads the contents of `dist/` over FTPS. It can also be run manually from the
+GitHub Actions tab.
+
+Configure these repository secrets before the first deployment:
+
+| Secret          | Value                                                        |
+| :-------------- | :----------------------------------------------------------- |
+| `FTP_SERVER`    | The hosting provider's FTP server hostname                   |
+| `FTP_USERNAME`  | The FTP account username                                     |
+| `FTP_PASSWORD`  | The FTP account password                                     |
+| `FTP_SERVER_DIR` | The server directory that serves `glyphrstudio.com/help/`   |
+
+Set `FTP_SERVER_DIR` to the directory for the help site, including a trailing
+slash. Confirm its path with the hosting provider; it is often something like
+`/public_html/help/`. The deployment synchronizes that server directory with
+`dist/`, including removing files that were removed from `dist/`.
