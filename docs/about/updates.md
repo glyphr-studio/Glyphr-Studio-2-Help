@@ -4,6 +4,16 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.10.x
 
+### v2.10.8 <badge>patch release</badge><badge type="info">2026-10-27</badge>
+
+#### Bug Fixes
+- Actually updated to the latest FFJS
+
+### v2.10.7 <badge>patch release</badge><badge type="info">2026-10-08</badge>
+
+#### Bug Fixes
+- Update to the latest FFJS to fix a TTF export bug.
+
 ### v2.10.6 <badge>patch release</badge><badge type="info">2026-10-02</badge>
 
 #### Bug Fixes
