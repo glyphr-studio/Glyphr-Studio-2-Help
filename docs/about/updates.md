@@ -4,19 +4,33 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 
 ## Version 2.10.x
 
+### v2.10.9 <badge>patch release</badge><badge type="info">2026-11-13</badge>
+
+#### New features
+
+- Keyboard shortcut `Ctrl`+`X` for "Cut" command, which applies to Paths and Component Instances (not Path Points).
+- Unicode Ranges dialog box now has Search enabled, and a Sorted / Grouped toggle.
+
+#### Quality updates
+
+- Updated Unicode range and character name definitions to Unicode v18
+
 ### v2.10.8 <badge>patch release</badge><badge type="info">2026-10-27</badge>
 
 #### Bug Fixes
+
 - Actually updated to the latest FFJS
 
 ### v2.10.7 <badge>patch release</badge><badge type="info">2026-10-08</badge>
 
 #### Bug Fixes
+
 - Update to the latest FFJS to fix a TTF export bug.
 
 ### v2.10.6 <badge>patch release</badge><badge type="info">2026-10-02</badge>
 
 #### Bug Fixes
+
 - Tool buttons now actually disable in appropriate circumstances. This has been bugging me for at least 4 years. Woot.
 - Moved Composite Character import/export settings to "App" where they should be. Thanks, AI.
 - Improved how characters are searched for within a Unicode range.
@@ -25,19 +39,23 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 ### v2.10.5 <badge>patch release</badge><badge type="info">2026-09-18</badge>
 
 #### New Features
+
 - New Global Action for Combine all Paths, also some small feature improvements to Global Actions (thank you GitHub user `Zentheon`).
 - Some minor Ligatures improvements. The Glyph attributes card now shows the source characters for the current Ligature. Also, since many ligatures being edited in Glyphr Studio are also ligatures in the display font we use for the UI, each ligature name is now forced to show the source characters separated, as opposed to potentially combined into a ligature itself.
 
 #### Bug Fixes
+
 - Fixed an import/export bug that wasn't handling older style Ligatures.
 - Fixed some url typos on the About page (thank you GitHub user `cknoblauch`).
 
 #### Quality Improvements
+
 - Upgraded to use Font Flux JS v2.9
 
 ### v2.10.4 <badge>patch release</badge><badge type="info">2026-09-04</badge>
 
 #### New Features
+
 - Grid! The Guides Panel now has options to show a Grid (that is divisions of your Em square). It also has a toggle for snapping points to grid intersections. This will be handy if you are making a pixel-like font comprised mostly of rectangles. Thank you GitHub user `viciscat` for the feature contribution!
 
 #### Bug Fixes
@@ -46,6 +64,7 @@ This info and more can be found on the [Glyphr Studio 2 Github Releases Page](ht
 - A handful of attributes from various cards in the Attributes Panel were not registering their changes with the History / Undo features. Now they are.
 
 #### Quality Improvements
+
 - The History functions (Undo and Redo) now rely on IndexDB instead of localStorage. For very long-running sessions, this should improve performance, as IndexDB is asynchronous with the UI, and more performant for large amounts of data. Thank you GitHub user `Munetios` for suggesting IndexDB.
 
 ### v2.10.3 <badge>patch release</badge><badge type="info">2026-07-12</badge>
