@@ -47,6 +47,7 @@ Most of the Keyboard Shortcuts in Glyphr Studio are focused on pages where you e
 
 | Key combination                   | Description                                                                                                                                     |
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Ctrl` `X`                        | Cut the selected shapes                                                                                                                         |
 | `Ctrl` `C`                        | Copy the selected shapes                                                                                                                        |
 | `Ctrl` `V`                        | Paste the selected shapes (Glyphr Studio Clipboard)<br>Paste to import copied SVG Code (Operating System Clipboard)                             |
 | `Ctrl` `Z`                        | Undo the last action. If the previous action was on a different item, undo navigates to the previously changed item without undoing the change. |
